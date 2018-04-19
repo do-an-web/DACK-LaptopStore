@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+    <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./styles/sign_in_style.css">
+</head>
+<body>
+    
+<div class="super_container">
+	
+	<!-- Header -->
+	<header class="header">
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col d-flex flex-row">
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/phone.png" alt=""></div>+38 068 005 3570</div>
+						<div class="top_bar_contact_item"><div class="top_bar_icon"><img src="images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a></div>
+						<div class="top_bar_content ml-auto">
+							<div class="top_bar_menu">
+								<ul class="standard_dropdown top_bar_dropdown">
+									<li>
+										<a href="#">English<i class="fas fa-chevron-down"></i></a>
+										<ul>
+											<li><a href="#">Italian</a></li>
+											<li><a href="#">Spanish</a></li>
+											<li><a href="#">Japanese</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">$ US dollar<i class="fas fa-chevron-down"></i></a>
+										<ul>
+											<li><a href="#">EUR Euro</a></li>
+											<li><a href="#">GBP British Pound</a></li>
+											<li><a href="#">JPY Japanese Yen</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="top_bar_user">
+								<div class="user_icon"><img src="images/user.svg" alt=""></div>
+								<div><a href="#">Register</a></div>
+								<div><a href="#">Sign in</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</header>
+	<!-- Content page -->
+	<div class="text-center">
+		<form class="form-signin">
+		  <img class="" src="./images/logo.jpg" alt="" width="50%" height="70%">
+		  <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+		  <label for="inputEmail" class="sr-only">Email address</label>
+		  <input type="email" id="inputEmail" class="form-control mb-1" placeholder="Email address" required="" autofocus="">
+		  <label for="inputPassword" class="sr-only">Password</label>
+		  <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required="">
+		  <div class="checkbox mb-3">
+			<label>
+			  <input type="checkbox" value="remember-me"> Remember me
+			</label>
+		  </div>
+		  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		  <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+		</form>
+	</div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+</body>
+</html>

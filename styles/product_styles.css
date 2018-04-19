@@ -1256,7 +1256,7 @@ select option
 .single_product
 {
 	padding-top: 110px;
-	padding-bottom: 140px;
+	padding-bottom: 110px;
 }
 .image_list li
 {
@@ -1348,7 +1348,7 @@ select option
 }
 .product_text
 {
-	margin-top: 27px;
+	margin-top: 15px;
 }
 .product_text p:last-child
 {
@@ -1356,8 +1356,10 @@ select option
 }
 .order_info
 {
-	margin-top: 53px;
+	margin-top: 55px;
+	margin-left: 50px;
 }
+
 .product_quantity
 {
 	width: 182px;
@@ -1549,12 +1551,12 @@ select option
 	display: inline-block;
 	font-size: 24px;
 	font-weight: 500;
-	margin-top: 75px;
+	margin-top: 8px;
 	clear: left;
 }
 .button_container
 {
-	margin-top: 43px;
+	margin-top: 5px;
 }
 .cart_button
 {
@@ -1604,6 +1606,48 @@ select option
 	color: #df3b3b;
 }
 
+/*news of Laptop store*/
+.product_overview i{
+	display: inline-block;
+}
+.product_overview p{
+	display: inline-block;
+}
+.product_highlight ul {
+	list-style-type: square;
+	margin-left: 20px;
+	font-size: 13px;
+}
+.product_description hr{
+	margin-top: -1rem;
+}
+.product_description.product_text p{
+	font-size: 13px;
+}
+.product_description.product_text a{
+	color: #0261d9;
+	border-bottom: 0 solid;
+}
+.product_description.product_text a:hover{
+	background-color: #FFFFFF;
+	color: #1e7e34;
+	border-bottom: 1px solid;
+
+}
+.recently .owl-item .viewed_name a{
+	font-size: 13px;
+}
+.recently .owl-item.active{
+	height: 340px;
+}
+.same_brands .owl-item .viewed_name a{
+	font-size: 13px;
+}
+.same_brands .owl-item.active{
+	height: 340px;
+}
+
+
 /*********************************
 6. Recently Viewed
 *********************************/
@@ -1612,7 +1656,7 @@ select option
 {
 	padding-top: 51px;
 	padding-bottom: 60px;
-	background: #eff6fa;
+	background:#aaccde;
 }
 .viewed_title_container
 {
@@ -1680,6 +1724,8 @@ select option
 {
 	width: 100%;
 	margin-top: 25px;
+	height: 150px;
+	overflow:hidden;
 }
 .viewed_price
 {
@@ -1835,7 +1881,7 @@ select option
 .newsletter
 {
 	width: 100%;
-	background: #fafafa;
+	background: #aaccde;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.1);

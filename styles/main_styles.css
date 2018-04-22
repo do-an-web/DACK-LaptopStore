@@ -1261,7 +1261,11 @@ select option
 }
 .banner_button
 {
-	margin-top: 42px;
+	margin-top: 210px;
+	display: inline-block;
+}
+.banner_button i{
+	display: inline-block;
 }
 .banner_product_image
 {
@@ -1269,6 +1273,11 @@ select option
 	top: -5px;
 	right: -52px;
 	z-index: 0;
+}
+.product_content .product_name a{
+	padding: 0 20px 0 20px;
+	white-space: pre-wrap;       /* css-3 */
+
 }
 
 /*********************************

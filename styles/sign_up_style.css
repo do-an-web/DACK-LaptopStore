@@ -197,7 +197,7 @@
     padding-bottom: 30px;
     background-color: #f5f5f5;
 }
-.form-signin {
+.form-signup {
     width: 100%;
     max-width: 330px;
     padding: 15px;
@@ -206,3 +206,25 @@
 	box-shadow: 5px 3px 5px rgb(187, 185, 185);
 	background-color: white;
 }
+.form-signup a{
+    text-decoration: none;
+}
+#signup{
+	width: 30%;
+	margin: auto;
+}
+/* .field_password{
+	position: relative;
+}
+.hide-password{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	left: 240px;
+	top: 8%;
+  	bottom: auto;
+	border-left: 1px solid #d2d8d8;
+	color: #343642;
+	padding: 6px 10px;
+	font-size: 14px;
+} */

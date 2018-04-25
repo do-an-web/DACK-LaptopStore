@@ -19,6 +19,12 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<style>
+    * {
+      font-family: sans-serif;
+      font-size: 14px; 
+    }
+</style>
 </head>
 
 <body>
@@ -87,43 +93,136 @@
           <li><a href="#">Paris</a></li>
             <li><a href="#">Tokyo</a></li>
         </ul>
-      </div>
+    </div>
 
      <div class="infomation">
     
-
           <div class="panel-body">
 
             <div class="form-group">
+
               <label class="person-info">
-              Person Info
+              Personal info
               </label>
               <hr style="margin-top: 0;">
 
-                <div class="col-lg-12"  style="background-color: coral;">
-                  ]
-                  <div class="col-sm-12 col-md-6 col-lg-6" style="background-color: green;">
-                    13
+                <div class="row">
+                  <div class="col-6">
+                      <div class="col-3">
+                        First Name
+                      </div>
+                       <div class="col-9">
+                        <input type="text" class="form-control" placeholder="Nguyen">
+                      
+                      </div>
                   </div>
 
-                  <div class="col-sm-12 col-md-6 col-lg-6"  style="background-color: yellow;">
-                    213
+                  <div class="col-6">
+                            <div class="col-3">
+                            Last Name
+                          </div>
+                          <div class="col-9">
+                            <input type="text" class="form-control" placeholder="Duong">
+                          
+                          </div>
                   </div>
-                   
                 </div>
-            
-            </div>
-          </div>
-         
-  
-    
 
-        <script src="assets/jquery-3.1.1.min.js"></script>
-        <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+                <br>
+                <div class="row">
+                  <div class="col-6">
+                      <div class="col-3">
+                      Gender
+                      </div>
+
+                        <div class="col-9">
+                            <select class="custom-select" id="inputGroupSelect01" style="margin-left: 0px;">
+                              <option selected>...</option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                              <option value="3">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                  <div class="col-6">
+                     <div class="col-3">
+                      Birthday
+                      </div>
+
+                        <div class="col-9">
+                         <input type="date" class="form-control" placeholder="dd/mm/yyyy" style="color: #555;">
+  
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-6">
+                    <div class="col-3">Email</div>
+                    <div class="col-9">
+                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">Phone</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                 
+              </div>
+
+              <br>
+
+              <label class="person-info">
+             Address
+              </label>
+              <hr style="margin-top: 0;">
+
+              <div class="row">
+                <div class="col-6">
+                    <div class="col-3">Address 1</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">Address 2</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                 
+              </div>
+                <br>
+               <div class="row">
+                <div class="col-6">
+                    <div class="col-3">City</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">State</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                
+              </div>
+              <br>
+               <div class="row">
+                <div class="col-6">
+                    <div class="col-3">Postcode</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">Country</div>
+                    <div class="col-9"><input type="text" class="form-control"></div>
+                </div>
+              </div>
+            </div>
+          <br>
+           <div class="form-group row">
+            
+              <button  onclick="saveInfo()" type="submit" class="btn btn-primary" style="margin-left: 30px;">Save</button>
+          
+          </div>
+          </div>
      </div>
 
   </div>
-  
 
   <!-- Characteristics -->
 
@@ -250,7 +349,7 @@
     </div>
   </div>
 </div>
-
+<!-- <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script> -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
@@ -263,6 +362,9 @@
 <script src="plugins/slick-1.8.0/slick.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
+
+<script src="js/account.js"></script>
+
 </body>
 
 </html>

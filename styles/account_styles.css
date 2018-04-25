@@ -27,7 +27,6 @@
 
 
 
-
 form{
     border-color: #36AA47;
 }
@@ -86,20 +85,3 @@ form{
 .pointer{
     cursor: pointer;
 }
-
-body >
-@media only screen and (max-width: 600px) {
-   .mylable{
-        margin-top: 5px;
-        text-align: left;
-        padding-left: 15px;
-    }
-}
-@media only screen and (max-width: 992px) {
-   .mylable{
-        margin-top: 5px;
-        text-align: left;
-        padding-left: 15px;
-    }
-}
-

@@ -40,4 +40,6 @@ function sortNewest() {
 
 }
 
-
+function addToCart() {
+    alert("Product have been added to cart!");
+}

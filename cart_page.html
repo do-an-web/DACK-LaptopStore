@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+
 <link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
@@ -18,6 +19,9 @@
 <link rel="stylesheet" type="text/css" href="styles/account_styles.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/product_styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
 
 <style>
     * {
@@ -66,7 +70,7 @@
               </div>
               <div class="top_bar_user">
                 <div class="user_icon"><img src="images/user.svg" alt=""></div>
-                 <div><a href="./account.html">VietDuong</a></div>
+               <div><a href="./account.html">VietDuong</a></div>
 				<div><a href="./sign_in.html">Sign out</a></div>
               </div>
             </div>
@@ -153,132 +157,84 @@
 
   </header>
 
-<div ">
- <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
-    <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Account</li>
-    <li class="breadcrumb-item active" aria-current="page">Histories</li>
-  </ol> 
-</div>
  
-    <br>
-  <div class="container">
 
-    <div class="row">
-  
-    <div class="col-3">
-
-      <div class="list-group-flush" style="margin-top: 55px;">
-      
-        <a href="./Account.html" class="list-group-item list-group-item-action">Account infomations</a>
-        <a href="./history.html" class="list-group-item list-group-item-action active">Your Histories</a>
-      
-      </div>
-    </div>
-    
-		     <div class="col-9" >
-		     	<div class="row">
-		     		<div class="col-9">
-		     			 <h3 style="font-weight:lighter;">Histories</h3>
-		     		</div>
-		     		
-		     		<div class="col-1 form-check form-check-inline">
-							  <input class="form-check-input" onchange="sortNewest()" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
-							  <label class="form-check-label" for="inlineRadio1">Newest</label>
-					</div>
-					<div class="col-1 form-check form-check-inline">
-						<input class="form-check-input" onchange="sortOldest()" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-							  <label class="form-check-label" for="inlineRadio2">Oldest</label>
-					</div>
-		     	</div>
-		        
-		         <br>
-
-		      <table id="myTable" class="table table-borderless table-hover">
-				  <thead>
-				    <tr>
-				      <th scope="col">Code</th>
-				      <th scope="col">Buying date</th>
-				      <th scope="col">Product name</th>
-				      <th scope="col">Amount</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr>
-				       <td><a href="./order_detail.html">312321312</a></th></td>
-				       <td>06/04/2017</td>
-				       <td>Macbook Air 13 2018</td>
-				       <td>$1000</td>
-				    </tr>
-				    <tr>
-				       <td><a href="./order_detail.html">857164483</a></th></td>
-				       <td>04/03/2018</td>
-				       <td>HP 15 inch</td>
-				       <td>$6000</td>
-				    </tr>
-				   
-				   <tr>
-				       <td><a href="./order_detail.html">213213123</a></th></td>
-				       <td>01/11/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1010</td>
-				    </tr>
-				   <tr>
-				       <td><a href="./order_detail.html">435454354</a></th></td>
-				       <td>06/12/2017</td>
-				       <td>Dell 5547</td>
-				       <td>$7000</td>
-				    </tr>
-				   <tr>
-				       <td><a href="./order_detail.html">565464645</a></th></td>
-				       <td>08/04/2000</td>
-				       <td>Samsung</td>
-				       <td>$4000</td>
-				    </tr>
-				   <tr>
-				       <td><a href="./order_detail.html">654765645</a></th></td>
-				       <td>06/05/2018</td>
-				       <td>Thinkpad</td>
-				       <td>$2200</td>
-				    </tr>
-				   <tr>
-				       <td><a href="./order_detail.html">657543345</a></th></td>
-				       <td>01/04/2014</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1300</td>
-				    </tr>
-				   <tr>
-				       <td><a href="./order_detail.html">656434756</a></th></td>
-				       <td>06/09/2018</td>
-				       <td>Macbook Pro</td>
-				       <td>$2000</td>
-				    </tr>
-				   
-				   
-				  </tbody>
-			</table>
-			<div >
-				<nav aria-label="...">
-			  <ul class="pagination justify-content-end">
-			    
-			    <li class="page-item"><a class="page-link" href="#">1</a></li>
-			    <li class="page-item active">
-			      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-			    </li>
-			    <li class="page-item"><a class="page-link" href="#">3</a></li>
-			   
-			  </ul>
-			</nav>
-			</div>
-			
-		     </div>
-
-          
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-12" style="margin-left: 125px;">
+              <h3>Your cart</h3>
           </div>
-     </div>  
-    </div>
-    
-  </div>
+        
+        </div>
+
+          <div class="row">
+                <div class="col-8">
+                   <table class="table" style="margin-left: 125px; width: 80%;">
+                          <thead>
+                            <tr>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Quantity</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                  <div>
+                                     <img src="images/product_1.jpg" width="130" height="130">
+                                     
+                                  </div>
+                                  <div style="margin-left: 40px;">
+                                    <h5>Dell 5547</h5>
+                                  </div>
+                                  
+
+                              </td>
+                             <td style="vertical-align: middle;">
+                               $1000
+                             </td>
+                               <td style="vertical-align: middle;">
+                                <div class="product_quantity clearfix" style="width: 80px; padding-left: 10px; ">
+                             
+                                  <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+                                  <div class="quantity_buttons">
+                                    <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fas fa-chevron-up"></i></div>
+                                    <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fas fa-chevron-down"></i></div>
+                                  </div>
+                                </div>
+                              </td>
+              
+                            </tr>
+
+                             
+                          </tbody>
+                            
+                        </table>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-4">
+                      <p style="font-size: 22px; font-weight: 400"> Price:</p>
+                    
+                   </div>
+                   <div class="col-8">
+                    <p style="color: #fe3834; font-size: 22px; font-weight: 400">
+                      $1000
+                    </p>
+                     
+                   </div>
+                  </div>
+                  <br>
+                  <div class="row"  style="width: 60%;">
+                    <button type="button" class="btn btn-large btn-block btn-danger btn-checkout">Check out</button>
+                  </div>
+                   
+                </div>
+          </div>
+
+
+  </div><!-- Supper container -->
 
   <!-- Characteristics -->
 
@@ -316,7 +272,7 @@
         <div class="col-lg-3 footer_col">
           <div class="footer_column footer_contact">
             <div class="logo_container">
-              <div class="logo"><a href="#">OneTech</a></div>
+              <div class="logo"><a href="./index_signin.html">OneTech</a></div>
             </div>
             <div class="footer_title">Got Question? Call Us 24/7</div>
             <div class="footer_phone">+84 1234567869</div>
@@ -419,13 +375,9 @@
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
 
-<script src="js/account.js"></script>
+<script src="js/product_custom.js"></script>
 
-<script>
-   window.onload = function(){
-  	sortNewest();
-};
-  </script>
+<script src="js/account.js"></script>
 
 </body>
 

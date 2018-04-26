@@ -183,18 +183,18 @@
 		     		</div>
 		     		
 		     		<div class="col-1 form-check form-check-inline">
-							  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							  <input class="form-check-input" onchange="sortNewest()" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
 							  <label class="form-check-label" for="inlineRadio1">Newest</label>
 					</div>
 					<div class="col-1 form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+						<input class="form-check-input" onchange="sortOldest()" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
 							  <label class="form-check-label" for="inlineRadio2">Oldest</label>
 					</div>
 		     	</div>
 		        
 		         <br>
 
-		      <table class="table table-borderless table-hover">
+		      <table id="myTable" class="table table-borderless table-hover">
 				  <thead>
 				    <tr>
 				      <th scope="col">Code</th>
@@ -205,53 +205,53 @@
 				  </thead>
 				  <tbody>
 				    <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
+				       <td><a href="#">312321312</a></th></td>
+				       <td>06/04/2017</td>
+				       <td>Macbook Air 13 2018</td>
 				       <td>$1000</td>
 				    </tr>
 				    <tr>
 				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td>04/03/2018</td>
+				       <td>HP 15 inch</td>
+				       <td>$6000</td>
 				    </tr>
 				   
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
+				       <td><a href="#">213213123</a></th></td>
+				       <td>01/11/2018</td>
 				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td>$1010</td>
 				    </tr>
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td><a href="#">435454354</a></th></td>
+				       <td>06/12/2017</td>
+				       <td>Dell 5547</td>
+				       <td>$7000</td>
 				    </tr>
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td><a href="#">565464645</a></th></td>
+				       <td>08/04/2000</td>
+				       <td>Samsung</td>
+				       <td>$4000</td>
 				    </tr>
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td><a href="#">654765645</a></th></td>
+				       <td>06/05/2018</td>
+				       <td>Thinkpad</td>
+				       <td>$2200</td>
 				    </tr>
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
+				       <td><a href="#">65754334534</a></th></td>
+				       <td>01/04/2014</td>
 				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td>$1300</td>
 				    </tr>
 				   <tr>
-				       <td><a href="#">857164483</a></th></td>
-				       <td>06/04/2018</td>
-				       <td>Macbook Air 13</td>
-				       <td>$1000</td>
+				       <td><a href="#">65643475656</a></th></td>
+				       <td>06/09/2018</td>
+				       <td>Macbook Pro</td>
+				       <td>$2000</td>
 				    </tr>
 				   
 				   
@@ -420,6 +420,12 @@
 <script src="js/custom.js"></script>
 
 <script src="js/account.js"></script>
+
+<script>
+   window.onload = function(){
+  	sortNewest();
+};
+  </script>
 
 </body>
 

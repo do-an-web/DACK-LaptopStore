@@ -1410,10 +1410,11 @@ select option
 	width: 1px;
 	height: calc(100% - 71px);
 	background: #e5e5e5;
+	height: 200px;
 }
 .product_image
 {
-	width: 100%;
+	width: 150px;
 	height: 115px;
 }
 .product_image img
@@ -1470,12 +1471,14 @@ select option
 	font-size: 14px;
 	font-weight: 400;
 	color: #000000;
-	white-space: nowrap;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+	margin: 0 10px 0 10px;
+	white-space: pre-wrap;
+	text-align: center;
 }
 .product_name div a:hover
 {
@@ -1773,7 +1776,19 @@ select option
 {
 	color: #0e8ce4;
 }
-
+.shop_sidebar .sidebar_section ul{
+	margin-top: 12px;
+}
+.shop_sidebar .sidebar_section li>input{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	vertical-align: middle;
+}
+.shop_sidebar .sidebar_section li>p{
+	display: inline-block;
+}
 /*********************************
 7. Recently Viewed
 *********************************/
@@ -1782,7 +1797,7 @@ select option
 {
 	padding-top: 51px;
 	padding-bottom: 60px;
-	background: #eff6fa;
+	background:#eff6fa;
 }
 .viewed_title_container
 {
@@ -1850,6 +1865,8 @@ select option
 {
 	width: 100%;
 	margin-top: 25px;
+	height: 150px;
+	overflow:hidden;
 }
 .viewed_price
 {
@@ -1933,7 +1950,6 @@ select option
 {
 	display: inline-block;
 }
-
 /*********************************
 8. Brands
 *********************************/

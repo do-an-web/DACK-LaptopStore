@@ -1275,8 +1275,9 @@ select option
 	z-index: 0;
 }
 .product_content .product_name a{
-	padding: 0 20px 0 20px;
+	padding: 0 10px 0 10px;
 	white-space: pre-wrap;       /* css-3 */
+	text-align: center;
 
 }
 

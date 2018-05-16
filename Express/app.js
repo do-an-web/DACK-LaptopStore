@@ -6,7 +6,8 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 
-var homeController = require('./controller/homeController');
+var homeController = require('./controller/homeController'),
+    shopController = require('./controller/shopController');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/home', homeController);
+app.use('/shop', shopController);
 
 app.listen(3000, () => {
   console.log('Site running on port 3000');

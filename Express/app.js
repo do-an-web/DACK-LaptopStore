@@ -6,8 +6,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 
-var indexRouter = require('./controller/index');
-var usersRouter = require('./controller/users');
+var homeController = require('./controller/homeController');
 
 var app = express();
 
@@ -23,11 +22,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.redirect('/index');
+  res.redirect('/home');
 });
 
-app.use('/index', indexRouter);
-app.use('/users', usersRouter);
+app.use('/home', homeController);
 
 app.listen(3000, () => {
   console.log('Site running on port 3000');

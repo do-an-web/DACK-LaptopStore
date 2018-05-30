@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   var vm = {
     // layout: false,
     title: 'Express'
-};
-  res.render('index', vm);
+  };
+  res.render('Home/index', vm);
 });
 router.get('/home', function(req, res, next) {
     res.render('Home/index', { title: 'Express' });

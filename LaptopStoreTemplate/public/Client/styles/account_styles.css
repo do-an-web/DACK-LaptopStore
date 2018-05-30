@@ -1,0 +1,89 @@
+.body{
+    width: 100%;
+}
+
+.sidebar {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+.sidebar ul a {
+    text-decoration: none;
+}
+
+.infomation {
+    margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+
+
+form{
+    border-color: #36AA47;
+}
+.panel-primary>.myheading{
+    background-color: #36AA47;
+    color: #fff;
+    border-color: #36AA47;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.icon-size{
+    font-size: 9px;
+    margin-bottom: 6px!important;
+    vertical-align: middle !important;
+}
+.icon-option{
+    margin-top: 4px;
+    margin-left: 6px; 
+    vertical-align: middle;
+    text-align: center;
+}
+.mylable{
+    margin-top: 5px;
+    text-align: right;
+    padding-left: 0;
+    
+}
+.person-info{
+    font-size: 20px; 
+    color: #8B8B8B;
+}
+.no-margin-top{
+    margin-top: 20px;
+}
+.no-padding-left{
+    padding-left: 0;
+}
+.comment{
+    margin-top: 5px;
+}
+.my-carpet{
+    width: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.gender-button{
+    background-image: url(assets/images/arrow.png);
+}
+
+.footer{
+    background-color: #F5F5F5;
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 30px; 
+    padding: 20px 0px 20px 175px;
+}
+.pointer{
+    cursor: pointer;
+}
+
+

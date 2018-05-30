@@ -2,9 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6716650-7b74-43ba-aa3c-039789d81cfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/layout/footer.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/1/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/10/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/11/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/12/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/13/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/14/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/15/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/16/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/17/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/18/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/19/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/2/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/20/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/21/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/22/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/23/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/24/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/25/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/26/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/27/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/28/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/29/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/3/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/30/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/31/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/32/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/33/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/34/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/35/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/36/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/37/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/38/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/39/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/4/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/40/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/41/41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/42/42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/43/43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/44/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/45/45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/46/46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/47/47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/48/48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/49/49..jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/5/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/50/50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/6/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/7/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/8/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/images/9/9.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,19 +73,28 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="514">
+              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.hbs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/footer.hbs">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="336">
+              <caret line="1558" column="0" lean-forward="true" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#5;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,17 +102,47 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="176">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="www" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/bin/www">
+      <file leaf-file-name="demo.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-213">
+            <state relative-caret-position="32">
+              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.hbs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/error.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -64,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;</find>
       <find>&quot;product.html&quot;</find>
       <find>html&gt;</find>
       <find>add t</find>
@@ -94,6 +182,7 @@
       <find>duration</find>
       <find>shop_c</find>
       <find>view</find>
+      <find>layout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,7 +218,11 @@
         <option value="$PROJECT_DIR$/client/js/shop_custom.js" />
         <option value="$PROJECT_DIR$/Express/app.js" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/app.js" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/home.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs" />
       </list>
     </option>
   </component>
@@ -138,6 +231,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/LaptopStoreTemplate/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
@@ -161,7 +257,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="Home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,12 +355,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK-LaptopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK-LaptopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK-LaptopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DACK-LaptopStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,25 +514,26 @@
       <workItem from="1527153399757" duration="2689000" />
       <workItem from="1527646423616" duration="1557000" />
       <workItem from="1527648333038" duration="396000" />
+      <workItem from="1527649814004" duration="1583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56836000" />
+    <option name="totallyTimeSpent" value="58419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16983895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -435,14 +572,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/shop_styles.css" />
-    <entry file="file://$PROJECT_DIR$/shop.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/styles/main_styles.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/styles/main_styles.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/product.html" />
     <entry file="file://$PROJECT_DIR$/product.html" />
     <entry file="file://$PROJECT_DIR$/product.html" />
     <entry file="file://$PROJECT_DIR$/js/custom.js" />
@@ -593,70 +722,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Express/model/New Text Document.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Express/model/New Text Document.txt" />
     <entry file="file://$PROJECT_DIR$/Express/bin/www" />
     <entry file="file://$PROJECT_DIR$/Express/routes/index.js" />
     <entry file="file://$PROJECT_DIR$/Express/views/error.hbs" />
     <entry file="file://$PROJECT_DIR$/Express/views/index.hbs" />
     <entry file="file://$PROJECT_DIR$/Express/views/layout.hbs" />
-    <entry file="file://$PROJECT_DIR$/Express/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Express/controller/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Express/controller/shopController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Express/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Express/package.json" />
+    <entry file="file://$PROJECT_DIR$/Express/controller/homeController.js" />
+    <entry file="file://$PROJECT_DIR$/Express/controller/shopController.js" />
+    <entry file="file://$PROJECT_DIR$/Express/app.js" />
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/app.js">
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/header.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -665,6 +752,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="3464" column="6" lean-forward="false" selection-start-line="3464" selection-start-column="6" selection-end-line="3464" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/public/Client/images/adv_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="1558" column="0" lean-forward="true" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/error.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

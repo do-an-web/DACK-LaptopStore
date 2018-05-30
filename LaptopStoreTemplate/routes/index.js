@@ -9,11 +9,12 @@ router.get('/', function(req, res, next) {
   };
   res.render('Home/index', vm);
 });
-router.get('/home', function(req, res, next) {
-    res.render('Home/index', { title: 'Express' });
-});
 router.get('/demo', function(req, res, next) {
-    res.render('Home/demo', { title: 'Express' });
+    var vm = {
+        title: 'Hello demo',
+        layout: 'layout'
+    }
+    res.render('Home/demo', vm);
 });
 
 

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6716650-7b74-43ba-aa3c-039789d81cfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/BestSellersProducts.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/FavoriteProduct.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/NewProduct.hbs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
               <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,7 +63,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5664">
               <caret line="354" column="32" lean-forward="false" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
-              <folding />
+              <folding>
+                <marker date="1529065104541" expanded="true" signature="19335:19358" ph="..." />
+                <marker date="1529065104541" expanded="true" signature="19335:19365" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -451,12 +456,12 @@
       <workItem from="1527997353616" duration="13000" />
       <workItem from="1528037075265" duration="3000" />
       <workItem from="1528040570201" duration="305000" />
-      <workItem from="1529065043351" duration="19000" />
+      <workItem from="1529065043351" duration="74000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65427000" />
+    <option name="totallyTimeSpent" value="65482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -700,7 +705,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs" />
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -735,7 +739,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5664">
           <caret line="354" column="32" lean-forward="false" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1529065104541" expanded="true" signature="19335:19358" ph="..." />
+            <marker date="1529065104541" expanded="true" signature="19335:19365" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,6 +766,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

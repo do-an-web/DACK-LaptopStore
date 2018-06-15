@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6716650-7b74-43ba-aa3c-039789d81cfa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/BestSellersProducts.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/FavoriteProduct.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/NewProduct.hbs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,38 +29,48 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="16">
+              <caret line="15" column="62" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="128">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="2320">
+              <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css">
+      <file leaf-file-name="main.layout.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="5664">
+              <caret line="354" column="32" lean-forward="false" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavoriteProduct.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/FavoriteProduct.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,12 +145,16 @@
         <option value="$PROJECT_DIR$/client/js/shop_custom.js" />
         <option value="$PROJECT_DIR$/Express/app.js" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/home.hbs" />
-        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/layout.hbs" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/BestSellersProducts.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/FavoriteProduct.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs" />
+        <option value="$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs" />
         <option value="$PROJECT_DIR$/LaptopStoreTemplate/app.js" />
       </list>
     </option>
@@ -171,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -234,7 +253,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,28 +314,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DACK-LaptopStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DACK-LaptopStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -338,7 +335,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,12 +447,16 @@
       <workItem from="1527153399757" duration="2689000" />
       <workItem from="1527646423616" duration="1557000" />
       <workItem from="1527648333038" duration="396000" />
-      <workItem from="1527649814004" duration="4751000" />
+      <workItem from="1527649814004" duration="8251000" />
+      <workItem from="1527997353616" duration="13000" />
+      <workItem from="1528037075265" duration="3000" />
+      <workItem from="1528040570201" duration="305000" />
+      <workItem from="1529065043351" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61587000" />
+    <option name="totallyTimeSpent" value="65427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -509,11 +509,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/custom.js" />
-    <entry file="file://$PROJECT_DIR$/product.html" />
-    <entry file="file://$PROJECT_DIR$/styles/product_styles.css" />
-    <entry file="file://$PROJECT_DIR$/styles/main_styles.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/shop.html" />
     <entry file="file://$PROJECT_DIR$/styles/shop_styles.css" />
     <entry file="file://$PROJECT_DIR$/admin/bill_manager.html">
@@ -671,40 +666,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/header.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/footer.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/header.hbs" />
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layout/footer.hbs" />
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="3464" column="6" lean-forward="false" selection-start-line="3464" selection-start-column="6" selection-end-line="3464" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#5;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,19 +684,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/error.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,63 +695,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs" />
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs" />
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js" />
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/BestSellersProduct.bhs" />
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/NewProduct.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/BestSellersProducts.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/FavoriteProduct.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/index.hbs">
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/layouts/main.layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="5664">
+          <caret line="354" column="32" lean-forward="false" selection-start-line="354" selection-start-column="32" selection-end-line="354" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="1558" column="0" lean-forward="true" selection-start-line="1558" selection-start-column="0" selection-end-line="1558" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#5;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="2320">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="16">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/views/Home/demo.hbs">
+    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LaptopStoreTemplate/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="128">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>

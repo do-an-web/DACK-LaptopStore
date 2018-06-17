@@ -11,9 +11,11 @@ var express_handlebars_sections = require('express-handlebars-sections');
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.engine('handlebars', express_handlebars({
-    section: express_handlebars_sections()  // CONFIGURE 'express_handlebars_sections'
-    // properties used by express-handlebars configuration ...
+
+app.engine('hbs', express_handlebars({
+  helpers: {
+    section: express_handlebars_sections()
+  }
 }));
 
 // view engine setup
@@ -28,7 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Muốn ngăn chặn người dùng truy cập vào file public -> viết middle-ware xử lý ngăn chặn giữa response và request
-app.use(express.static(path.resolve(__dirname, 'public/Client')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 
 //Router - main, product

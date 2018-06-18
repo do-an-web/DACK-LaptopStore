@@ -5,13 +5,21 @@
 <title>{{{title}}}</title>
 
     <!--Home Page-->
-    {{#if title == "One Tech" }}
-        {{> _layouts/home.css}}
-    {{/if}}
+    {{#compare  title 'One Tech' operator="=="}}
+        {{> Home/home.css}}
+    {{/compare }}
     <!--Shop Page-->
-    {{#if title==="Shop" }}
-        {{> _layouts/shop.css}}
-    {{/if}}
+    {{#compare title 'Shop' operator="=="}}
+        {{> Shop/shop.css}}
+    {{/compare}}
+    <!--Cart Page-->
+    {{#compare title 'Cart' operator="=="}}
+        {{> Cart/cart.css}}
+    {{/compare}}
+    <!--Detail Page-->
+    {{#compare title 'Single Product' operator="=="}}
+        {{> Detail/detail.css}}
+    {{/compare}}
 
 </head>
 
@@ -32,14 +40,21 @@
     </div>
 
     <!--Home Page-->
-    {{#> layouts/base title="One Tech" }}
-        {{> _layouts/home.js}}
-    {{/layouts/base}}
-
+    {{#compare  title 'One Tech' operator="=="}}
+        {{> Home/home.js}}
+    {{/compare }}
     <!--Shop Page-->
-    {{#> layouts/base title="Shop" }}
-        {{> _layouts/shop.js}}
-    {{/layouts/base}}
+    {{#compare title 'Shop' operator="=="}}
+        {{> Shop/shop.js}}
+    {{/compare}}
+    <!--Cart Page-->
+    {{#compare title 'Shop' operator="=="}}
+        {{> Cart/cart.js}}
+    {{/compare}}
+    <!--Detail Page-->
+    {{#compare title 'Single Product' operator="=="}}
+        {{> Detail/detail.js}}
+    {{/compare}}
 
 </body>
 

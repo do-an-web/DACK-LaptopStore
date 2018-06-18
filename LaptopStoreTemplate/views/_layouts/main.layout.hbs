@@ -1,0 +1,46 @@
+<!--Layout Home Page của người dùng-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{{title}}}</title>
+
+    <!--Home Page-->
+    {{#if title == "One Tech" }}
+        {{> _layouts/home.css}}
+    {{/if}}
+    <!--Shop Page-->
+    {{#if title==="Shop" }}
+        {{> _layouts/shop.css}}
+    {{/if}}
+
+</head>
+
+<body>
+
+    <div class="super_container">
+
+        <!-- Header -->
+
+        {{> _layouts/header.layout}}
+
+        <div class="container-body">
+            {{{body}}}
+        </div>
+
+        {{> _layouts/footer.layout}}
+
+    </div>
+
+    <!--Home Page-->
+    {{#> layouts/base title="One Tech" }}
+        {{> _layouts/home.js}}
+    {{/layouts/base}}
+
+    <!--Shop Page-->
+    {{#> layouts/base title="Shop" }}
+        {{> _layouts/shop.js}}
+    {{/layouts/base}}
+
+</body>
+
+</html>

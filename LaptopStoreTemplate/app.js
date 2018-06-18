@@ -14,6 +14,7 @@ var shopRouter = require('./routes/shop');
 var app = express();
 
 app.engine('hbs', express_handlebars({
+<<<<<<< HEAD
     extname: '.hbs',
     defaultLayout: 'main.layout.hbs',
     partialsDir: path.join(__dirname, 'views/_partials'),
@@ -21,6 +22,11 @@ app.engine('hbs', express_handlebars({
     helpers: {
         section: express_handlebars_sections()
     }
+=======
+  helpers: {
+    section: express_handlebars_sections()
+  }
+>>>>>>> 18db2b8df45130d2b3efd1066ee265c13cfa3098
 }));
 
 
@@ -35,7 +41,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Muốn ngăn chặn người dùng truy cập vào file public -> viết middle-ware xử lý ngăn chặn giữa response và request
-app.use(express.static(path.resolve(__dirname, 'public/Client')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 /////////////// Router////////////////////
 //Home

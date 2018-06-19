@@ -6,19 +6,52 @@
 
     <!--Home Page-->
     {{#compare  title 'One Tech' operator="=="}}
-        {{> Home/home.css}}
+        {{> _partialsUser/Home/home.css}}
     {{/compare }}
+
     <!--Shop Page-->
     {{#compare title 'Shop' operator="=="}}
-        {{> Shop/shop.css}}
+        {{> _partialsUser/Shop/shop.css}}
     {{/compare}}
+
     <!--Cart Page-->
     {{#compare title 'Cart' operator="=="}}
-        {{> Cart/cart.css}}
+        {{> _partialsUser/Cart/cart.css}}
     {{/compare}}
+
     <!--Detail Page-->
     {{#compare title 'Single Product' operator="=="}}
-        {{> Detail/detail.css}}
+        {{> _partialsUser/Detail/detail.css}}
+    {{/compare}}
+
+    <!--InfoAccount Page-->
+    {{#compare title 'Info Account' operator="=="}}
+        {{> _partialsUser/InfoAccount/InfoAccount.css}}
+    {{/compare}}
+
+    <!--Payment Page-->
+    {{#compare title 'Payment' operator="=="}}
+        {{> _partialsUser/Payment/Payment.css}}
+    {{/compare}}
+
+    <!--SignIn Page-->
+    {{#compare title 'Sign In' operator="=="}}
+        {{> _partialsUser/SignIn/signin.css}}
+    {{/compare}}
+
+    <!--SignUp Page-->
+    {{#compare title 'Sign Up' operator="=="}}
+        {{> _partialsUser/SignUp/signup.css}}
+    {{/compare}}
+
+    <!--User History Page-->
+    {{#compare title 'User History' operator="=="}}
+        {{> _partialsUser/UserHistory/userhistory.css}}
+    {{/compare}}
+
+    <!--User History Detail Page-->
+    {{#compare title 'User History Detail' operator="=="}}
+        {{> _partialsUser/UserHistoryDetail/userhistorydetail.css}}
     {{/compare}}
 
 </head>
@@ -41,19 +74,47 @@
 
     <!--Home Page-->
     {{#compare  title 'One Tech' operator="=="}}
-        {{> Home/home.js}}
+        {{> _partialsUser/Home/home.js}}
     {{/compare }}
     <!--Shop Page-->
     {{#compare title 'Shop' operator="=="}}
-        {{> Shop/shop.js}}
+        {{> _partialsUser/Shop/shop.js}}
     {{/compare}}
     <!--Cart Page-->
-    {{#compare title 'Shop' operator="=="}}
-        {{> Cart/cart.js}}
+    {{#compare title 'Cart' operator="=="}}
+        {{> _partialsUser/Cart/cart.js}}
     {{/compare}}
     <!--Detail Page-->
     {{#compare title 'Single Product' operator="=="}}
-        {{> Detail/detail.js}}
+        {{> _partialsUser/Detail/detail.js}}
+    {{/compare}}
+    <!--InfoAccount Page-->
+    {{#compare title 'Info Account' operator="=="}}
+        {{> _partialsUser/InfoAccount/InfoAccount.js}}
+    {{/compare}}
+    <!--Payment Page-->
+    {{#compare title 'Payment' operator="=="}}
+        {{> _partialsUser/Payment/Payment.js}}
+    {{/compare}}
+
+    <!--SignIn Page-->
+    {{#compare title 'Sign In' operator="=="}}
+        {{> _partialsUser/SignIn/signin.js}}
+    {{/compare}}
+
+    <!--SignUp Page-->
+    {{#compare title 'Sign Up' operator="=="}}
+        {{> _partialsUser/SignUp/signup.js}}
+    {{/compare}}
+
+    <!--User History Page-->
+    {{#compare title 'User History' operator="=="}}
+        {{> _partialsUser/UserHistory/userhistory.js}}
+    {{/compare}}
+
+    <!--User History Detail Page-->
+    {{#compare title 'User History Detail' operator="=="}}
+        {{> _partialsUser/UserHistoryDetail/userhistorydetail.js}}
     {{/compare}}
 
 </body>

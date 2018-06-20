@@ -36,9 +36,15 @@ router.post('/signin', (req, res) => {
         if (rows.length > 0) {
             // user = rows[0];
 
-            //req.session.isLogged = true;
+            req.session.isLogged = true;
+            req.session.user = rows[0];
+            req.session.cart = [];
 
-            res.redirect('/');
+            var url = '/';
+            if (req.query.retUrl) {
+                url = req.query.retUrl;
+            }
+            res.redirect(url);
 
         } else {
             var vm = {

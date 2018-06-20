@@ -7,6 +7,10 @@ var express = require('express');
 var express_handlebars  = require('express-handlebars');
 var express_handlebars_sections = require('express-handlebars-sections');
 
+var session = require('express-session');
+var MySQLStore = require('express-mysql-session')(session);
+
+
 
 var homeRouter = require('./routes/home');
 var shopRouter = require('./routes/shop');
@@ -15,7 +19,6 @@ var detailRouter = require('./routes/detail');
 var infoAccountRouter = require('./routes/infoAccount');
 var paymentRouter = require('./routes/payment');
 var signInRouter = require('./routes/signIn');
-var signUpRouter = require('./routes/signUp');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
@@ -111,11 +114,42 @@ app.use('/payment', paymentRouter);
 //SignIn
 app.use('/sign-in', signInRouter);
 //SignUp
-app.use('/sign-up', signUpRouter);
+//app.use('/sign-up', signUpRouter);
 //User history
 app.use('/user-history', userHistoryInRouter);
 //User history Detail
 app.use('/user-history-detail', userHistoryDetailInRouter);
+
+
+
+
+
+
+/*Session*/
+var sessionStore = new MySQLStore({
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: '',
+    database: 'laptoponline',
+    createDatabaseTable: true,
+    schema: {
+        tableName: 'sessions',
+        columnNames: {
+            session_id: 'session_id',
+            expires: 'expires',
+            data: 'data'
+        }
+    }
+});
+
+app.use(session({
+    key: 'session_cookie_name',
+    secret: 'session_cookie_secret',
+    store: sessionStore,
+    resave: false,
+    saveUninitialized: false
+}));
 
 
 app.use('/user', userController);

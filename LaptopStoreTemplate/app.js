@@ -19,6 +19,8 @@ var signUpRouter = require('./routes/signUp');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
+var demoRouter = require('./routes/demo');
+
 var app = express();
 
 app.engine('hbs', express_handlebars({
@@ -89,6 +91,8 @@ app.use(cookieParser());
 app.use(express.static(path.resolve(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
+//Demo
+app.use('/', demoRouter);
 //Home
 app.use('/', homeRouter);
 //Shop

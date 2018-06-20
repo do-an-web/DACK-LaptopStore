@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-
+console.log('Get connection...');
 
 exports.load = sql => {
     return new Promise((resolve, reject) => {
@@ -7,7 +7,7 @@ exports.load = sql => {
             host: 'localhost',
             port: 3306,
             user: 'root',
-            password: 'root',
+            password: '',
             database: 'laptoponline'
         });
     cn.connect();
@@ -21,4 +21,30 @@ exports.load = sql => {
         cn.end();
     });
 });
+}
+
+exports.save = sql => {
+    return new Promise((resolve, reject) => {
+        var cn = mysql.createConnection({
+            host: 'localhost',
+            port: 3306,
+            user: 'root',
+            password: '',
+            database: 'laptoponline'
+        });
+
+        cn.connect();
+
+        console.log('Save connected');
+
+        cn.query(sql, function(error, value) {
+            if (error) {
+                reject(error);
+            } else {
+                resolve(value);
+            }
+
+            cn.end();
+        });
+    });
 }

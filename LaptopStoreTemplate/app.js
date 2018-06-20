@@ -21,6 +21,9 @@ var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
 var demoRouter = require('./routes/demo');
 
+/*******Duong************/
+var userController = require('./controller/userController');
+/************************/
 var app = express();
 
 app.engine('hbs', express_handlebars({
@@ -114,6 +117,9 @@ app.use('/user-history', userHistoryInRouter);
 //User history Detail
 app.use('/user-history-detail', userHistoryDetailInRouter);
 
+
+app.use('/user', userController);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -129,5 +135,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
 
 module.exports = app;

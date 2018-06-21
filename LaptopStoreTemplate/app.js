@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var wnumb = require('wnumb');
 
 var express = require('express');
 var express_handlebars  = require('express-handlebars');
@@ -19,7 +20,7 @@ var signUpRouter = require('./routes/signUp');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
-var demoRouter = require('./routes/demo');
+var userRouter = require('./routes/user');
 
 var app = express();
 
@@ -30,6 +31,13 @@ app.engine('hbs', express_handlebars({
     layoutsDir: path.join(__dirname, 'views/_layouts'),
     helpers: {
         section: express_handlebars_sections(),
+            number_format: n => {
+            var nf = wnumb({
+                thousand: ',',
+                suffix: ' VND'
+            });
+            return nf.to(n);
+        },
         compare: function(lvalue, rvalue, options) {
 
             if (arguments.length < 3)
@@ -91,12 +99,10 @@ app.use(cookieParser());
 app.use(express.static(path.resolve(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
-//Demo
-app.use('/', demoRouter);
-//Home
-app.use('/', homeRouter);
-//Shop
-app.use('/shop', shopRouter);
+//User
+
+app.use('/', userRouter);
+
 //Cart
 app.use('/cart', cartRouter);
 //Detail Product

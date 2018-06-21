@@ -8,12 +8,14 @@
                 <!-- Shop Sidebar -->
                 <div class="shop_sidebar">
                     <div class="sidebar_section">
-                        <div class="sidebar_title">Categories</div>
-                        <ul class="sidebar_categories">
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Gamming</a></li>
-                            <li><a href="#">Standark Laptop</a></li>
-                            <li><a href="#">Workstation</a></li>
+                        <div class="sidebar_subtitle brands_subtitle">Brands</div>
+                        <ul class="brands_list">
+                            <li class="brand"><a href="#">Macvbook</a></li>
+                            <li class="brand"><a href="#">HP</a></li>
+                            <li class="brand"><a href="#">Dell</a></li>
+                            <li class="brand"><a href="#">Asus</a></li>
+                            <li class="brand"><a href="#">Acer</a></li>
+                            <li class="brand"><a href="#">Lenovo</a></li>
                         </ul>
                     </div>
                     <div class="sidebar_section filter_by_section">
@@ -65,16 +67,7 @@
                             <li class="process"><input type="checkbox" name="process" value=""><p>&nbsp; Intel Core 2 Duo</p><br></li>
                         </ul>
                     </div>
-                    <div class="sidebar_section">
-                        <div class="sidebar_subtitle brands_subtitle">Brands</div>
-                        <ul class="brands_list">
-                            <li class="brand"><a href="#">Macvbook</a></li>
-                            <li class="brand"><a href="#">HP</a></li>
-                            <li class="brand"><a href="#">Dell</a></li>
-                            <li class="brand"><a href="#">Asus</a></li>
-                            <li class="brand"><a href="#">Acer</a></li>
-                        </ul>
-                    </div>
+
                 </div>
 
             </div>
@@ -85,7 +78,7 @@
 
                 <div class="shop_content">
                     <div class="shop_bar clearfix">
-                        <div class="shop_product_count"><span>186</span> products found</div>
+                        <div class="shop_product_count"><span>{{CountProduct}}</span> products found</div>
                         <div class="shop_sorting">
                             <span>Sort by:</span>
                             <ul>
@@ -104,311 +97,18 @@
                     <div class="product_grid">
                         <div class="product_grid_border"></div>
 
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_11.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus FX503VD-E4082T...</a></div></div>
+                        {{#each products}}
+                            <!-- Product Item -->
+                            <div class="product_item is_new">
+                                <div class="product_border"></div>
+                                <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
+                                <div class="product_content">
+                                    <div class="product_price">{{number_format Price}}</div>
+                                    <div class="product_name"><div><a href="./product.html">{{ProName}}</a></div></div>
+                                </div>
+                                <div class="product_fav"><i class="fas fa-heart"></i></div>
                             </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">-25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item discount">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_12.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$979</div>
-                                <div class="product_name"><div><a href="./product.html">Asus TUF FX504GD-E4571T/i5-8300H</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_14.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$879</div>
-                                <div class="product_name"><div><a href="./product.html">Dell N7567E</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_16.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus UX430UA-GV261T</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_11.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus FX503VD-E4082T...</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">-25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item discount">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_12.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$979</div>
-                                <div class="product_name"><div><a href="./product.html">Asus TUF FX504GD-E4571T/i5-8300H</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_14.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$879</div>
-                                <div class="product_name"><div><a href="./product.html">Dell N7567E</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_16.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus UX430UA-GV261T</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_11.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus FX503VD-E4082T...</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">-25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item discount">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_12.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$979</div>
-                                <div class="product_name"><div><a href="./product.html">Asus TUF FX504GD-E4571T/i5-8300H</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_14.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$879</div>
-                                <div class="product_name"><div><a href="./product.html">Dell N7567E</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_16.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus UX430UA-GV261T</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_16.png" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$825</div>
-                                <div class="product_name"><div><a href="./product.html">Asus UX430UA-GV261T</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount">25%</li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-                        <!-- Product Item -->
-                        <div class="product_item is_new">
-                            <div class="product_border"></div>
-                            <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/product_15.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_price">$725</div>
-                                <div class="product_name"><div><a href="./product.html">Acer Nitro 5 AN515-51-79WJ</a></div></div>
-                            </div>
-                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                            <ul class="product_marks">
-                                <li class="product_mark product_discount"></li>
-                                <li class="product_mark product_new">new</li>
-                            </ul>
-                        </div>
-
-
-
-
-
-
+                        {{/each}}
 
                     </div>
 

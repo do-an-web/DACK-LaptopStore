@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var wnumb = require('wnumb');
 
 var express = require('express');
 var express_handlebars  = require('express-handlebars');
@@ -22,7 +23,8 @@ var signInRouter = require('./routes/signIn');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
-var demoRouter = require('./routes/demo');
+/*************************/
+var userRouter = require('./routes/user');
 
 /*******Duong************/
 var userController = require('./controller/userController');
@@ -36,6 +38,13 @@ app.engine('hbs', express_handlebars({
     layoutsDir: path.join(__dirname, 'views/_layouts'),
     helpers: {
         section: express_handlebars_sections(),
+        number_format: n => {
+            var nf = wnumb({
+                thousand: ',',
+                suffix: ' VND'
+            });
+            return nf.to(n);
+        },
         compare: function(lvalue, rvalue, options) {
 
             if (arguments.length < 3)
@@ -94,15 +103,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Muốn ngăn chặn người dùng truy cập vào file public -> viết middle-ware xử lý ngăn chặn giữa response và request
-app.use(express.static(path.resolve(__dirname, 'public/Client')));
+app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
-//Demo
-app.use('/', demoRouter);
-//Home
-app.use('/', homeRouter);
-//Shop
-app.use('/shop', shopRouter);
+//User
+
+app.use('/', userRouter);
+
 //Cart
 app.use('/cart', cartRouter);
 //Detail Product
@@ -121,7 +128,7 @@ app.use('/user-history', userHistoryInRouter);
 app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
-
+app.use('/user', userController);
 
 
 
@@ -152,8 +159,13 @@ app.use(session({
 }));
 
 
+<<<<<<< HEAD
 app.use('/user', userController);
 //app.use(handleLayoutMDW);
+=======
+
+
+>>>>>>> 5abbc182b9243d09fe69acad79a6820d39fb7e4a
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

@@ -23,6 +23,7 @@ var signInRouter = require('./routes/signIn');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
 
+/*************************/
 var userRouter = require('./routes/user');
 
 /*******Duong************/
@@ -37,7 +38,7 @@ app.engine('hbs', express_handlebars({
     layoutsDir: path.join(__dirname, 'views/_layouts'),
     helpers: {
         section: express_handlebars_sections(),
-            number_format: n => {
+        number_format: n => {
             var nf = wnumb({
                 thousand: ',',
                 suffix: ' VND'
@@ -102,7 +103,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Muốn ngăn chặn người dùng truy cập vào file public -> viết middle-ware xử lý ngăn chặn giữa response và request
-app.use(express.static(path.resolve(__dirname, 'public/Client')));
+app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
 //User
@@ -127,7 +128,7 @@ app.use('/user-history', userHistoryInRouter);
 app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
-
+app.use('/user', userController);
 
 
 
@@ -158,7 +159,7 @@ app.use(session({
 }));
 
 
-app.use('/user', userController);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

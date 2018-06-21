@@ -48,13 +48,14 @@ exports.getProductsHome = function (req,res,next) {
 exports.getAllProducts = function (req,res,next) {
 
     var page = req.params.page;
-    console.log(req);
+   // console.log(req);
 
     products.loadAll().then(rows => {
         var vm = {
             products: rows,
             CountProduct: rows.length,
             title: 'Shop',
+            layout: 'main.layout.hbs',
         };
 
         res.render('_pageUser/Shop/index',vm);

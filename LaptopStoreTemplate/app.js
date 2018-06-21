@@ -128,11 +128,8 @@ app.use('/user-history', userHistoryInRouter);
 app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
-app.use('/user', userController);
 
-
-
-/*Session*/
+/*Sessions*/
 var sessionStore = new MySQLStore({
     host: 'localhost',
     port: 3306,
@@ -158,14 +155,12 @@ app.use(session({
     saveUninitialized: false
 }));
 
-
-<<<<<<< HEAD
-app.use('/user', userController);
+app.use(handleLayoutMDW);
 //app.use(handleLayoutMDW);
-=======
+app.use('/user', userController);
 
 
->>>>>>> 5abbc182b9243d09fe69acad79a6820d39fb7e4a
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

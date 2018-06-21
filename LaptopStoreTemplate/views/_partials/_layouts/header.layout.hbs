@@ -33,8 +33,20 @@
                         </div>
                         <div class="top_bar_user">
                             <div class="user_icon"><img src="/images/user.svg" alt=""></div>
-                            <div><a href="./sign_up.html">Register</a></div>
-                            <div><a href="./sign_in.html">Sign in</a></div>
+                                {{#if layoutVM.isLogged}}
+
+                                    <div><a href="/user/register">{{layoutVM.curUser.f_Name}}</a></div>
+                                     <div>
+                                        <form action="/user/logout" method="post">
+                                            <input type="submit" value="Log out"/>
+                                        </form>
+
+                                        </div>
+                                {{else}}
+                                    <div><a href="/user/register">Register</a></div>
+                                     <div><a href="/user/signin">Sign in</a></div>
+                                {{/if}}
+                                   
                         </div>
                     </div>
                 </div>
@@ -222,5 +234,11 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $('#lnkLogout').on('click', function() {
+            $('#frmLogout').submit();
+        });
+    </script>
 
 </header>

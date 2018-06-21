@@ -13,19 +13,27 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/signin', (req, res) => {
-    /*var vm = {
+    var vm = {
        // layout: 'user.layout.hbs',
         title: "Sign In"
-    };*/
-    res.render('user/signin');
+    };
+    res.render('user/signin',vm);
 });
 
-router.get('/signup', (req, res) => {
-    res.render('user/signup');
+router.get('/register', (req, res) => {
+     var vm = {
+       // layout: 'user.layout.hbs',
+        title: "Register"
+    };
+    res.render('user/register',vm);
 });
 
 router.get('/profile', (req, res) => {
-    res.render('user/profile');
+     var vm = {
+       // layout: 'user.layout.hbs',
+        title: "Profile"
+    };
+    res.render('user/profile', vm);
 });
 
 router.post('/signin', (req, res) => {
@@ -42,7 +50,7 @@ router.post('/signin', (req, res) => {
             req.session.user = rows[0];
             req.session.cart = [];
 
-            var url = '/';
+            var url = '/user/profile';
             if (req.query.retUrl) {
                 url = req.query.retUrl;
             }
@@ -50,6 +58,7 @@ router.post('/signin', (req, res) => {
 
         } else {
             var vm = {
+                title: "Sign In",
                 showError: true,
                 errorMsg: 'Login failed'
             };
@@ -58,7 +67,7 @@ router.post('/signin', (req, res) => {
     });
 });
 /*Dk tai khoang*/
-router.post('/signup', (req, res) => {
+router.post('/register', (req, res) => {
 
     var dob = moment(req.body.dob, 'D/M/YYYY')
         .format('YYYY-MM-DDTHH:mm');
@@ -73,8 +82,16 @@ router.post('/signup', (req, res) => {
     };
 
     userRepo.add(user).then(value => {
-        res.render('user/signin');
+        res.render('user/register');
     });
+});
+
+router.post('/logout', (req, res) => {
+    req.session.isLogged = false;
+    req.session.user = null;
+    // req.session.cart = [];
+    
+    res.redirect(req.headers.referer);
 });
 
 

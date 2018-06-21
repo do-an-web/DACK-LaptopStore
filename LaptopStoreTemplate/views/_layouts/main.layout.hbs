@@ -40,8 +40,13 @@
     {{/compare}}
 
     <!--SignUp Page-->
-    {{#compare title 'Sign Up' operator="=="}}
+    {{#compare title 'Register' operator="=="}}
         {{> _partialsUser/SignUp/signup.css}}
+    {{/compare}}
+
+    <!--SignUp Page-->
+    {{#compare title 'Profile' operator="=="}}
+        {{> _partialsUser/InfoAccount/InfoAccount.css}}
     {{/compare}}
 
     <!--User History Page-->
@@ -117,8 +122,12 @@
     {{/compare}}
 
     <!--SignUp Page-->
-    {{#compare title 'Sign Up' operator="=="}}
+    {{#compare title 'Register' operator="=="}}
         {{> _partialsUser/SignUp/signup.js}}
+    {{/compare}}
+
+    {{#compare title 'Profile' operator="=="}}
+        {{> _partialsUser/InfoAccount/InfoAccount.js}}
     {{/compare}}
 
     <!--User History Page-->

@@ -10,6 +10,7 @@ module.exports = (req, res, next) => {
             isLogged: req.session.isLogged,
             curUser: req.session.user
         };
+        next();
    /* categoryRepo.loadAll().then(rows => {
         res.locals.layoutVM = {
             categories: rows,

@@ -10,7 +10,7 @@ var express_handlebars_sections = require('express-handlebars-sections');
 var session = require('express-session');
 var MySQLStore = require('express-mysql-session')(session);
 
-
+var handleLayoutMDW = require('./middle-wares/handleLayout');
 
 var homeRouter = require('./routes/home');
 var shopRouter = require('./routes/shop');
@@ -153,7 +153,7 @@ app.use(session({
 
 
 app.use('/user', userController);
-
+//app.use(handleLayoutMDW);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

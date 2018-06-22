@@ -29,11 +29,10 @@ router.get('/register', (req, res) => {
     res.render('user/register',vm);
 });
 
-
 router.get('/profile', restrict,(req, res) => {
     
     var date = new Date(res.locals.layoutVM.curUser.f_DOB);
-    date = date.getDate()+'-' + (date.getMonth()+1) + '-'+date.getFullYear();
+    date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
     var vm = {
        // layout: 'user.layout.hbs',
         title: "Profile",
@@ -76,8 +75,12 @@ router.post('/signin', (req, res) => {
 router.post('/register', (req, res) => {
 
     var dob = moment(req.body.dob, 'D/M/YYYY')
-        .format('YYYY-MM-DDTHH:mm');
+        .format('YYYY-MM-DD');
 
+        /*var dob = moment(req.body.dob, 'D/M/YYYY')
+        .format('D/M/YYYY');*/
+
+    
     var user = {
         username: req.body.username,
         password: SHA256(req.body.rawPWD).toString(),
@@ -88,7 +91,43 @@ router.post('/register', (req, res) => {
     };
 
     userRepo.add(user).then(value => {
-        res.render('user/register');
+        res.render('/user/register');
+    });
+});
+router.post('/update', (req, res) => {
+    req.session.isLogged = false;
+    req.session.user = null;
+    // req.session.cart = [];
+    
+    res.redirect(req.headers.referer);
+});
+
+router.post('/edit', (req, res) => {
+
+    var mdob = moment(req.body.dob, 'D/M/YYYY')
+        .format('YYYY-MM-DD');
+
+    var user = {
+        ID: res.locals.layoutVM.curUser.f_ID,
+        dob: mdob,
+        fullname: req.body.name,
+        email: req.body.email
+    };
+
+    
+        res.locals.layoutVM.curUser.f_Name = user.fullname;
+        res.locals.layoutVM.curUser.f_Email = user.email;
+
+   /*var mdob1 = moment(mdob, 'D/M/YYY')
+        .format('YYYY-MM-DD');*/
+
+
+        res.locals.layoutVM.curUser.f_DOB = mdob;
+
+    userRepo.update(user).then(rows => {
+       
+
+        res.redirect('/user/profile');
     });
 });
 
@@ -99,8 +138,5 @@ router.post('/logout', (req, res) => {
     
     res.redirect(req.headers.referer);
 });
-
-
-
 
 module.exports = router;

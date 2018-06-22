@@ -1,6 +1,7 @@
 
 function saveInfo() {
     alert("Your infos saved!");
+
 }
 
 function convertDate(d) {

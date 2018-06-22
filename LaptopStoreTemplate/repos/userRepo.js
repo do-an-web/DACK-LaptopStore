@@ -9,3 +9,11 @@ exports.login = user => {
     var sql = `select * from users where f_Username = '${user.username}' and f_Password = '${user.password}'`;
     return db.load(sql);
 }
+
+
+exports.update = (user) => {
+    var sql = `update users set f_Name = '${user.fullname}', f_Email = '${user.email}' , f_DOB = '${user.dob}' where f_ID = ${user.ID}`;
+    
+    console.log("update user:"+sql);
+    return db.save(sql);
+}

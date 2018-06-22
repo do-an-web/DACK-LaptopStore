@@ -11,7 +11,9 @@ var express_handlebars_sections = require('express-handlebars-sections');
 var session = require('express-session');
 var MySQLStore = require('express-mysql-session')(session);
 
+/*middle-wares*/
 var handleLayoutMDW = require('./middle-wares/handleLayout');
+var restrict = require('./middle-wares/restrict');
 
 var homeRouter = require('./routes/home');
 var shopRouter = require('./routes/shop');
@@ -22,6 +24,8 @@ var paymentRouter = require('./routes/payment');
 var signInRouter = require('./routes/signIn');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
+
+
 
 /*************************/
 var userRouter = require('./routes/user');

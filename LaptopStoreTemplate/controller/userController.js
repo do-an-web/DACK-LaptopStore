@@ -4,6 +4,7 @@ var express = require('express'),
 
 var userRepo = require('../repos/userRepo');
 
+var restrict = require('../middle-wares/restrict');
 var router = express.Router();
 
 /*router.get('/login', (req, res) => {
@@ -28,7 +29,8 @@ router.get('/register', (req, res) => {
     res.render('user/register',vm);
 });
 
-router.get('/profile', (req, res) => {
+
+router.get('/profile', restrict,(req, res) => {
      var vm = {
        // layout: 'user.layout.hbs',
         title: "Profile"
@@ -93,6 +95,8 @@ router.post('/logout', (req, res) => {
     
     res.redirect(req.headers.referer);
 });
+
+
 
 
 module.exports = router;

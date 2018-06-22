@@ -106,26 +106,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
-//User
 
-app.use('/', userRouter);
-
-//Cart
-app.use('/cart', cartRouter);
-//Detail Product
-app.use('/detail', detailRouter);
-//Info Account
-app.use('/info-account', infoAccountRouter);
-//Payment
-app.use('/payment', paymentRouter);
-//SignIn
-app.use('/sign-in', signInRouter);
-//SignUp
-//app.use('/sign-up', signUpRouter);
-//User history
-app.use('/user-history', userHistoryInRouter);
-//User history Detail
-app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
 
@@ -158,7 +139,26 @@ app.use(session({
 app.use(handleLayoutMDW);
 //app.use(handleLayoutMDW);
 app.use('/user', userController);
+//User
 
+app.use('/', userRouter);
+
+//Cart
+app.use('/cart', cartRouter);
+//Detail Product
+app.use('/detail', detailRouter);
+//Info Account
+app.use('/info-account', infoAccountRouter);
+//Payment
+app.use('/payment', paymentRouter);
+//SignIn
+app.use('/sign-in', signInRouter);
+//SignUp
+//app.use('/sign-up', signUpRouter);
+//User history
+app.use('/user-history', userHistoryInRouter);
+//User history Detail
+app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
 // catch 404 and forward to error handler

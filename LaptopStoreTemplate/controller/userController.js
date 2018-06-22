@@ -31,9 +31,13 @@ router.get('/register', (req, res) => {
 
 
 router.get('/profile', restrict,(req, res) => {
-     var vm = {
+    
+    var date = new Date(res.locals.layoutVM.curUser.f_DOB);
+    date = date.getDate()+'-' + (date.getMonth()+1) + '-'+date.getFullYear();
+    var vm = {
        // layout: 'user.layout.hbs',
-        title: "Profile"
+        title: "Profile",
+        birth: date
     };
     res.render('user/profile', vm);
 });

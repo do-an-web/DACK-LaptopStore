@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/controller.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/controller/controller.txt" afterPath="$PROJECT_DIR$/config/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/products.controller.js" afterPath="$PROJECT_DIR$/controller/products.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/products.model.js" afterPath="$PROJECT_DIR$/model/products.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Client/js/shop_custom.js" afterPath="$PROJECT_DIR$/public/Client/js/shop_custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Client/styles/main_styles.css" afterPath="$PROJECT_DIR$/public/Client/styles/main_styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/Client/styles/shop_styles.css" afterPath="$PROJECT_DIR$/public/Client/styles/shop_styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" afterPath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/home.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/home.js.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,14 +21,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="31" column="140" lean-forward="true" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
+            <state relative-caret-position="496">
+              <caret line="31" column="140" lean-forward="false" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
               <folding>
                 <element signature="e#1499#1505#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +125,6 @@
         <option value="$PROJECT_DIR$/routes/signUp.js" />
         <option value="$PROJECT_DIR$/views/_layouts/user.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/model/products.js" />
         <option value="$PROJECT_DIR$/routes/demo.js" />
         <option value="$PROJECT_DIR$/views/demo.hbs" />
@@ -176,6 +171,7 @@
         <option value="$PROJECT_DIR$/controller/products.controller.js" />
         <option value="$PROJECT_DIR$/public/Client/js/shop_custom.js" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -607,15 +603,15 @@
       <workItem from="1529695653185" duration="5429000" />
       <workItem from="1529717610946" duration="7043000" />
       <workItem from="1529820738590" duration="15144000" />
-      <workItem from="1529844913572" duration="7703000" />
+      <workItem from="1529844913572" duration="7755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112733000" />
+    <option name="totallyTimeSpent" value="112785000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="1" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -669,13 +665,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_pageUser/Home/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/demo.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1062,11 +1051,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="31" column="140" lean-forward="true" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
+        <state relative-caret-position="496">
+          <caret line="31" column="140" lean-forward="false" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
           <folding>
             <element signature="e#1499#1505#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

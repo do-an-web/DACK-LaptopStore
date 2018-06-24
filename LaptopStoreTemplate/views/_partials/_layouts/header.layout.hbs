@@ -32,9 +32,38 @@
                             </ul>
                         </div>
                         <div class="top_bar_user">
+<<<<<<< HEAD
                             <div class="user_icon"><img src="/  images/user.svg" alt=""></div>
                             <div><a href="/signup">Register</a></div>
                             <div><a href="/signin">Sign in</a></div>
+=======
+                           
+                                {{#if layoutVM.isLogged}}
+                                <form id="frmLogout" action="/user/logout" method="post"></form>
+                                    <div>
+                                        <div class="user_icon"><img src="/images/user.svg" alt=""></div>
+                                        <div>
+
+                                            <div class="dropdown">
+                                               
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{layoutVM.curUser.f_Name}} <b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
+                                                    <li><a class="dropdown-item" id="lnkLogout" href="javascript:;">Logout</a></li>
+                                                </ul>
+
+                                            </div>
+                                         </div>
+                                        <div><a href="">Shopping Cart (0 items)</a></div>
+                                    </div>
+                        
+                                {{else}}
+                                    <div class="user_icon"><img src="/images/user.svg" alt=""></div>
+                                    <div><a href="/user/register">Register</a></div>
+                                    <div><a href="/user/signin">Sign in</a></div>
+                                {{/if}}
+                                   
+>>>>>>> 801d7180823671ab8d5c08302cf81ce54e4891f3
                         </div>
                     </div>
                 </div>
@@ -222,5 +251,7 @@
             </div>
         </div>
     </div>
+
+   
 
 </header>

@@ -11,7 +11,9 @@ var express_handlebars_sections = require('express-handlebars-sections');
 var session = require('express-session');
 var MySQLStore = require('express-mysql-session')(session);
 
-
+/*middle-wares*/
+var handleLayoutMDW = require('./middle-wares/handleLayout');
+var restrict = require('./middle-wares/restrict');
 
 var homeRouter = require('./routes/home');
 var shopRouter = require('./routes/shop');
@@ -22,6 +24,8 @@ var paymentRouter = require('./routes/payment');
 var signInRouter = require('./routes/signIn');
 var userHistoryInRouter = require('./routes/userHistory');
 var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
+
+
 
 /*************************/
 var userRouter = require('./routes/user');
@@ -106,33 +110,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /////////////// Router////////////////////
-//User
-
-app.use('/', userRouter);
-
-//Cart
-app.use('/cart', cartRouter);
-//Detail Product
-app.use('/detail', detailRouter);
-//Info Account
-app.use('/info-account', infoAccountRouter);
-//Payment
-app.use('/payment', paymentRouter);
-//SignIn
-app.use('/sign-in', signInRouter);
-//SignUp
-//app.use('/sign-up', signUpRouter);
-//User history
-app.use('/user-history', userHistoryInRouter);
-//User history Detail
-app.use('/user-history-detail', userHistoryDetailInRouter);
-
-
-app.use('/user', userController);
 
 
 
-/*Session*/
+
+/*Sessions*/
 var sessionStore = new MySQLStore({
     host: 'localhost',
     port: 3306,
@@ -158,7 +140,29 @@ app.use(session({
     saveUninitialized: false
 }));
 
+app.use(handleLayoutMDW);
+//app.use(handleLayoutMDW);
+app.use('/user', userController);
+//User
 
+app.use('/', userRouter);
+
+//Cart
+app.use('/cart', cartRouter);
+//Detail Product
+app.use('/detail', detailRouter);
+//Info Account
+app.use('/info-account', infoAccountRouter);
+//Payment
+app.use('/payment', paymentRouter);
+//SignIn
+app.use('/sign-in', signInRouter);
+//SignUp
+//app.use('/sign-up', signUpRouter);
+//User history
+app.use('/user-history', userHistoryInRouter);
+//User history Detail
+app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
 // catch 404 and forward to error handler

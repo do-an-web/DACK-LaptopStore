@@ -13,11 +13,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/signin', (req, res) => {
-    /*var vm = {
-       // layout: 'user.layout.hbs',
+    var vm = {
+        layout: 'user.layout.hbs',
         title: "Sign In"
-    };*/
-    res.render('user/signin');
+    };
+    res.render('user/signin',vm);
 });
 
 router.get('/signup', (req, res) => {

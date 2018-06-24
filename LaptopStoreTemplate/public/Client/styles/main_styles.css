@@ -2548,10 +2548,15 @@ select option
 }
 .bestsellers_item
 {
+
 	background: #FFFFFF;
 	border-radius: 8px;
 	padding: 25px;
-    min-height: 206px;
+
+
+}
+.bestsellers_item_container {
+    height: 149px;
 }
 .bestsellers_slider .slick-slide > div:first-child
 {

@@ -417,3 +417,8 @@ $(document).ready(function()
 		}
 	}
 });
+
+function SearchStandard()
+{
+
+}

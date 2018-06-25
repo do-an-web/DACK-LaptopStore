@@ -1,0 +1,37 @@
+{{#section 'title'}}
+  <li class="breadcrumb-item active">
+    <a href="#">Category</a>
+  </li>
+{{/section}}
+<a href="/category/add" class="btn btn-primary a-btn-slide-text">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  <span>Add A Category</span>
+</a>
+<hr/>
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each categories}}
+          <tr>
+            <td>{{CatID}}</td>
+            <td>{{CatName}}</td>
+            <td>
+              <a href="/category/edit?id={{CatID}}" class="btn btn-primary">Edit</a>
+              <form action="/category/delete" method="POST" role="form">
+                <input type="hidden" id="" name="CatId" value="{{CatID}}">  
+                <button type="submit" class="btn btn-danger">
+                  Delete
+                </button>
+              </form>
+              <a href="/product/byCat/{{CatID}}" class="btn btn-primary">Product</a>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>

@@ -15,14 +15,14 @@
 
             <!-- Selected Image -->
             <div class="col-lg-5 order-lg-2 order-1">
-                <div class="image_selected"><img src="images/single_4.jpg" alt=""></div>
+                <div class="image_selected"><img src="/images_product/{{product.ProID}}/{{product.ProID}}.jpg" alt=""></div>
             </div>
 
             <!-- Description -->
             <div class="col-lg-5 order-3">
                 <div class="product_description">
-                    <div class="product_category">Laptops</div>
-                    <div class="product_name">MacBook Air 13</div>
+                    <div class="product_category">{{product.Fatory}}</div>
+                    <div class="product_name">{{product.ProName}}</div>
                     <div class="product_overview">
 							<span class="rating_r rating_r_4 product_rating">
 								<i class="fas fa-star"></i>
@@ -32,11 +32,11 @@
 								<i class="fas fa-star"></i>
 								<p>(908)</p>
 							</span>
-                        <p>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</p>
+                        <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
                         <span>
-								<i class="fas fa-eye"><p>&nbsp&nbsp1863</p></i>
+								<i class="fas fa-eye"><p>&nbsp;&nbsp;1863</p></i>
 							</span>
-                        <p>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp</p>
+                        <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
                         <span>
 								<p><b>21 Products Sold</b></p>
 							</span>
@@ -46,28 +46,27 @@
                     <div class="product_highlight">
                         <h5>Highlights</h5>
                         <ul type="circle">
-                            <li>
-                                <span>Fifth-generation Intel Core processors</span>
-                            </li>
-                            <li>
-                                <span>Lasts up to an incredible 12 hours between charges</span>
-                            </li>
-                            <li>
-                                <span>SSD storage is up to 17x faster than a 5400-rpm notebook hard drive</span>
-                            </li>
+                            {{{product.Detail}}}
+                            {{!-- <LI><span>Fifth-generation Intel Core processors</span></LI><li><span>Lasts up to an incredible 12 hours between charges</span>
+                            </li><li><span>SSD storage is up to 17x faster than a 5400-rpm notebook hard drive</span></li> --}}
                         </ul>
                         <span>
-								<i class="fas fa-angle-right">&nbsp;<a href="#">See more product details</a></i>
-							</span>
+							<i class="fas fa-angle-right">&nbsp;<a href="#">See more product details</a></i>
+						</span>
                     </div>
 
                 </div>
                 <div class="product_description product_text">
                     <h5>About this product</h5>
                     <p>
-                        Lorem ipsum dolor sit amet,adipiscing elit. Maecenas fermentum. laoreet turpis, nec sollicitudin dolor cursus at.
+                        {{product.Overview}}
                         <a href="#">See more.</a>
                     </p>
+                    
+                    {{!-- <p>
+                        Lorem ipsum dolor sit amet,adipiscing elit. Maecenas fermentum. laoreet turpis, nec sollicitudin dolor cursus at.
+                        <a href="#">See more.</a>
+                    </p> --}}
                 </div>
                 <div class="order_info d-flex flex-row">
                     <form action="#">

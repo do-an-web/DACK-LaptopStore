@@ -92,6 +92,20 @@ exports.getAllProducts = function (req,res,next) {
 
 }
 
+exports.getSingleProduct = function (req, res, next) {
+    var proID = req.params.proID;
+
+    products.single(proID).then(rows =>{
+        
+        var vm = {
+            product: rows[0],
+            layout: 'main.layout.hbs',
+            title: "Single Product"
+        };
+        res.render('_pageUser/Detail/index', vm);
+    });
+}
+
 exports.searchProductType= function (req,res,next) {
 
 

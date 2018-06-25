@@ -95,6 +95,29 @@ exports.getAllProducts = function (req,res,next) {
 
 }
 
+<<<<<<< HEAD
+=======
+exports.getSingleProduct = function (req, res, next) {
+    var proID = req.params.proID;
+
+    products.single(proID).then(pRow => {
+        products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{
+            var vm = {
+                sameBrand: psRow,
+                product: pRow[0],
+                layout: 'main.layout.hbs',
+                title: "Single Product"
+            };
+            res.render('_pageUser/Detail/index', vm);
+        })
+    });
+}
+
+exports.searchProductType= function (req,res,next) {
+
+
+
+>>>>>>> fe20c1c6037ce9aaab1e8f069c4347099b7f8687
 
 exports.searchProductType= function (req,res,next) {
 

@@ -1,0 +1,9 @@
+/*button dely done delivering*/
+.table-responsive td{
+    vertical-align: middle;
+    text-align: center;
+}
+.table-responsive .btn.a-btn-slide-text{
+    display: block;
+    text-align: center;
+}

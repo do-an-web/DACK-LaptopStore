@@ -95,14 +95,16 @@ exports.getAllProducts = function (req,res,next) {
 exports.getSingleProduct = function (req, res, next) {
     var proID = req.params.proID;
 
-    products.single(proID).then(rows =>{
-        
-        var vm = {
-            product: rows[0],
-            layout: 'main.layout.hbs',
-            title: "Single Product"
-        };
-        res.render('_pageUser/Detail/index', vm);
+    products.single(proID).then(pRow => {
+        products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{
+            var vm = {
+                sameBrand: psRow,
+                product: pRow[0],
+                layout: 'main.layout.hbs',
+                title: "Single Product"
+            };
+            res.render('_pageUser/Detail/index', vm);
+        })
     });
 }
 

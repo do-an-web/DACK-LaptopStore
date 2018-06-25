@@ -10,6 +10,10 @@ exports.loadAllBrands = () => {
     var sql = 'select * from categories';
     return db.load(sql);
 }
+exports.loadSameBrandsByCat = (catId) => {
+    var sql = `select * from products where CatId = ${catId} limit 6 offset 0`;
+    return db.load(sql);
+}
 exports.loadAllByPro = (offset) => {
     var sql = `select * from products limit ${config.PRODUCTS_PER_PAGE} offset ${offset}`;
     return db.load(sql);

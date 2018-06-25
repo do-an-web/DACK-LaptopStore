@@ -15,14 +15,14 @@
 
             <!-- Selected Image -->
             <div class="col-lg-5 order-lg-2 order-1">
-                <div class="image_selected"><img src="/images_product/{{product_0.ProID}}/{{product_0.ProID}}.jpg" alt=""></div>
+                <div class="image_selected"><img src="/images_product/{{product.ProID}}/{{product.ProID}}.jpg" alt=""></div>
             </div>
 
             <!-- Description -->
             <div class="col-lg-5 order-3">
                 <div class="product_description">
-                    <div class="product_category">{{product_0.Fatory}}</div>
-                    <div class="product_name">{{product_0.ProName}}</div>
+                    <div class="product_category">{{product.Fatory}}</div>
+                    <div class="product_name">{{product.ProName}}</div>
                     <div class="product_overview">
 							<span class="rating_r rating_r_4 product_rating">
 								<i class="fas fa-star"></i>
@@ -46,7 +46,7 @@
                     <div class="product_highlight">
                         <h5>Highlights</h5>
                         <ul type="circle">
-                            {{{product_0.Detail}}}
+                            {{{product.Detail}}}
                             {{!-- <LI><span>Fifth-generation Intel Core processors</span></LI><li><span>Lasts up to an incredible 12 hours between charges</span>
                             </li><li><span>SSD storage is up to 17x faster than a 5400-rpm notebook hard drive</span></li> --}}
                         </ul>
@@ -59,7 +59,7 @@
                 <div class="product_description product_text">
                     <h5>About this product</h5>
                     <p>
-                        {{product_0.Overview}}
+                        {{product.Overview}}
                         <a href="#">See more.</a>
                     </p>
                     

@@ -3,7 +3,7 @@ var router = express.Router();
 var products = require('../controller/products.controller');
 
 /* GET home page. */
-router.get('/', products.getSingleProduct);
+router.get('/:proID', products.getSingleProduct);
 
 module.exports = router;
 //goi controller render

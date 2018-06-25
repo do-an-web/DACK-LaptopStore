@@ -15,11 +15,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/signin', (req, res) => {
     var vm = {
-<<<<<<< HEAD
-        layout: 'user.layout.hbs',
-=======
        // layout: 'user.layout.hbs',
->>>>>>> 801d7180823671ab8d5c08302cf81ce54e4891f3
+
         title: "Sign In"
     };
     res.render('user/signin',vm);

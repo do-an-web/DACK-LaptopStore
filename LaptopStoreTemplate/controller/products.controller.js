@@ -93,11 +93,12 @@ exports.getAllProducts = function (req,res,next) {
 }
 
 exports.getSingleProduct = function (req, res, next) {
-    products.loadAll().then(rows =>{
-        
+    var proID = req.params.proID;
+
+    products.single(proID).then(rows =>{
         
         var vm = {
-            product_0: rows[0],
+            product: rows[0],
             layout: 'main.layout.hbs',
             title: "Single Product"
         };

@@ -15,17 +15,6 @@ var MySQLStore = require('express-mysql-session')(session);
 var handleLayoutMDW = require('./middle-wares/handleLayout');
 var restrict = require('./middle-wares/restrict');
 
-var homeRouter = require('./routes/home');
-var shopRouter = require('./routes/shop');
-var cartRouter = require('./routes/cart');
-var detailRouter = require('./routes/detail');
-var infoAccountRouter = require('./routes/infoAccount');
-var paymentRouter = require('./routes/payment');
-var signInRouter = require('./routes/signIn');
-var userHistoryInRouter = require('./routes/userHistory');
-var userHistoryDetailInRouter = require('./routes/userHistoryDetail');
-
-
 
 /*************************/
 var userRouter = require('./routes/user');
@@ -119,7 +108,7 @@ var sessionStore = new MySQLStore({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: '',
+    password: 'root',
     database: 'laptoponline',
     createDatabaseTable: true,
     schema: {
@@ -146,23 +135,6 @@ app.use('/user', userController);
 //User
 
 app.use('/', userRouter);
-
-//Cart
-app.use('/cart', cartRouter);
-//Detail Product
-app.use('/detail', detailRouter);
-//Info Account
-app.use('/info-account', infoAccountRouter);
-//Payment
-app.use('/payment', paymentRouter);
-//SignIn
-app.use('/sign-in', signInRouter);
-//SignUp
-//app.use('/sign-up', signUpRouter);
-//User history
-app.use('/user-history', userHistoryInRouter);
-//User history Detail
-app.use('/user-history-detail', userHistoryDetailInRouter);
 
 
 // catch 404 and forward to error handler

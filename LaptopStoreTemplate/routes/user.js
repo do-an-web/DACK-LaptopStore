@@ -7,13 +7,9 @@ router.get('/',products.getProductsHome);
 //Shop
 router.get('/shop',products.getAllProducts);
 
-router.get('/shop/search/:CatID',products.searchProductType);
+router.get('/shop/search',products.searchProduct);
 
-router.get('/shop/search/:Core',products.searchProductType);
-
-//router.get('/shop/search/type',products.searchProductProcess);
-//router.get('/shop/search/:CatID/:ProcessType',products.searchProduct);
-
+router.post('/shop/search',products.searchProduct);
 
 module.exports = router;
 //goi controller render

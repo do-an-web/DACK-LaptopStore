@@ -1,8 +1,13 @@
 var express =  require('express');
 var products = require('../model/products.model');
 var config = require('../config/config');
-var location = require('location-href')
+var location = require('location-href');
 
+var ConditonSearch = {
+    money: [],
+    brands: [],
+    process: [],
+};
 exports.getProductsHome = function (req,res,next) {
     products.loadAll().then(rows => {
         // var rowsClone = rows.slice();
@@ -54,8 +59,6 @@ exports.getAllProducts = function (req,res,next) {
         page = 1;
     }
 
-    console.log("req : " + req.url);
-
     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
     var p1 = products.loadAllByPro(offset);
@@ -92,11 +95,8 @@ exports.getAllProducts = function (req,res,next) {
 
 }
 
+
 exports.searchProductType= function (req,res,next) {
-
-
-
-
 
     var page = req.query.list;
     if (!page) {
@@ -113,8 +113,6 @@ exports.searchProductType= function (req,res,next) {
 
         var products = [];
         var total = 0;
-        total = countRows[0].total;
-        products = pRows;
         total = countRows[0].total;
         products = pRows;
         var nPages = total / config.PRODUCTS_PER_PAGE;
@@ -144,118 +142,168 @@ exports.searchProductType= function (req,res,next) {
 
 }
 
+exports.searchProduct = function (req,res,next) {
 
-// exports.searchProductProcess= function (req,res,next) {
-//
-//     var ProcessType = req.params.ProcessType;
-//
-//     console.log( "Process Type : " + ProcessType);
-//
-//     var page = req.query.list;
-//     if (!page) {
-//         page = 1;
-//     }
-//     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
-//
-//     console.log("offset : " + offset);
-//
-//     var p1 = products.loadAllByCat(offset);
-//     var p2 = products.countByCat();
-//     var p3 = products.loadAllBrands();
-//
-//     var arr = [];
-//
-//     Promise.all([p1, p2,p3]).then(([pRows, countRows,Brands]) => {
-//         console.log("1");
-//         pRows.forEach(function (element) {
-//             if(element.Detail.search(ProcessType))
-//             {
-//                 arr.push(element);
-//             }
-//         });
-//         console.log("2");
-//         var total = arr.length;
-//         var nPages = total / config.PRODUCTS_PER_PAGE;
-//         if (total % config.PRODUCTS_PER_PAGE > 0) {
-//             nPages++;
-//         }
-//         console.log("3");
-//         var numbers = [];
-//         for (i = 1; i <= nPages; i++) {
-//             numbers.push({
-//                 pagination: i,
-//                 isCurPage: i === +page
-//             });
-//         }
-//
-//         var vm = {
-//             products: arr,
-//             CountProduct: total,
-//             noProducts: arr.length === 0,
-//             page_numbers: numbers,
-//             next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
-//             previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
-//             brands : Brands,
-//             title: 'Shop',
-//         };
-//         res.render('_pageUser/Shop/index',vm);
-//     });
-//
-// }
-//
-// exports.searchProduct = function (req,res,next) {
-//
-//     var CatID = req.params.CatID;
-//     var ProcessType = req.params.ProcessType;
-//
-//     console.log("Cat ID " + CatID + "Process Type : " + ProcessType);
-//
-//     var page = req.query.list;
-//     if (!page) {
-//         page = 1;
-//     }
-//     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
-//
-//     var p1 = products.loadAllByCat(CatID,offset);
-//     var p2 = products.countByCat();
-//     var p3 = products.loadAllBrands();
-//
-//     Promise.all([p1, p2,p3]).then(([pRows, countRows,Brands]) => {
-//         // console.log(pRows);
-//         //console.log(countRows);
-//         //console.log(Brands);
-//
-//         var total = countRows[0].total;
-//         var nPages = total / config.PRODUCTS_PER_PAGE;
-//         if (total % config.PRODUCTS_PER_PAGE > 0) {
-//             nPages++;
-//         }
-//         var numbers = [];
-//         for (i = 1; i <= nPages; i++) {
-//             numbers.push({
-//                 pagination: i,
-//                 isCurPage: i === +page
-//             });
-//         }
-//
-//         var vm = {
-//             products: pRows,
-//             CountProduct: total,
-//             noProducts: pRows.length === 0,
-//             page_numbers: numbers,
-//             next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
-//             previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
-//             brands : Brands,
-//             title: 'Shop',
-//         };
-//         res.render('_pageUser/Shop/index',vm);
-//     });
-//
-// }
+    var isMethodGet = false;
+    if (req.method === 'POST')
+    {
+        isMethodGet = true;
+
+        ConditonSearch = {
+            money: [],
+            brands: [],
+            process: [],
+        };
+        ConditonSearch.money = req.body.money;
+        if (req.body.brands !== undefined ) {
+            if (isArray(req.body.brands))
+            {
+                ConditonSearch.brands = req.body.brands;
+            }
+            else{
+                ConditonSearch.brands.push(req.body.brands);
+            }
+        }
+        if (req.body.process !== undefined ) {
+            if (isArray(req.body.process))
+            {
+                ConditonSearch.process= req.body.process;
+            }
+            else{
+                ConditonSearch.process.push(req.body.process);
+            }
+        }
+
+    }
+    var page = req.query.list;
+
+    if (!page) {
+        page = 1;
+    }
+    var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
+
+    var p0 = products.loadAll();
+    var p1 = products.loadAllBrands();
+
+    Promise.all([p0,p1]).then(([pTotal,Brands]) => {
 
 
+        var products = [];
+        var Temp = [];
+        var TempProcess = [];
+        var isMoney = false;
+        var isBrands = false;
+        var isProcess = false;
+        var total;
 
+        //Search
+        pTotal.forEach(function (item,index) {
 
+            if (ConditonSearch.money !== null) {
+                if (Number(item.Price) > Number(ConditonSearch.money[0]) && Number(item.Price) <= Number(ConditonSearch.money[1])) {
 
+                    products.push(item);
+                    isMoney = true;
+                }
+            }
+        });
+        pTotal.forEach(function (item,index) {
 
+            if (ConditonSearch.brands.length !== 0) {
+                for (i = 0; i < ConditonSearch.brands.length; i++) {
+                    if (ConditonSearch.brands[i] === item.Factory) {
+                        isBrands = true;
+                        if (isMoney === true) {
+                            for (i = 0; i < products.length; i++) {
+                                if (products[i].ProID === item.ProID) {
+                                    Temp.push(item);
+                                }
+                            }
+                        }
+                        else {
+                            console.log(item.ProID);
+                            products.push(item);
+                        }
+                    }
+                }
 
+            }
+        });
+        pTotal.forEach(function (item,index) {
+
+            if (ConditonSearch.process.length !== 0 ) {
+                for(i = 0; i < ConditonSearch.process.length; i++)
+                {
+                    if (item.Detail.search(ConditonSearch.process[i]) > 0) {
+                        isProcess = true;
+                        if (isMoney === true && isBrands === true)
+                        {
+                            for(i = 0; i < Temp.length; i++)
+                            {
+                                if (Temp[i].ProID === item.ProID)
+                                {
+                                    TempProcess.push(item);
+                                }
+                            }
+                        }
+                        else {
+                            if ((isMoney === true && isBrands === false) || (isMoney === false && isBrands === true)){
+                                for(i = 0; i < products.length; i++)
+                                {
+                                    if (products[i].ProID === item.ProID)
+                                    {
+                                        TempProcess.push(item);
+                                    }
+                                }
+                            }
+                            else {
+                                products.push(item);
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        });
+        if (isBrands && isProcess){
+            products = TempProcess;
+        }
+        else{
+            if (isProcess){
+                products = Temp;
+            }
+        }
+        total = products.length;
+        products = products.slice((Number(page)-1)* config.PRODUCTS_PER_PAGE,Number(page)* config.PRODUCTS_PER_PAGE);
+
+        var nPages = total / config.PRODUCTS_PER_PAGE;
+        if (total % config.PRODUCTS_PER_PAGE > 0) {
+            nPages++;
+        }
+        var numbers = [];
+        for (i = 1; i <= nPages; i++) {
+            numbers.push({
+                pagination: i,
+                isCurPage: i === +page
+            });
+        }
+
+        var vm = {
+            products: products,
+            CountProduct: total,
+            noProducts: products.length === 0,
+            page_numbers: numbers,
+            next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
+            previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
+            brands : Brands,
+            isMethodGet : isMethodGet,
+            body: req.body,
+            title: 'Shop',
+        };
+        res.render('_pageUser/Shop/index',vm);
+    });
+}
+function isArray(arr) {
+    return arr.constructor.toString().indexOf("Array") > -1;
+}

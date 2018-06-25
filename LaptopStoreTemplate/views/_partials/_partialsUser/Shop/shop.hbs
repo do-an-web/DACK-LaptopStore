@@ -1,35 +1,82 @@
 <!-- Shop -->
 {{#if noProducts}}
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            No Products.
-        </div>
-    </div>
-{{else}}
-<div class="shop">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-
                 <!-- Shop Sidebar -->
                 <div class="shop_sidebar">
-                    <form action="" method="POST" role="form" onsubmit="return SearchStandard();">
+                    <form action="/shop/search" method="POST" role="form" onsubmit="return SearchStandard();">
                         <div class=" filter_by_section">
                             <div class="sidebar_title">Filter By</div>
                         </div>
                         <div class="sidebar_section form-group">
                             <div class="sidebar_subtitle">Price</div>
-                            <div class="filter_price">
-                                <div id="slider-range" class="slider_range"></div>
-                                <p>Range: </p>
-                                <p><input type="text" id="amount" class="amount" readonly style="border:0; font-weight:bold;"></p>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="money" id="value-start" placeholder="">
+                            </div>
+                            <label for="validate-text">Between</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="money" id="value-finish" placeholder="">
                             </div>
                         </div>
                         <div class="sidebar_section form-group">
                             <div class="sidebar_subtitle brands_subtitle">Brands</div>
                             <ul class="brands_list">
                                 {{#each brands}}
-                                    <li class="brand"><input type="checkbox" name="process" value={{CatName}}><p>&nbsp; {{CatName}}</p></li>
+                                    <li class="brand"><input type="checkbox" name="brands" value={{CatName}}><p>&nbsp;&nbsp;&nbsp;{{CatName}}</p></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="sidebar_section form-group">
+                            <div class="sidebar_subtitle system_subtitle">Process Type</div>
+                            <ul class="process_list">
+                                <li class="process"><input type="checkbox" name="process" value="Celeron"><p>&nbsp; Intel Celeron</p><br></li>
+                                <li class="process"><input type="checkbox" name="process" value="Core i3"><p>&nbsp; Intel Core i3</p><br></li>
+                                <li class="process"><input type="checkbox" name="process" value="Core i5"><p>&nbsp; Intel Core i5</p><br></li>
+                                <li class="process"><input type="checkbox" name="process" value="Core i7"><p>&nbsp; Intel Core i7</p><br></li>
+                                <li class="process"><input type="checkbox" name="process" value="Pentium"><p>&nbsp; Intel Pentium</p><br></li>
+                            </ul>
+                        </div>
+                        <input type="submit" value="Search" class="btn btn-primary pull-right">
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+                <h3>No Products.</h3>
+            </div>
+
+        </div>
+    </div>
+
+{{else}}
+<div class="shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Shop Sidebar -->
+                <div class="shop_sidebar">
+                    <form action="/shop/search" method="POST" role="form" onsubmit="return SearchStandard();">
+                        <div class=" filter_by_section">
+                            <div class="sidebar_title">Filter By</div>
+                        </div>
+                        <div class="sidebar_section form-group">
+                            <div class="sidebar_subtitle">Price</div>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="money" id="value-start" placeholder="">
+                            </div>
+                            <label for="validate-text">Between</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="money" id="value-finish" placeholder="">
+                            </div>
+                        </div>
+                        <div class="sidebar_section form-group">
+                            <div class="sidebar_subtitle brands_subtitle">Brands</div>
+                            <ul class="brands_list">
+                                {{#each brands}}
+                                    <li class="brand"><input type="checkbox" name="brands" value={{CatName}}><p>&nbsp;&nbsp;&nbsp;{{CatName}}</p></li>
                                 {{/each}}
                             </ul>
                         </div>
@@ -55,19 +102,42 @@
 
                 <div class="shop_content">
                     <div class="shop_bar clearfix">
-                        <div class="shop_product_count"><span>{{CountProduct}}</span> products found</div>
+                        <div class="shop_product_count">
+                            <span>{{CountProduct}}</span> products found.
+                            <div>
+                                {{#if isMethodGet}}
+                                    Price: <span>{{body.money.[0]}}</span>VND - <span>{{body.money.[1]}}</span>VND,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Bands:  <span>{{body.brands}}</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Process Type: <span>{{body.process}}</span>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                {{/if}}
+                            </div>
+
+                        </div>
                         <div class="shop_sorting">
                             <span>Sort by:</span>
                             <ul>
                                 <li>
-                                    <span class="sorting_text">Highest rated<i class="fas fa-chevron-down"></span></i>
+                                    <span class="sorting_text">Sorting<i class="fas fa-chevron-down"></span></i>
                                     <ul>
-                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>Highest rated</li>
-                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>Name</li>
-                                        <li class="shop_sorting_button"data-isotope-option='{ "sortBy": "price" }'>Price</li>
+                                        <li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>
+                                            Name
+                                        </li>
+                                        <li class="shop_sorting_button"data-isotope-option='{ "sortBy": "price" }'>
+                                            Price
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
+                            <!--<ul>-->
+                                <!--<li>-->
+                                    <!--<span class="sorting_text">Highest rated<i class="fas fa-chevron-down"></span></i>-->
+                                    <!--<ul>-->
+                                        <!--<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>Highest rated</li>-->
+                                        <!--<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>Name</li>-->
+                                        <!--<li class="shop_sorting_button"data-isotope-option='{ "sortBy": "price" }'>Price</li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                         </div>
                     </div>
 

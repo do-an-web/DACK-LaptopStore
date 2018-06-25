@@ -83,7 +83,8 @@
                             <div class="featured_slider slider">
 
                                 {{#each dataFavorite}}
-                                    <div class="featured_slider_item">
+                                
+                                    <div class="featured_slider_item" onclick="javascript:location.href='/detail/{{ProID}}'">
                                         <div class="border_active"></div>
                                         <div class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                             <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="/images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
@@ -100,8 +101,9 @@
                                                 </div>
                                             </div>
                                             <div class="product_fav"><i class="fas fa-heart"></i></div>
-                                        </div>
+                                        </div>                                    
                                     </div>
+                                
                                 {{/each}}
                             </div>
                             <div class="featured_slider_dots_cover"></div>

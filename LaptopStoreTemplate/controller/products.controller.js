@@ -97,7 +97,6 @@ exports.getAllProducts = function (req,res,next) {
 
 exports.getSingleProduct = function (req, res, next) {
     var proID = req.params.proID;
-    console.log(proID);
     
     products.single(proID).then(pRow => {
         products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{

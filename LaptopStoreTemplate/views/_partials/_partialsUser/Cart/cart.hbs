@@ -1,7 +1,7 @@
 <div class="cart_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 offset-lg-1">
+            <div class="col-lg-12">
                 <div class="cart_container">
                     <div class="cart_title">Your Shopping Cart</div>
                     <div class="cart_items">
@@ -29,6 +29,14 @@
                                         <div class="cart_item_total cart_info_col">
                                             <div class="cart_item_title">Total</div>
                                             <div class="cart_item_text">{{number_format Amount}}</div>
+                                        </div>
+                                        <div class="cart_info_col">
+                                            <form id="frmRemoveItem" method="POST" action="/cart/remove">
+			                                    <input id="txtProId_R" name="ProId" type="hidden" value="{{Product.ProID}}">
+		                                    </form>
+                                            
+                                            <div class="cart_item_text removeItem" style="margin-top:55px;cursor: pointer" ><i class="far fa-trash-alt"></i></div>
+                                            
                                         </div>
                                     </div>
                                 </li>

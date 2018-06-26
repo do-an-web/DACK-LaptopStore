@@ -1,10 +1,11 @@
 var express =  require('express');
+var restrict = require('../middle-wares/restrict');
 var products = require('../model/products.model');
 var cartRepo = require('../repos/userRepos/cartRepo');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res) => {
+router.get('/', restrict, (req, res) => {
     var arr_p = [];
     for (var i = 0; i < req.session.cart.length; i++) {
         var cartItem = req.session.cart[i];
@@ -43,11 +44,17 @@ router.post('/add', (req, res) => {
         ProId: req.body.proId,
         Quantity: +req.body.quantity
     };
-
     cartRepo.add(req.session.cart, item);
+    
     res.redirect(req.headers.referer);
 });
 
-
+router.post('/remove', (req, res) => {
+    console.log(req.body.ProId);
+    
+    cartRepo.remove(req.session.cart, req.body.ProId);
+    
+    res.redirect(req.headers.referer);
+});
 
 module.exports = router;

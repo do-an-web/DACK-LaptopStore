@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-06-27 00:03:56
+Date: 2018-06-27 00:16:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,11 +47,17 @@ CREATE TABLE `orderdetails` (
   `Price` bigint(20) NOT NULL,
   `Amount` int(11) NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of orderdetails
 -- ----------------------------
+INSERT INTO `orderdetails` VALUES ('1', '1', '1', '1', '7290000', '7290000');
+INSERT INTO `orderdetails` VALUES ('2', '1', '2', '1', '6370000', '6370000');
+INSERT INTO `orderdetails` VALUES ('3', '2', '3', '1', '5799000', '5799000');
+INSERT INTO `orderdetails` VALUES ('4', '3', '12', '1', '1149000', '1149000');
+INSERT INTO `orderdetails` VALUES ('5', '3', '11', '1', '1219000', '1219000');
+INSERT INTO `orderdetails` VALUES ('6', '3', '20', '1', '6790000', '6790000');
 
 -- ----------------------------
 -- Table structure for orders
@@ -64,11 +70,14 @@ CREATE TABLE `orders` (
   `Total` bigint(20) NOT NULL,
   `Status` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`OrderID`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of orders
 -- ----------------------------
+INSERT INTO `orders` VALUES ('1', '2018-06-13 00:05:08', '1', '13660000', 'Processing');
+INSERT INTO `orders` VALUES ('2', '2018-06-15 00:06:40', '1', '5799000', 'Delivering');
+INSERT INTO `orders` VALUES ('3', '2018-05-29 00:07:27', '1', '9158000', 'Done');
 
 -- ----------------------------
 -- Table structure for products

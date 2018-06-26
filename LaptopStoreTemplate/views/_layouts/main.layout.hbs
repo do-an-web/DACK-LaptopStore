@@ -59,6 +59,7 @@
         {{> _partialsUser/UserHistoryDetail/userhistorydetail.css}}
     {{/compare}}
 
+    
 </head>
 
 <body>
@@ -127,13 +128,13 @@
     {{/compare}}
 
     <!-- Cho nay dung chung -->
-
-
+    {{#if layoutVM.isLogged}}
     <script type="text/javascript">
         $('#lnkLogout').on('click', function() {
             $('#frmLogout').submit();
         });
     </script>
+    {{/if}}
 </body>
 
 </html>

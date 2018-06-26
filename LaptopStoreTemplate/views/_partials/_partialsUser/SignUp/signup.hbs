@@ -1,6 +1,6 @@
-<!-- Content page -->
+{{!-- <!-- Content page -->
 <div class="text-center">
-    <form class="form-signup" method="POST">
+    <form class="form-signup" method="POST" role="form" onsubmit="return validate();">
         <img class="" src="./images/logo.jpg" alt="" width="50%" height="70%">
         <h1 class="h3 mb-4 font-weight-normal">Sign up</h1>
 
@@ -24,11 +24,17 @@
 
         <div class="g-recaptcha" data-sitekey="6LdZglQUAAAAAAReQrsF08evZqxDomRJz2W-WngR"></div>
 
-        <a class="btn btn-lg btn-primary btn-block" href="./sign_in.html">Sign up</a>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-success">
+                    Sign up
+                </button>
+            </div>
+	    </div>
         <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
     </form>
 </div>
 
 
 
-
+ --}}

@@ -2,7 +2,7 @@ var express = require('express'),
     SHA256 = require('crypto-js/sha256'),
     moment = require('moment');
 
-var userRepo = require('../repos/userRepo');
+var userRepo = require('../repos/userRepos/userRepo');
 
 var restrict = require('../middle-wares/restrict');
 var router = express.Router();
@@ -82,13 +82,6 @@ router.post('/logout', (req, res) => {
     
     res.redirect(req.headers.referer);
 });
-// router.post('/update', (req, res) => {
-//     req.session.isLogged = false;
-//     req.session.user = null;
-//     // req.session.cart = [];
-    
-//     res.redirect(req.headers.referer);
-// });
 
 router.get('/profile', restrict,(req, res) => {
     
@@ -100,11 +93,6 @@ router.get('/profile', restrict,(req, res) => {
     };
     res.render('_pageUser/InfoAccount/index', vm);
 });
-
-
-
-
-
 
 router.post('/edit', (req, res) => {
 

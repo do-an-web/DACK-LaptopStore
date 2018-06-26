@@ -61,13 +61,15 @@
                         <a href="#">See more.</a>
                     </p>
                 </div>
+                {{#if layoutVM.isLogged}}
                 <div class="order_info d-flex flex-row">
-                    <form action="#">
+                    <form method="post" action="/cart/add">
                         <div class="clearfix" style="z-index: 1000;">
+                            <input name="proId" type="hidden" value="{{product.ProID}}">
                             <!-- Product Quantity -->
                             <div class="product_quantity clearfix">
                                 <span>Quantity: </span>
-                                <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+                                <input name="quantity" id="quantity_input" type="text" pattern="[0-9]*" value="1">
                                 <div class="quantity_buttons">
                                     <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fas fa-chevron-up"></i></div>
                                     <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fas fa-chevron-down"></i></div>
@@ -92,12 +94,13 @@
 
                         <div class="product_price">$2000</div>
                         <div class="button_container">
-                            <button type="button" class="button cart_button">Add to Cart</button>
+                            <button type="submit" class="button cart_button">Add to Cart</button>
                             <div class="product_fav"><i class="fas fa-heart"></i></div>
                         </div>
 
                     </form>
                 </div>
+                {{/if}}
             </div>
         </div>
 

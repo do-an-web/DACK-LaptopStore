@@ -19,8 +19,9 @@ var restrict = require('./middle-wares/restrict');
 /*************************/
 var userRouter = require('./routes/user');
 var detailRouter = require('./routes/detail')
-/*******Duong************/
+
 var userController = require('./controller/userController');
+var cartController = require('./controller/cartController')
 /************************/
 var app = express();
 
@@ -131,11 +132,12 @@ app.use(session({
 
 app.use(handleLayoutMDW);
 
-app.use('/user', userController);
 //User
-
 app.use('/', userRouter);
 app.use('/detail', detailRouter);
+
+app.use('/user', userController);
+app.use('/cart', cartController);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -22,12 +22,21 @@ exports.loadAllByCat = (catId,offset) => {
     var sql = `select * from products where CatID = ${catId} limit ${config.PRODUCTS_PER_PAGE} offset ${offset}`;
     return db.load(sql);
 }
+exports.loadAllByCatName = (CatName,offset) => {
+    var sql = `select * from products where Factory = '${CatName}' limit ${config.PRODUCTS_PER_PAGE} offset ${offset}`;
+    return db.load(sql);
+}
 exports.countByCat = () => {
     var sql = `select count(*) as total from products`;
     return db.load(sql);
 }
 exports.countByCatBrands = (catId) => {
     var sql = `select count(*) as total from products where CatID = ${catId}`;
+    return db.load(sql);
+}
+exports.countByCatNameBrands = (CatName) => {
+    console.log("Cat Name : " + CatName);
+    var sql = `select count(*) as total from products where factory = '${CatName}'`;
     return db.load(sql);
 }
 

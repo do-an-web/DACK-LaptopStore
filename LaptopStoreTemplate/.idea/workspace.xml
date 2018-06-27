@@ -5,192 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/adminControllers/categoryController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/adminControllers/homeController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr-CH.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hy.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it-CH.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kh.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.me.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr-latin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css.bk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.bundle.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.bundle.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/datatables/dataTables.bootstrap4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/datatables/dataTables.bootstrap4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/datatables/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-easing/jquery.easing.compatibility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-easing/jquery.easing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery-easing/jquery.easing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery.slim.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/sb-admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/sb-admin.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sb-admin-datatables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sb-admin-datatables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sb-admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sb-admin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repos/adminRepos/categoryRepo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/_layouts/admin_main.handlebars" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/category/add.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/category/delete.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/category/edit.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/category/index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/home/about.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/home/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LaptopOnline.sql" afterPath="$PROJECT_DIR$/../LaptopOnline.sql" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/detail.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/products.controller.js" afterPath="$PROJECT_DIR$/controller/products.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/products.model.js" afterPath="$PROJECT_DIR$/model/products.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/detail.js" afterPath="$PROJECT_DIR$/routes/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/SameBrands.hbs" afterPath="$PROJECT_DIR$/views/_partials/SameBrands.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" afterPath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -208,110 +35,15 @@
       <file leaf-file-name="products.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="295" column="25" lean-forward="false" selection-start-line="295" selection-start-column="25" selection-end-line="295" selection-end-column="25" />
+            <state relative-caret-position="784">
+              <caret line="193" column="44" lean-forward="false" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
               <folding>
+                <element signature="e#294#1762#0" expanded="false" />
                 <element signature="e#1813#2979#0" expanded="false" />
-                <marker date="1529965159504" expanded="false" signature="3623:4917" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="3672:3697" ph="{...}" />
-                <marker date="1529965159504" expanded="false" signature="3991:4912" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="4309:4433" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="4336:4421" ph="{&quot;pagination&quot;: i...}" />
-                <marker date="1529965159504" expanded="true" signature="4452:4858" ph="{&quot;products&quot;: products...}" />
-                <marker date="1529965159504" expanded="true" signature="5034:5785" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5090:5173" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5266:5497" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5322:5394" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5411:5487" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5543:5778" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5600:5673" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5690:5768" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="5833:5858" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6296:6600" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6346:6590" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6648:7438" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6703:7428" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6772:7413" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6841:7395" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6930:7214" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="6998:7188" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7070:7158" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7244:7373" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7486:8923" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7543:8913" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7628:8898" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7705:8880" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7840:8182" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="7931:8156" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8031:8126" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8212:8857" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8331:8713" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8434:8683" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8546:8649" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8747:8831" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="8960:9007" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="9020:9106" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="9048:9096" ph="{...}" />
-                <marker date="1529965159504" expanded="true" signature="9364:9397" ph="{...}" />
+                <element signature="e#3034#3468#0" expanded="false" />
+                <element signature="e#3513#4853#0" expanded="false" />
+                <element signature="e#6750#11919#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="126" column="40" lean-forward="false" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
-              <folding>
-                <element signature="e#176#2776#0#HTML" expanded="false" />
-                <element signature="e#1492#1498#0#HTML" expanded="true" />
-                <element signature="e#1498#1504#0#HTML" expanded="true" />
-                <element signature="e#1504#1510#0#HTML" expanded="true" />
-                <element signature="e#1959#1965#0#HTML" expanded="true" />
-                <element signature="e#3088#5688#0#HTML" expanded="false" />
-                <element signature="e#4404#4410#0#HTML" expanded="true" />
-                <element signature="e#4410#4416#0#HTML" expanded="true" />
-                <element signature="e#4416#4422#0#HTML" expanded="true" />
-                <element signature="e#4871#4877#0#HTML" expanded="true" />
-                <element signature="e#6212#6218#0#HTML" expanded="true" />
-                <element signature="e#6218#6224#0#HTML" expanded="true" />
-                <element signature="e#6224#6230#0#HTML" expanded="true" />
-                <element signature="e#6230#6236#0#HTML" expanded="true" />
-                <element signature="e#6236#6242#0#HTML" expanded="true" />
-                <element signature="e#6316#6322#0#HTML" expanded="true" />
-                <element signature="e#6322#6328#0#HTML" expanded="true" />
-                <element signature="e#6328#6334#0#HTML" expanded="true" />
-                <element signature="e#6334#6340#0#HTML" expanded="true" />
-                <element signature="e#6340#6346#0#HTML" expanded="true" />
-                <element signature="e#6427#6433#0#HTML" expanded="true" />
-                <element signature="e#6433#6439#0#HTML" expanded="true" />
-                <element signature="e#6439#6445#0#HTML" expanded="true" />
-                <element signature="e#6445#6451#0#HTML" expanded="true" />
-                <element signature="e#6451#6457#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.layout.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_layouts/main.layout.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="137" column="11" lean-forward="false" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
-              <folding>
-                <marker date="1529965159454" expanded="true" signature="3571:3684" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.model.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model/products.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -319,63 +51,69 @@
       <file leaf-file-name="header.layout.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="194" column="33" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="194" selection-end-column="33" />
-              <folding>
-                <marker date="1529965159440" expanded="true" signature="4027:7916" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4059:7905" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4089:7890" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4182:4353" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4231:4330" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4474:6318" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4522:6295" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4582:6268" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4653:6237" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4739:6202" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="4948:6002" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="5023:5959" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="5288:5912" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="6441:7871" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="6544:7848" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="6646:7044" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="6805:7013" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="7126:7821" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="7238:7790" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="7294:7488" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="7547:7755" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="7974:10813" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8006:10802" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8036:10787" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8138:10745" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8246:10125" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8360:8608" ph="..." />
-                <marker date="1529965159440" expanded="false" signature="8552:8558" ph=" " />
-                <marker date="1529965159440" expanded="true" signature="8659:10094" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8712:8817" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="8870:10060" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9008:10022" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9053:9178" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9223:9336" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9381:9496" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9541:9656" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9701:9816" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="9861:9978" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10242:10717" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10352:10686" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10410:10651" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10861:13372" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10893:13361" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10923:13346" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="10957:13327" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11010:13304" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11066:11321" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11112:11290" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11372:12823" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11441:12072" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="11595:12038" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="12141:12793" ph="..." />
-                <marker date="1529965159440" expanded="true" signature="12295:12759" ph="..." />
-              </folding>
+            <state relative-caret-position="2576">
+              <caret line="161" column="66" lean-forward="false" selection-start-line="161" selection-start-column="66" selection-end-line="161" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavoriteLaptops.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellersProducts.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewProducts.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="52" column="124" lean-forward="false" selection-start-line="52" selection-start-column="124" selection-end-line="52" selection-end-column="124" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="108" column="113" lean-forward="false" selection-start-line="108" selection-start-column="113" selection-end-line="108" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/products.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -384,8 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hbs</find>
-      <find>product_ite</find>
       <find>best_sellers</find>
       <find>bestsellers_item</find>
       <find>bestsellers_name</find>
@@ -393,7 +129,6 @@
       <find>.bestsellers_price</find>
       <find>186</find>
       <find>.product_image img</find>
-      <find>color</find>
       <find>src=&quot;</find>
       <find>image</find>
       <find>ima</find>
@@ -409,6 +144,14 @@
       <find>countByCat</find>
       <find>console</find>
       <find>conso</find>
+      <find>home</find>
+      <find>colo</find>
+      <find>Single Product</find>
+      <find>detail</find>
+      <find>color</find>
+      <find>product</find>
+      <find>href</find>
+      <find>VND</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -417,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/signIn.js" />
         <option value="$PROJECT_DIR$/routes/signUp.js" />
         <option value="$PROJECT_DIR$/views/_layouts/user.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" />
@@ -446,9 +188,6 @@
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/UserHistory/userhistory.js.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/UserHistoryDetail/userhistorydetail.js.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/UserHistoryDetail/userhistorydetail.css.hbs" />
-        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
-        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
-        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/Recently.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/SameBrands.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/Brands.hbs" />
@@ -456,17 +195,21 @@
         <option value="$PROJECT_DIR$/public/Client/styles/main_styles.css" />
         <option value="$PROJECT_DIR$/public/Client/styles/shop_styles.css" />
         <option value="$PROJECT_DIR$/views/_pageUser/Shop/index.hbs" />
-        <option value="$PROJECT_DIR$/model/products.model.js" />
         <option value="$PROJECT_DIR$/public/Client/js/shop_custom.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/controller/userController.js" />
-        <option value="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
-        <option value="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
         <option value="$PROJECT_DIR$/fn/db.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/controller/userController.js" />
+        <option value="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
+        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
+        <option value="$PROJECT_DIR$/model/products.model.js" />
+        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" />
+        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
+        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/controller/products.controller.js" />
+        <option value="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
       </list>
     </option>
@@ -511,6 +254,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -570,6 +314,164 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partialsUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partialsUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partialsUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partialsUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_pageUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_pageUser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -663,7 +565,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -797,12 +698,14 @@
       <workItem from="1529858245050" duration="301000" />
       <workItem from="1529867544933" duration="3927000" />
       <workItem from="1529906690195" duration="17547000" />
-      <workItem from="1529938762829" duration="24807000" />
+      <workItem from="1529938762829" duration="30322000" />
+      <workItem from="1530029368404" duration="190000" />
+      <workItem from="1530064030614" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160927000" />
+    <option name="totallyTimeSpent" value="167231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -812,8 +715,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -854,53 +757,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.js.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Payment/Payment.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Payment/Payment.js.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -964,20 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="88" column="143" lean-forward="false" selection-start-line="88" selection-start-column="143" selection-end-line="88" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="147" lean-forward="false" selection-start-line="25" selection-start-column="147" selection-end-line="25" selection-end-column="147" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/SameBrands.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2336">
@@ -1015,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/home.js.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Client/styles/main_styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1037,25 +877,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="114" column="22" lean-forward="true" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/signUp.js" />
     <entry file="file://$PROJECT_DIR$/views/_partials/Recently.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="137" column="69" lean-forward="false" selection-start-line="137" selection-start-column="69" selection-end-line="137" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/footer.layout.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1193">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1084,13 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layouts/user.layout.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2039">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1112,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-103">
@@ -1133,13 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/Client/js/shop_custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1151,15 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="41" column="11" lean-forward="false" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,171 +963,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
+    <entry file="file://$PROJECT_DIR$/views/user/signin.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="194" column="33" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="194" selection-end-column="33" />
-          <folding>
-            <marker date="1529965159440" expanded="true" signature="4027:7916" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4059:7905" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4089:7890" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4182:4353" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4231:4330" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4474:6318" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4522:6295" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4582:6268" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4653:6237" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4739:6202" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="4948:6002" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="5023:5959" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="5288:5912" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="6441:7871" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="6544:7848" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="6646:7044" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="6805:7013" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="7126:7821" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="7238:7790" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="7294:7488" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="7547:7755" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="7974:10813" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8006:10802" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8036:10787" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8138:10745" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8246:10125" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8360:8608" ph="..." />
-            <marker date="1529965159440" expanded="false" signature="8552:8558" ph=" " />
-            <marker date="1529965159440" expanded="true" signature="8659:10094" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8712:8817" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="8870:10060" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9008:10022" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9053:9178" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9223:9336" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9381:9496" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9541:9656" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9701:9816" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="9861:9978" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10242:10717" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10352:10686" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10410:10651" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10861:13372" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10893:13361" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10923:13346" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="10957:13327" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11010:13304" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11066:11321" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11112:11290" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11372:12823" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11441:12072" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="11595:12038" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="12141:12793" ph="..." />
-            <marker date="1529965159440" expanded="true" signature="12295:12759" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/footer.layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layouts/admin_main.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1728">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_pageUser/Home/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/home.js.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_layouts/main.layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="137" column="11" lean-forward="false" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
-          <folding>
-            <marker date="1529965159454" expanded="true" signature="3571:3684" ph="..." />
-          </folding>
+        <state relative-caret-position="191">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
+    <entry file="file://$PROJECT_DIR$/routes/detail.js" />
+    <entry file="file://$PROJECT_DIR$/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="126" column="40" lean-forward="false" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
-          <folding>
-            <element signature="e#176#2776#0#HTML" expanded="false" />
-            <element signature="e#1492#1498#0#HTML" expanded="true" />
-            <element signature="e#1498#1504#0#HTML" expanded="true" />
-            <element signature="e#1504#1510#0#HTML" expanded="true" />
-            <element signature="e#1959#1965#0#HTML" expanded="true" />
-            <element signature="e#3088#5688#0#HTML" expanded="false" />
-            <element signature="e#4404#4410#0#HTML" expanded="true" />
-            <element signature="e#4410#4416#0#HTML" expanded="true" />
-            <element signature="e#4416#4422#0#HTML" expanded="true" />
-            <element signature="e#4871#4877#0#HTML" expanded="true" />
-            <element signature="e#6212#6218#0#HTML" expanded="true" />
-            <element signature="e#6218#6224#0#HTML" expanded="true" />
-            <element signature="e#6224#6230#0#HTML" expanded="true" />
-            <element signature="e#6230#6236#0#HTML" expanded="true" />
-            <element signature="e#6236#6242#0#HTML" expanded="true" />
-            <element signature="e#6316#6322#0#HTML" expanded="true" />
-            <element signature="e#6322#6328#0#HTML" expanded="true" />
-            <element signature="e#6328#6334#0#HTML" expanded="true" />
-            <element signature="e#6334#6340#0#HTML" expanded="true" />
-            <element signature="e#6340#6346#0#HTML" expanded="true" />
-            <element signature="e#6427#6433#0#HTML" expanded="true" />
-            <element signature="e#6433#6439#0#HTML" expanded="true" />
-            <element signature="e#6439#6445#0#HTML" expanded="true" />
-            <element signature="e#6445#6451#0#HTML" expanded="true" />
-            <element signature="e#6451#6457#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="-80">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="295" column="25" lean-forward="false" selection-start-line="295" selection-start-column="25" selection-end-line="295" selection-end-column="25" />
-          <folding>
-            <element signature="e#1813#2979#0" expanded="false" />
-            <marker date="1529965159504" expanded="false" signature="3623:4917" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="3672:3697" ph="{...}" />
-            <marker date="1529965159504" expanded="false" signature="3991:4912" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="4309:4433" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="4336:4421" ph="{&quot;pagination&quot;: i...}" />
-            <marker date="1529965159504" expanded="true" signature="4452:4858" ph="{&quot;products&quot;: products...}" />
-            <marker date="1529965159504" expanded="true" signature="5034:5785" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5090:5173" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5266:5497" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5322:5394" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5411:5487" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5543:5778" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5600:5673" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5690:5768" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="5833:5858" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6296:6600" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6346:6590" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6648:7438" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6703:7428" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6772:7413" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6841:7395" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6930:7214" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="6998:7188" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7070:7158" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7244:7373" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7486:8923" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7543:8913" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7628:8898" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7705:8880" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7840:8182" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="7931:8156" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8031:8126" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8212:8857" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8331:8713" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8434:8683" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8546:8649" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8747:8831" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="8960:9007" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="9020:9106" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="9048:9096" ph="{...}" />
-            <marker date="1529965159504" expanded="true" signature="9364:9397" ph="{...}" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="146" column="43" lean-forward="false" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Detail/detail.js.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layouts/user.layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/products.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="384">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="52" column="124" lean-forward="false" selection-start-line="52" selection-start-column="124" selection-end-line="52" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="193" column="44" lean-forward="false" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+          <folding>
+            <element signature="e#294#1762#0" expanded="false" />
+            <element signature="e#1813#2979#0" expanded="false" />
+            <element signature="e#3034#3468#0" expanded="false" />
+            <element signature="e#3513#4853#0" expanded="false" />
+            <element signature="e#6750#11919#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2576">
+          <caret line="161" column="66" lean-forward="false" selection-start-line="161" selection-start-column="66" selection-end-line="161" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="108" column="113" lean-forward="false" selection-start-line="108" selection-start-column="113" selection-end-line="108" selection-end-column="113" />
           <folding />
         </state>
       </provider>

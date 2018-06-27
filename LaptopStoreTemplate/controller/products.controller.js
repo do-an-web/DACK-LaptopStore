@@ -127,9 +127,7 @@ exports.getAllProductsForBrands= function (req,res,next) {
 
         var products = [];
         var total = 0;
-        console.log("CatID :" + pIDBrand[0].CatID + "Brands : " + pIDBrand[0].CatName);
         pRows.forEach(function (item) {
-            console.log("CatID :" + item.CatID);
             if (item.CatID === pIDBrand[0].CatID)
             {
                 products.push(item);
@@ -192,7 +190,7 @@ exports.getAllProductForProcess = function (req,res,next) {
             if (process.length !== 0 ) {
                 for(i = 0; i < process.length; i++)
                 {
-                    if (item.Detail.search(process[i]) > 0) {
+                    if (item.Detail.toUpperCase().search(process[i].toUpperCase()) >= 0) {
 
                         products.push(item);
 
@@ -295,72 +293,46 @@ exports.searchProduct = function (req,res,next) {
                 }
             }
         });
+        if (ConditonSearch.brands.length !== 0) {
+            if (isMoney) {
+                pTotal = products;
+                products = [];
+            }
+        }
         pTotal.forEach(function (item,index) {
-
             if (ConditonSearch.brands.length !== 0) {
                 for (i = 0; i < ConditonSearch.brands.length; i++) {
                     if (ConditonSearch.brands[i] === item.Factory) {
+                        console.log(item.Factory);
                         isBrands = true;
-                        if (isMoney === true) {
-                            for (i = 0; i < products.length; i++) {
-                                if (products[i].ProID === item.ProID) {
-                                    Temp.push(item);
-                                }
-                            }
-                        }
-                        else {
+                        products.push(item);
+                    }
+                }
+
+            }
+        });
+        if (ConditonSearch.process.length !== 0)
+        {
+            if(isMoney || isBrands)
+            {
+                pTotal = products;
+                products = [];
+            }
+            pTotal.forEach(function (item,index) {
+
+
+                    for(i = 0; i < ConditonSearch.process.length; i++)
+                    {
+                        if (Number(item.Detail.toUpperCase().search(ConditonSearch.process[i].toUpperCase())) >= 0) {
                             products.push(item);
                         }
                     }
-                }
 
-            }
-        });
-        pTotal.forEach(function (item,index) {
-
-            if (ConditonSearch.process.length !== 0 ) {
-                for(i = 0; i < ConditonSearch.process.length; i++)
-                {
-                    if (item.Detail.search(ConditonSearch.process[i]) > 0) {
-                        isProcess = true;
-                        if (isMoney === true && isBrands === true)
-                        {
-                            for(i = 0; i < Temp.length; i++)
-                            {
-                                if (Temp[i].ProID === item.ProID)
-                                {
-                                    TempProcess.push(item);
-                                }
-                            }
-                        }
-                        else {
-                            if ((isMoney === true && isBrands === false) || (isMoney === false && isBrands === true)){
-                                for(i = 0; i < products.length; i++)
-                                {
-                                    if (products[i].ProID === item.ProID)
-                                    {
-                                        TempProcess.push(item);
-                                    }
-                                }
-                            }
-                            else {
-                                products.push(item);
-                            }
-                        }
-
-                    }
-                }
-
-            }
-        });
-        if (isBrands && isProcess){
-            products = TempProcess;
+                
+            });
         }
-        else{
-            if (isProcess){
-                products = Temp;
-            }
-        }
+
+
         total = products.length;
         products = products.slice((Number(page)-1)* config.PRODUCTS_PER_PAGE,Number(page)* config.PRODUCTS_PER_PAGE);
 
@@ -390,6 +362,70 @@ exports.searchProduct = function (req,res,next) {
         };
         res.render('_pageUser/Shop/index',vm);
     });
+}
+
+exports.searchNameProduct = function (req,res,next) {
+
+    if (req.method === 'POST') {
+        var Keyword = req.body.keyword;
+        var page = req.query.list;
+
+        if (!page) {
+            page = 1;
+        }
+        var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
+
+        var p0 = products.loadAll();
+        var p1 = products.loadAllBrands();
+
+        Promise.all([p0, p1]).then(([pTotal, Brands]) => {
+
+
+            var products = [];
+            var total;
+
+            //Search
+            pTotal.forEach(function (item, index) {
+                    if (item.ProName.toUpperCase().search(Keyword.toUpperCase()) >= 0) {
+                        products.push(item);
+                    }
+            });
+
+            total = products.length;
+            products = products.slice((Number(page) - 1) * config.PRODUCTS_PER_PAGE, Number(page) * config.PRODUCTS_PER_PAGE);
+
+            var nPages = total / config.PRODUCTS_PER_PAGE;
+            if (total % config.PRODUCTS_PER_PAGE > 0) {
+                nPages++;
+            }
+            var numbers = [];
+            for (i = 1; i <= nPages; i++) {
+                numbers.push({
+                    pagination: i,
+                    isCurPage: i === +page
+                });
+            }
+
+            var vm = {
+                products: products,
+                CountProduct: total,
+                noProducts: products.length === 0,
+                page_numbers: numbers,
+                next: Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
+                previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
+                brands: Brands,
+                body: req.body,
+                title: 'Shop',
+            };
+            res.render('_pageUser/Shop/index', vm);
+        });
+    }
+    else {
+        var vm = {
+            title: 'Error',
+        };
+        res.render('error', vm);
+    }
 }
 function isArray(arr) {
     return arr.constructor.toString().indexOf("Array") > -1;

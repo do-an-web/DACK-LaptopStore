@@ -14,6 +14,8 @@ var MySQLStore = require('express-mysql-session')(session);
 /*middle-wares*/
 var handleLayoutMDW = require('./middle-wares/handleLayout');
 var restrict = require('./middle-wares/restrict');
+var handle404MDW = require('./middle-wares/handle404');
+
 
 
 /*************************/
@@ -139,6 +141,8 @@ app.use('/', userRouter);
 app.use('/user', userController);
 app.use('/cart', cartController);
 app.use('/payment', paymentController);
+
+app.use(handle404MDW);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

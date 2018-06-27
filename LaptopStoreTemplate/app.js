@@ -21,7 +21,9 @@ var userRouter = require('./routes/user');
 var detailRouter = require('./routes/detail')
 
 var userController = require('./controller/userController');
-var cartController = require('./controller/cartController')
+var cartController = require('./controller/cartController');
+var paymentController = require('./controller/paymentController');
+
 /************************/
 var app = express();
 
@@ -138,6 +140,7 @@ app.use('/detail', detailRouter);
 
 app.use('/user', userController);
 app.use('/cart', cartController);
+app.use('/payment', paymentController);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

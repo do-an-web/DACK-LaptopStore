@@ -10,6 +10,10 @@ exports.loadAllBrands = () => {
     var sql = 'select * from categories';
     return db.load(sql);
 }
+exports.getIDBrandsByCatName = (CatName) => {
+    var sql = `select * from categories where CatName = '${CatName}'`;
+    return db.load(sql);
+}
 exports.loadSameBrandsByCat = (catId) => {
     var sql = `select * from products where CatId = ${catId} limit 6 offset 0`;
     return db.load(sql);
@@ -35,7 +39,6 @@ exports.countByCatBrands = (catId) => {
     return db.load(sql);
 }
 exports.countByCatNameBrands = (CatName) => {
-    console.log("Cat Name : " + CatName);
     var sql = `select count(*) as total from products where factory = '${CatName}'`;
     return db.load(sql);
 }

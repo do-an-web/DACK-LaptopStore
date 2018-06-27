@@ -5,40 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/adminControllers/productController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/cartController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repos/adminRepos/productRepo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repos/userRepos/cartRepo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/error/index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/add.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/byCat - Copy.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/byCat.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/detail.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/edit.hbs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/_layouts/user.layout.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/profile.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/register.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/signin.hbs" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/repos/userRepo.js" afterPath="$PROJECT_DIR$/repos/userRepos/userRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LaptopOnline.sql" afterPath="$PROJECT_DIR$/../LaptopOnline.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/products.controller.js" afterPath="$PROJECT_DIR$/controller/products.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/middle-wares/handleLayout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" afterPath="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" afterPath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.js.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/products.model.js" afterPath="$PROJECT_DIR$/model/products.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs" afterPath="$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.js.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,128 +29,60 @@
       <file leaf-file-name="products.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+            <state relative-caret-position="353">
+              <caret line="134" column="36" lean-forward="false" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
               <folding>
                 <element signature="e#294#1762#0" expanded="false" />
                 <element signature="e#1813#2979#0" expanded="false" />
-                <element signature="e#6732#11901#0" expanded="false" />
+                <element signature="e#3034#3442#0" expanded="false" />
+                <element signature="e#5238#6909#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/userController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="-48">
               <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.layout.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2496">
-              <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
-              <folding>
-                <marker date="1530065446013" expanded="true" signature="1877:1969" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7210" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7245" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7276" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7303" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7326" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7345" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7360" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7172:7371" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7461:11458" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7491:11443" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7593:11401" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7701:10781" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="7815:8063" ph="..." />
-                <marker date="1530065446013" expanded="false" signature="8007:8013" ph=" " />
-                <marker date="1530065446013" expanded="true" signature="8114:10750" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8167:8262" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8315:9538" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8453:9500" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8498:8631" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8676:8792" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="8837:8957" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9002:9122" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9167:9287" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9332:9456" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9591:10716" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9740:10678" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9785:9925" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="9970:10100" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="10145:10275" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="10320:10450" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="10495:10636" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="10898:11373" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11008:11342" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11066:11307" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11517:14028" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11549:14017" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11579:14002" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11613:13983" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11666:13960" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11722:11977" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="11768:11946" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="12028:13479" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="12097:12728" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="12251:12694" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="12797:13449" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="12951:13415" ph="..." />
-                <marker date="1530065446013" expanded="true" signature="13531:13933" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoriteLaptops.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
+            <state relative-caret-position="169">
+              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SellersProducts.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs">
+      <file leaf-file-name="signin.css.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="100" lean-forward="false" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="100" />
+            <state relative-caret-position="224">
+              <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewProducts.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="52" column="124" lean-forward="false" selection-start-line="52" selection-start-column="124" selection-end-line="52" selection-end-column="124" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="108" column="113" lean-forward="false" selection-start-line="108" selection-start-column="113" selection-end-line="108" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cartController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+      <file leaf-file-name="signin.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -189,18 +94,18 @@
       <file leaf-file-name="products.model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/products.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="64">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="336">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -210,11 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>best_sellers</find>
-      <find>bestsellers_item</find>
-      <find>bestsellers_name</find>
-      <find>Home</find>
-      <find>.bestsellers_price</find>
       <find>186</find>
       <find>.product_image img</find>
       <find>src=&quot;</find>
@@ -230,7 +130,6 @@
       <find>amount</find>
       <find>product.</find>
       <find>countByCat</find>
-      <find>console</find>
       <find>conso</find>
       <find>home</find>
       <find>colo</find>
@@ -240,6 +139,12 @@
       <find>product</find>
       <find>href</find>
       <find>VND</find>
+      <find>get`</find>
+      <find>loadAllBrandsByCatName</find>
+      <find>loadAllBrands</find>
+      <find>countByCatNameBrands</find>
+      <find>console</find>
+      <find>loadAllByCatName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/signUp.js" />
         <option value="$PROJECT_DIR$/views/_layouts/user.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" />
         <option value="$PROJECT_DIR$/model/products.js" />
@@ -268,7 +172,6 @@
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Payment/Payment.js.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.css.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.js.hbs" />
-        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.js.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs" />
@@ -286,19 +189,21 @@
         <option value="$PROJECT_DIR$/public/Client/js/shop_custom.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/fn/db.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
-        <option value="$PROJECT_DIR$/model/products.model.js" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
-        <option value="$PROJECT_DIR$/controller/products.controller.js" />
         <option value="$PROJECT_DIR$/controller/userController.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/model/products.model.js" />
+        <option value="$PROJECT_DIR$/controller/products.controller.js" />
+        <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" />
+        <option value="$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs" />
       </list>
     </option>
   </component>
@@ -431,81 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partialsUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partialsUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Detail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="SignIn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,25 +376,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Detail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaptopStoreTemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="SignIn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -788,15 +601,15 @@
       <workItem from="1529906690195" duration="17547000" />
       <workItem from="1529938762829" duration="30322000" />
       <workItem from="1530029368404" duration="190000" />
-      <workItem from="1530064030614" duration="697000" />
+      <workItem from="1530064030614" duration="7233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167329000" />
+    <option name="totallyTimeSpent" value="173865000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -850,41 +663,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/UserHistory/userhistory.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/UserHistory/userhistory.js.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/UserHistoryDetail/userhistorydetail.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -917,13 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="19" column="124" lean-forward="false" selection-start-line="19" selection-start-column="124" selection-end-line="19" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1040,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user/signin.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1090,13 +854,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/detail.js" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="146" column="43" lean-forward="false" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1115,14 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/products.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,14 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="24" column="99" lean-forward="false" selection-start-line="24" selection-start-column="99" selection-end-line="24" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1215,6 +956,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1223,7 +972,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/adminControllers/categoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/products.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="134" column="36" lean-forward="false" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
+          <folding>
+            <element signature="e#294#1762#0" expanded="false" />
+            <element signature="e#1813#2979#0" expanded="false" />
+            <element signature="e#3034#3442#0" expanded="false" />
+            <element signature="e#5238#6909#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1231,22 +1033,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
+    <entry file="file://$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
-          <folding>
-            <element signature="e#294#1762#0" expanded="false" />
-            <element signature="e#1813#2979#0" expanded="false" />
-            <element signature="e#6732#11901#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="-48">
           <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
       </provider>

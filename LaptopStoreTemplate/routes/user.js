@@ -9,9 +9,9 @@ router.get('/shop',products.getAllProducts);
 
 router.get('/shop/search',products.searchProduct);
 
-router.get('/shop/:CatName',products.getAllCat);
+router.get('/shop/:CatName',products.getAllProductsForBrands);
 
-router.get('/shop/process/:Process',products.getAllProcess);
+router.get('/shop/process/:Process',products.getAllProductForProcess);
 
 router.post('/shop/search',products.searchProduct);
 

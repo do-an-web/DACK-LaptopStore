@@ -18,7 +18,6 @@ var restrict = require('./middle-wares/restrict');
 
 /*************************/
 var userRouter = require('./routes/user');
-var detailRouter = require('./routes/detail')
 
 var userController = require('./controller/userController');
 var cartController = require('./controller/cartController')
@@ -134,7 +133,6 @@ app.use(handleLayoutMDW);
 
 //User
 app.use('/', userRouter);
-app.use('/detail', detailRouter);
 
 app.use('/user', userController);
 app.use('/cart', cartController);

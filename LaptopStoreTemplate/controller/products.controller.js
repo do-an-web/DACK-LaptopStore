@@ -110,8 +110,7 @@ exports.getSingleProduct = function (req, res, next) {
     });
 }
 
-
-exports.searchProductType= function (req,res,next) {
+exports.getAllProductsForBrands= function (req,res,next) {
     var page = req.query.list;
     if (!page) {
         page = 1;
@@ -119,17 +118,25 @@ exports.searchProductType= function (req,res,next) {
     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
     var CatName = req.params.CatName;
-    var p1 = products.loadAllByCatName(CatName,offset);
-    var p2 = products.countByCatNameBrands(CatName);
-    var p3 = products.loadAllBrands();
 
-    Promise.all([p1, p2,p3]).then(([pRows, countRows,Brands]) => {
+    var p0 = products.getIDBrandsByCatName(CatName);
+    var p1 = products.loadAll();
+    var p2 = products.loadAllBrands();
+
+    Promise.all([p0,p1,p2]).then(([pIDBrand,pRows,Brands]) => {
 
         var products = [];
         var total = 0;
-        console.log("hello");
-        total = countRows[0].total;
-        products = pRows;
+        console.log("CatID :" + pIDBrand[0].CatID + "Brands : " + pIDBrand[0].CatName);
+        pRows.forEach(function (item) {
+            console.log("CatID :" + item.CatID);
+            if (item.CatID === pIDBrand[0].CatID)
+            {
+                products.push(item);
+            }
+        });
+        total = products.length;
+        products = products.slice((Number(page)-1)* config.PRODUCTS_PER_PAGE,Number(page)* config.PRODUCTS_PER_PAGE);
         var nPages = total / config.PRODUCTS_PER_PAGE;
         if (total % config.PRODUCTS_PER_PAGE > 0) {
             nPages++;
@@ -157,13 +164,11 @@ exports.searchProductType= function (req,res,next) {
 
 }
 
-exports.getAllProcess = function (req,res,next) {
+exports.getAllProductForProcess = function (req,res,next) {
 
     var process =  [];
 
     process.push(req.params.Process);
-
-    console.log("heello : " + req.params.Process);
 
     var page = req.query.list;
 
@@ -187,8 +192,6 @@ exports.getAllProcess = function (req,res,next) {
             if (process.length !== 0 ) {
                 for(i = 0; i < process.length; i++)
                 {
-                    //Error
-                    console.log(item.Detail);
                     if (item.Detail.search(process[i]) > 0) {
 
                         products.push(item);
@@ -306,7 +309,6 @@ exports.searchProduct = function (req,res,next) {
                             }
                         }
                         else {
-                            console.log(item.ProID);
                             products.push(item);
                         }
                     }

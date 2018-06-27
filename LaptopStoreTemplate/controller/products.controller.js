@@ -97,7 +97,6 @@ exports.getAllProducts = function (req,res,next) {
 
 exports.getSingleProduct = function (req, res, next) {
     var proID = req.params.proID;
-    
     products.single(proID).then(pRow => {
         products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{
             var vm = {
@@ -111,23 +110,24 @@ exports.getSingleProduct = function (req, res, next) {
     });
 }
 
-exports.searchProductType= function (req,res,next) {
 
+exports.searchProductType= function (req,res,next) {
     var page = req.query.list;
     if (!page) {
         page = 1;
     }
     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
-    var CatID = req.params.CatID;
-    var p1 = products.loadAllByCat(CatID,offset);
-    var p2 = products.countByCatBrands(CatID);
+    var CatName = req.params.CatName;
+    var p1 = products.loadAllByCatName(CatName,offset);
+    var p2 = products.countByCatNameBrands(CatName);
     var p3 = products.loadAllBrands();
 
     Promise.all([p1, p2,p3]).then(([pRows, countRows,Brands]) => {
 
         var products = [];
         var total = 0;
+        console.log("hello");
         total = countRows[0].total;
         products = pRows;
         var nPages = total / config.PRODUCTS_PER_PAGE;
@@ -155,6 +155,76 @@ exports.searchProductType= function (req,res,next) {
         res.render('_pageUser/Shop/index',vm);
     });
 
+}
+
+exports.getAllProcess = function (req,res,next) {
+
+    var process =  [];
+
+    process.push(req.params.Process);
+
+    console.log("heello : " + req.params.Process);
+
+    var page = req.query.list;
+
+    if (!page) {
+        page = 1;
+    }
+    var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
+
+    var p0 = products.loadAll();
+    var p1 = products.loadAllBrands();
+
+    Promise.all([p0,p1]).then(([pTotal,Brands]) => {
+
+
+        var products = [];
+          var total;
+
+
+        pTotal.forEach(function (item,index) {
+
+            if (process.length !== 0 ) {
+                for(i = 0; i < process.length; i++)
+                {
+                    //Error
+                    console.log(item.Detail);
+                    if (item.Detail.search(process[i]) > 0) {
+
+                        products.push(item);
+
+                    }
+                }
+
+            }
+        });
+        total = products.length;
+        products = products.slice((Number(page)-1)* config.PRODUCTS_PER_PAGE,Number(page)* config.PRODUCTS_PER_PAGE);
+
+        var nPages = total / config.PRODUCTS_PER_PAGE;
+        if (total % config.PRODUCTS_PER_PAGE > 0) {
+            nPages++;
+        }
+        var numbers = [];
+        for (i = 1; i <= nPages; i++) {
+            numbers.push({
+                pagination: i,
+                isCurPage: i === +page
+            });
+        }
+
+        var vm = {
+            products: products,
+            CountProduct: total,
+            noProducts: products.length === 0,
+            page_numbers: numbers,
+            next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
+            previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
+            brands : Brands,
+            title: 'Shop',
+        };
+        res.render('_pageUser/Shop/index',vm);
+    });
 }
 
 exports.searchProduct = function (req,res,next) {

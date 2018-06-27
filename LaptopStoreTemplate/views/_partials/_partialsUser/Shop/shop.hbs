@@ -24,18 +24,45 @@
                             <div class="sidebar_subtitle brands_subtitle">Brands</div>
                             <ul class="brands_list">
                                 {{#each brands}}
-                                    <li class="brand"><input type="checkbox" name="brands" value={{CatName}}><p>&nbsp;&nbsp;&nbsp;{{CatName}}</p></li>
+                                    <label class="check ">{{CatName}}
+                                        <input type="checkbox"  name="brands" value={{CatName}}>
+                                        <span class="checkmark"></span>
+                                    </label>
                                 {{/each}}
                             </ul>
                         </div>
                         <div class="sidebar_section form-group">
                             <div class="sidebar_subtitle system_subtitle">Process Type</div>
                             <ul class="process_list">
-                                <li class="process"><input type="checkbox" name="process" value="Celeron"><p>&nbsp; Intel Celeron</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i3"><p>&nbsp; Intel Core i3</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i5"><p>&nbsp; Intel Core i5</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i7"><p>&nbsp; Intel Core i7</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Pentium"><p>&nbsp; Intel Pentium</p><br></li>
+                                <li class="process">
+                                    <label class="check ">Intel Celeron
+                                        <input type="checkbox"  name="process" value="Celeron">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i3
+                                        <input type="checkbox"  name="process" value="i3">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i5
+                                        <input type="checkbox"  name="process" value="i5">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i7
+                                        <input type="checkbox"  name="process" value="i7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <label class="check">Intel Pentium
+                                    <input type="checkbox"  name="process" value="Pentium">
+                                    <span class="checkmark"></span>
+                                </label>
+                                </li>
                             </ul>
                         </div>
                         <input type="submit" value="Search" class="btn btn-primary pull-right">
@@ -65,29 +92,56 @@
                             <div class="sidebar_subtitle">Price</div>
 
                             <div class="input-group">
-                                <input type="text" class="form-control" name="money" id="value-start" placeholder="">
+                                <input type="number" class="input-money form-control" name="money" id="value-start" value="0" placeholder=""/>
                             </div>
                             <label for="validate-text">Between</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="money" id="value-finish" placeholder="">
+                                <input type="number" class="input-money form-control" name="money" id="value-finish" placeholder=""/>
                             </div>
                         </div>
                         <div class="sidebar_section form-group">
                             <div class="sidebar_subtitle brands_subtitle">Brands</div>
                             <ul class="brands_list">
                                 {{#each brands}}
-                                    <li class="brand"><input type="checkbox" name="brands" value={{CatName}}><p>&nbsp;&nbsp;&nbsp;{{CatName}}</p></li>
+                                    <label class="check ">{{CatName}}
+                                        <input type="checkbox"  name="brands" value={{CatName}}>
+                                        <span class="checkmark"></span>
+                                    </label>
                                 {{/each}}
                             </ul>
                         </div>
                         <div class="sidebar_section form-group">
                             <div class="sidebar_subtitle system_subtitle">Process Type</div>
                             <ul class="process_list">
-                                <li class="process"><input type="checkbox" name="process" value="Celeron"><p>&nbsp; Intel Celeron</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i3"><p>&nbsp; Intel Core i3</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i5"><p>&nbsp; Intel Core i5</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Core i7"><p>&nbsp; Intel Core i7</p><br></li>
-                                <li class="process"><input type="checkbox" name="process" value="Pentium"><p>&nbsp; Intel Pentium</p><br></li>
+                                <li class="process">
+                                    <label class="check ">Intel Celeron
+                                        <input type="checkbox"  name="process" value="Celeron">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i3
+                                        <input type="checkbox"  name="process" value="i3">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i5
+                                        <input type="checkbox"  name="process" value="i5">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li class="process">
+                                    <label class="check ">Intel Core i7
+                                        <input type="checkbox"  name="process" value="i7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                    <label class="check">Intel Pentium
+                                        <input type="checkbox"  name="process" value="Pentium">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
                             </ul>
                         </div>
                         <input type="submit" value="Search" class="btn btn-primary pull-right">
@@ -151,7 +205,7 @@
                                 <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="/images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
                                 <div class="product_content">
                                     <div class="product_price">{{number_format Price}}</div>
-                                    <div class="product_name"><div><a href="./product.html">{{ProName}}</a></div></div>
+                                    <div class="product_name"><div><a href="/detail/{{ProID}}">{{ProName}}</a></div></div>
                                 </div>
                                 <div class="product_fav"><i class="fas fa-heart"></i></div>
                             </div>

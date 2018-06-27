@@ -1,0 +1,61 @@
+{{#section 'title'}}
+	<li class="breadcrumb-item active">
+   	 <a href="/category">Category</a>
+  	</li>
+	<li class="breadcrumb-item active">
+	  <a href="#">Edit Category</a>
+	</li>
+{{/section}}
+
+{{#with Product}}
+<form action="" method="POST" role="form">
+	<div class="form-group">
+		<label for="">ID</label>
+		<input type="text" class="form-control" id="" name="ProID" value="{{ProID}}" readonly>
+	</div>
+	<div class="form-group">
+		<label for="">Product Name</label>
+		<input type="text" class="form-control" id="" name="ProName" value="{{ProName}}">
+	</div>
+	<div class="form-group">
+		<label for="">Factory</label>
+		<input type="text" class="form-control" id="" name="Factory" value="{{Factory}}">
+	</div>
+	<div class="form-group">
+		<label for="">Overview</label>
+		<textarea class="form-control" name="Overview" rows="5" cols="30">{{Overview}}</textarea>
+	</div>
+	<div class="form-group">
+		<label for="">Detail</label>
+		<textarea class="form-control" name="Detail" rows="10" cols="30">{{Detail}}</textarea>
+	</div>
+	<div class="form-group">
+		<label for="">Price</label>
+		<input type="text" class="form-control" id="" name="Price" value="{{Price}}">
+	</div>
+	<div class="form-group">
+		<label for="">Category</label>
+		<input type="text" class="form-control" id="" name="CatID" value="{{CatID}}">
+	</div>
+	<div class="form-group">
+		<label for="">Quantity</label>
+		<input type="text" class="form-control" id="" name="Quantity" value="{{Quantity}}">
+	</div>
+	<div class="form-group">
+		<label for="">Views</label>
+		<input type="text" class="form-control" id="" name="Views" value="{{Views}}">
+	</div>
+	<div class="form-group">
+		<label for="">Image</label>
+		<input type="text" class="form-control" id="" name="Image" value="{{Image}}">
+	</div>
+	<a class="btn btn-default" href="/category" role="button">
+		<span class="glyphicon glyphicon-arrow-left"></span>
+		View List
+	</a>
+	<button type="submit" class="btn btn-primary">
+		<span class="glyphicon glyphicon-save"></span>
+		Update
+	</button>
+</form>
+{{/with}}

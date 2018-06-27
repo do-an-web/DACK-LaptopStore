@@ -34,24 +34,19 @@
                         <div class="top_bar_user">
                            
                                 {{#if layoutVM.isLogged}}
-                                <form id="frmLogout" action="/user/logout" method="post"></form>
-                                    <div>
-                                        <div class="user_icon"><img src="/images/user.svg" alt=""></div>
-                                        <div>
-
-                                            <div class="dropdown">
-                                               
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{layoutVM.curUser.f_Name}} <b class="caret"></b></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
-                                                    <li><a class="dropdown-item" id="lnkLogout" href="javascript:;">Logout</a></li>
-                                                </ul>
-
-                                            </div>
-                                         </div>
-                                        <div><a href="">Shopping Cart (0 items)</a></div>
+                                <form id="frmLogout" action="/user/logout" method="post">
+                                <div></div>
+                                <div></div>
+                                    <div class="user_icon"><img src="/images/user.svg" alt=""></div>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{layoutVM.curUser.f_Name}} <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
+                                            <li><a class="dropdown-item" id="lnkLogout" href="javascript:;">Logout</a></li>
+                                        </ul>
                                     </div>
-                        
+                                    {{!-- <div><a href="/cart">Shopping Cart(0 items)</a></div> --}}
+                                </form>
                                 {{else}}
                                     <div class="user_icon"><img src="/images/user.svg" alt=""></div>
                                     <div><a href="/user/register">Register</a></div>
@@ -119,12 +114,12 @@
                         <div class="cart">
                             <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                 <div class="cart_icon">
-                                    <img src="/ images/cart.png" alt="">
-                                    <div class="cart_count"><span>10</span></div>
+                                    <img src="/images/cart.png" alt="">
+                                    <div class="cart_count"><span>{{layoutVM.cartProducts}}</span></div>
                                 </div>
                                 <div class="cart_content">
-                                    <div class="cart_text"><a href="./sign_in.html">Cart</a></div>
-                                    <div class="cart_price">$85</div>
+                                    <div class="cart_text"><a href="/cart">Cart</a></div>
+                                    {{!-- <div class="cart_price">$85</div> --}}
                                 </div>
                             </div>
                         </div>

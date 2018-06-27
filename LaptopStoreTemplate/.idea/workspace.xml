@@ -5,19 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/detail.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/adminControllers/productController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/cartController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repos/adminRepos/productRepo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repos/userRepos/cartRepo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/error/index.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/add.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/byCat - Copy.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/byCat.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/detail.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/product/edit.hbs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/_layouts/user.layout.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/profile.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/register.hbs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/signin.hbs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/repos/userRepo.js" afterPath="$PROJECT_DIR$/repos/userRepos/userRepo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LaptopOnline.sql" afterPath="$PROJECT_DIR$/../LaptopOnline.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/products.controller.js" afterPath="$PROJECT_DIR$/controller/products.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/products.model.js" afterPath="$PROJECT_DIR$/model/products.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/middle-wares/handleLayout.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" afterPath="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" afterPath="$PROJECT_DIR$/views/_pageUser/SignUp/index.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" afterPath="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Cart/cart.js.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Home/SellersProducts.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.css.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignIn/signin.js.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.css.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,15 +56,23 @@
       <file leaf-file-name="products.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="193" column="44" lean-forward="false" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+            <state relative-caret-position="288">
+              <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
               <folding>
                 <element signature="e#294#1762#0" expanded="false" />
                 <element signature="e#1813#2979#0" expanded="false" />
-                <element signature="e#3034#3468#0" expanded="false" />
-                <element signature="e#3513#4853#0" expanded="false" />
-                <element signature="e#6750#11919#0" expanded="false" />
+                <element signature="e#6732#11901#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/userController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,9 +80,58 @@
       <file leaf-file-name="header.layout.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2576">
-              <caret line="161" column="66" lean-forward="false" selection-start-line="161" selection-start-column="66" selection-end-line="161" selection-end-column="66" />
-              <folding />
+            <state relative-caret-position="2496">
+              <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
+              <folding>
+                <marker date="1530065446013" expanded="true" signature="1877:1969" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7210" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7245" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7276" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7303" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7326" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7345" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7360" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7172:7371" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7461:11458" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7491:11443" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7593:11401" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7701:10781" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="7815:8063" ph="..." />
+                <marker date="1530065446013" expanded="false" signature="8007:8013" ph=" " />
+                <marker date="1530065446013" expanded="true" signature="8114:10750" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8167:8262" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8315:9538" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8453:9500" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8498:8631" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8676:8792" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="8837:8957" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9002:9122" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9167:9287" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9332:9456" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9591:10716" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9740:10678" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9785:9925" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="9970:10100" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="10145:10275" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="10320:10450" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="10495:10636" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="10898:11373" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11008:11342" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11066:11307" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11517:14028" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11549:14017" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11579:14002" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11613:13983" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11666:13960" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11722:11977" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="11768:11946" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="12028:13479" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="12097:12728" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="12251:12694" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="12797:13449" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="12951:13415" ph="..." />
+                <marker date="1530065446013" expanded="true" signature="13531:13933" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,11 +166,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shop.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="266">
               <caret line="108" column="113" lean-forward="false" selection-start-line="108" selection-start-column="113" selection-end-line="108" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cartController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,7 +288,6 @@
         <option value="$PROJECT_DIR$/fn/db.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/controller/userController.js" />
         <option value="$PROJECT_DIR$/views/_layouts/main.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
         <option value="$PROJECT_DIR$/model/products.model.js" />
@@ -208,9 +295,10 @@
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/NewProducts.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Home/FavoriteLaptops.hbs" />
         <option value="$PROJECT_DIR$/routes/user.js" />
-        <option value="$PROJECT_DIR$/controller/products.controller.js" />
         <option value="$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs" />
+        <option value="$PROJECT_DIR$/controller/products.controller.js" />
+        <option value="$PROJECT_DIR$/controller/userController.js" />
       </list>
     </option>
   </component>
@@ -700,12 +788,12 @@
       <workItem from="1529906690195" duration="17547000" />
       <workItem from="1529938762829" duration="30322000" />
       <workItem from="1530029368404" duration="190000" />
-      <workItem from="1530064030614" duration="599000" />
+      <workItem from="1530064030614" duration="697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167231000" />
+    <option name="totallyTimeSpent" value="167329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -762,13 +850,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/SignUp/signup.js.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1009,13 +1090,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/detail.js" />
-    <entry file="file://$PROJECT_DIR$/controller/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1084,32 +1158,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="193" column="44" lean-forward="false" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
-          <folding>
-            <element signature="e#294#1762#0" expanded="false" />
-            <element signature="e#1813#2979#0" expanded="false" />
-            <element signature="e#3034#3468#0" expanded="false" />
-            <element signature="e#3513#4853#0" expanded="false" />
-            <element signature="e#6750#11919#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_layouts/header.layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2576">
-          <caret line="161" column="66" lean-forward="false" selection-start-line="161" selection-start-column="66" selection-end-line="161" selection-end-column="66" />
-          <folding />
+        <state relative-caret-position="2496">
+          <caret line="156" column="66" lean-forward="false" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
+          <folding>
+            <marker date="1530065446013" expanded="true" signature="1877:1969" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7210" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7245" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7276" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7303" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7326" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7345" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7360" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7172:7371" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7461:11458" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7491:11443" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7593:11401" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7701:10781" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="7815:8063" ph="..." />
+            <marker date="1530065446013" expanded="false" signature="8007:8013" ph=" " />
+            <marker date="1530065446013" expanded="true" signature="8114:10750" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8167:8262" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8315:9538" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8453:9500" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8498:8631" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8676:8792" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="8837:8957" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9002:9122" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9167:9287" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9332:9456" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9591:10716" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9740:10678" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9785:9925" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="9970:10100" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="10145:10275" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="10320:10450" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="10495:10636" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="10898:11373" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11008:11342" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11066:11307" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11517:14028" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11549:14017" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11579:14002" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11613:13983" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11666:13960" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11722:11977" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="11768:11946" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="12028:13479" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="12097:12728" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="12251:12694" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="12797:13449" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="12951:13415" ph="..." />
+            <marker date="1530065446013" expanded="true" signature="13531:13933" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/_partials/_partialsUser/Shop/shop.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="266">
           <caret line="108" column="113" lean-forward="false" selection-start-line="108" selection-start-column="113" selection-end-line="108" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="113" column="52" lean-forward="false" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+          <folding>
+            <element signature="e#294#1762#0" expanded="false" />
+            <element signature="e#1813#2979#0" expanded="false" />
+            <element signature="e#6732#11901#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>

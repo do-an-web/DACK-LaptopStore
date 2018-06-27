@@ -1,36 +1,46 @@
 <div class="cart_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 offset-lg-1">
+            <div class="col-lg-12">
                 <div class="cart_container">
-                    <div class="cart_title">Shopping Cart</div>
+                    <div class="cart_title">Your Shopping Cart</div>
                     <div class="cart_items">
                         <ul class="cart_list">
-                            <li class="cart_item clearfix">
-                                <div class="cart_item_image"><img src="images/shopping_cart.jpg" alt=""></div>
-                                <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
-                                    <div class="cart_item_name cart_info_col">
-                                        <div class="cart_item_title">Name</div>
-                                        <div class="cart_item_text">MacBook Air 13</div>
+                            {{#each items}}
+                                <li class="cart_item clearfix">
+                                    <div class="cart_item_image"><img src="/images_product/{{Product.ProID}}/{{Product.ProID}}.jpg" alt=""></div>
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Name</div>
+                                            <div class="cart_item_text">{{Product.ProName}}</div>
+                                        </div>
+                                        <div class="cart_item_color cart_info_col">
+                                            <div class="cart_item_title">Color</div>
+                                            <div class="cart_item_text"><span style="background-color:#999999;"></span>Silver</div>
+                                        </div>
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Quantity</div>
+                                            <div class="cart_item_text">{{Quantity}}</div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Price</div>
+                                            <div class="cart_item_text">{{number_format Product.Price}}</div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">Total</div>
+                                            <div class="cart_item_text">{{number_format Amount}}</div>
+                                        </div>
+                                        <div class="cart_info_col">
+                                            <form id="frmRemoveItem" method="POST" action="/cart/remove">
+			                                    <input id="txtProId_R" name="ProId" type="hidden" value="{{Product.ProID}}">
+		                                    </form>
+                                            
+                                            <div class="cart_item_text removeItem" style="margin-top:55px;cursor: pointer" ><i class="far fa-trash-alt"></i></div>
+                                            
+                                        </div>
                                     </div>
-                                    <div class="cart_item_color cart_info_col">
-                                        <div class="cart_item_title">Color</div>
-                                        <div class="cart_item_text"><span style="background-color:#999999;"></span>Silver</div>
-                                    </div>
-                                    <div class="cart_item_quantity cart_info_col">
-                                        <div class="cart_item_title">Quantity</div>
-                                        <div class="cart_item_text">1</div>
-                                    </div>
-                                    <div class="cart_item_price cart_info_col">
-                                        <div class="cart_item_title">Price</div>
-                                        <div class="cart_item_text">$2000</div>
-                                    </div>
-                                    <div class="cart_item_total cart_info_col">
-                                        <div class="cart_item_title">Total</div>
-                                        <div class="cart_item_text">$2000</div>
-                                    </div>
-                                </div>
-                            </li>
+                                </li>
+                            {{/each}}
                         </ul>
                     </div>
 
@@ -38,7 +48,7 @@
                     <div class="order_total">
                         <div class="order_total_content text-md-right">
                             <div class="order_total_title">Order Total:</div>
-                            <div class="order_total_amount">$2000</div>
+                            <div class="order_total_amount">{{number_format totalAmount}}</div>
                         </div>
                     </div>
 

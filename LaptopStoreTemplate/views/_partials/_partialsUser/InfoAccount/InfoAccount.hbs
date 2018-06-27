@@ -23,6 +23,93 @@
         <div class="col-9" >
             <h3 style="font-weight:lighter;">Account infomations</h3>
             <br>
+             <form action = "/user/edit" method = "POST">
+            <div >
+            {{#if layoutVM.isLogged}}
+                <div class="form-group">
+
+                    <label class="person-info">
+                        Personal
+                    </label>
+                    <hr style="margin-top: 0;">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-3">
+                                Full Name
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="txtName" class="form-control" value={{layoutVM.curUser.f_Name}} name="name">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <br>
+                 
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <div class="col-3">
+                                Birthday
+                            </div>
+
+                            <div class="col-9">
+                                <!-- <input type="date" class="form-control" placeholder={{layoutVM.curUser.f_DOB}} style="color: #555;"> -->
+                                <input type="text" class="form-control" value={{birth}} name="dob">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="col-3">Email</div>
+                        <div class="col-9">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value= {{layoutVM.curUser.f_Email}}  name="email">
+                        </div>
+                    </div>
+
+                </div>
+       
+       			<br>
+                <div class="form-group row">
+                  
+                        <button type="submit" class="btn btn-primary" style="margin-left: 30px;">Update</button>
+                   
+                </div>
+            </div>
+             </form>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{!-- <div>
+    <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
+        <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Account</li>
+    </ol>
+</div>
+
+<br>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-3">
+
+            <div class="list-group-flush" style="margin-top: 55px;">
+
+                <a href="#" class="list-group-item list-group-item-action active">Account infomations</a>
+                <a href="./history.html" class="list-group-item list-group-item-action">Your Histories</a>
+
+            </div>
+        </div>
+
+        <div class="col-9" >
+            <h3 style="font-weight:lighter;">Account infomations</h3>
+            <br>
             <div >
 
                 <div class="form-group">
@@ -148,4 +235,4 @@
 
         </div>
     </div>
-</div>
+</div> --}}

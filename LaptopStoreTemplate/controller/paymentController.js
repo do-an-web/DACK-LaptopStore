@@ -77,7 +77,7 @@ router.post('/order', (req, res) => {
                     paymentRepo.addOrderDetail(details[i]);
                 }
             });
-            res.redirect("/");
+            res.redirect("/user/history");
         });
     });
 });

@@ -50,8 +50,6 @@ router.post('/add', (req, res) => {
 });
 
 router.post('/remove', (req, res) => {
-    console.log(req.body.ProId);
-    
     cartRepo.remove(req.session.cart, req.body.ProId);
     
     res.redirect(req.headers.referer);

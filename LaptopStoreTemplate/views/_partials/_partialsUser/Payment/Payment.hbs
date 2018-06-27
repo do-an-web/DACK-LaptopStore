@@ -57,8 +57,10 @@
 
 
             <div style="margin-top: 50px;">
-
-                <a href="./order_detail.html" type="button" class="btn btn-danger btn-lg btn-block ">Order</a>
+                <form id="frmOrderItem" method="POST" action="/payment/order">
+			        <input id="txtTotal_R" name="Total" type="hidden" value="{{totalAmount}}">
+		        </form>
+                <div type="button" class="btn btn-danger btn-lg btn-block orderItem">Order</div>
             </div>
         </div>
 
@@ -79,9 +81,9 @@
 
                     <hr>
 
-                    <h6 class="card-subtitle mb-2 text-muted">Viet Duong</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{layoutVM.curUser.f_Name}}</h6>
                     <p class="card-text">
-                        114/24 alley, De Tham street, disct 1 of Ho Chi Minh City, Viet Nam.
+                        {{layoutVM.curUser.f_Email}}
                     </p>
                 </div>
             </div>
@@ -92,34 +94,34 @@
                     <div class="row">
                         <div class="col-8" style="padding-top: 10px;">
                             <h5 class="card-title">
-                                Order(1 item)
+                                Order({{layoutVM.cartProducts}} item)
                             </h5>
                         </div>
                         <div class="col-4">
-                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary" onclick="javascript:location.href='/cart'">Edit</button>
                         </div>
                     </div>
 
                     <hr>
-
+                    {{#each items}}
                     <div class="row card-text">
                         <div class="col-8">
-                            1 x MacBook Pro 2018
+                            {{Quantity}} x {{Product.ProName}}
                         </div>
                         <div class="col-4">
-                            $1000
+                            {{number_format Amount}}
                         </div>
                     </div>
                     <hr>
-                    <div class="row card-text">
+                    {{!-- <div class="row card-text">
                         <div class="col-8">
                             Price
                         </div>
                         <div class="col-4">
-                            $1000
+                            {{number_format Amount}}
                         </div>
-                    </div>
-
+                    </div> --}}
+                    {{/each}}
                     <div class="row card-text">
                         <div class="col-8">
                             Delivery fee
@@ -129,13 +131,14 @@
                         </div>
                     </div>
                     <hr>
+                    
                     <div class="row card-text">
                         <div class="col-8">
                             <b> Sum</b>
 
                         </div>
                         <div class="col-4" style="color: red;">
-                            <b>  $1020</b>
+                            <b>{{number_format totalAmount}}</b>
 
                         </div>
                     </div>

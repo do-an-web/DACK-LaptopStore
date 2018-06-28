@@ -20,6 +20,7 @@ router.get('/', restrict, (req, res) => {
             var pro = result[i][0];
             var item = {
                 Product: pro,
+                ProID: pro.ProID,
                 Quantity: req.session.cart[i].Quantity,
                 Amount: pro.Price * req.session.cart[i].Quantity
             };
@@ -32,6 +33,7 @@ router.get('/', restrict, (req, res) => {
         var vm = {
             items: items,
             totalAmount: total,
+            ProID: item.ProID,
             title: "Cart"
         };
         res.render('_pageUser/Cart/index',vm);
@@ -39,10 +41,14 @@ router.get('/', restrict, (req, res) => {
 });
 
 router.post('/add', (req, res) => {
-
+    var amount = 0;
+    if (req.body.quantity === undefined)
+        amount = 1;
+    else
+        amount = req.body.quantity;
     var item = {
         ProId: req.body.proId,
-        Quantity: +req.body.quantity
+        Quantity: +amount
     };
     cartRepo.add(req.session.cart, item);
     
@@ -50,7 +56,8 @@ router.post('/add', (req, res) => {
 });
 
 router.post('/remove', (req, res) => {
-    cartRepo.remove(req.session.cart, req.body.ProId);
+    // console.log("Body : " + req.body);
+    cartRepo.remove(req.session.cart, req.body.ProID);
     
     res.redirect(req.headers.referer);
 });

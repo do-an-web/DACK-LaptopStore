@@ -7,7 +7,7 @@ exports.load = sql => {
             host: 'localhost',
             port: 3306,
             user: 'root',
-            password: '',
+            password: 'root',
             database: 'laptoponline'
         });
         cn.connect(function(err) {
@@ -32,7 +32,7 @@ exports.save = sql => {
             host: 'localhost',
             port: 3306,
             user: 'root',
-            password: '',
+            password: 'root',
             database: 'laptoponline'
         });
 

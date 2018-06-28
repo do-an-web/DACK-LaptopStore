@@ -1,41 +1,59 @@
-
-<div class="sider-account">
-    <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
-        <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Account</li>
-        <li class="breadcrumb-item active" aria-current="page">Histories</li>
-    </ol>
-</div>
-
 <br>
-<div class="content-history">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-3">
-
-                <div class="list-group-flush" style="margin-top: 55px;">
-
-                    <a href="/user/profile" class="list-group-item list-group-item-action">Account infomations</a>
-                    <a href="/user/history" class="list-group-item list-group-item-action active">Your Histories</a>
-
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-3" style="background-color: #9898b9">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img src="/assets/account.png" alt="">
                 </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        {{layoutVM.curUser.f_Username}}
+                    </div>
+                    <div class="profile-usertitle-job">
+                        {{layoutVM.curUser.f_Name}}
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR BUTTONS -->
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm">Follow</button>
+                    <button type="button" class="btn btn-danger btn-sm">Message</button>
+                </div>
+                <!-- END SIDEBAR BUTTONS -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li id="nav-element1">
+                            <a class="tablinks" href="#" onclick="OpenTabs(event,'Overview')">
+                                <i class="fa fa-home" aria-hidden="true"></i></i>
+                                Overview </a>
+                        </li>
+                        <li id="nav-element2">
+                            <a class="tablinks" href="/user/profile" onclick="OpenTabs(event,'Information')">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i></i>
+                                Account Information </a>
+                        </li>
+                        <li id="nav-element3" class="nav-element active">
+                            <a class="tablinks" href="/user/history" onclick="OpenTabs(event,'Histories')">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i></i>
+                                Histories </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
             </div>
-
-            <div class="col-9" >
+        </div>
+        <div id="Overview" class="col-md-9 tabcontent" style="display: none">
+            <div class="profile-content">
+                Overview Account
+            </div>
+        </div>
+        <div id="Histories" class="col-md-9 tabcontent" style="display: block">
+            <div class="profile-content">
                 <div class="row">
                     <div class="col-9">
                         <h3 style="font-weight:lighter;">Histories</h3>
-                    </div>
-
-                    <div class="col-1 form-check form-check-inline">
-                        <input class="form-check-input" onchange="sortNewest()" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
-                        <label class="form-check-label" for="inlineRadio1">Newest</label>
-                    </div>
-                    <div class="col-1 form-check form-check-inline">
-                        <input class="form-check-input" onchange="sortOldest()" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Oldest</label>
                     </div>
                 </div>
 
@@ -52,78 +70,34 @@
                     </thead>
                     <tbody>
                     {{#each orders}}
-                    <tr>
-                        <td><a href="/user/history_detail/{{OrderID}}">#{{OrderID}}</a></th></td>
-                        <td>{{OrderDate}}</td>
-                        <td>{{ProName}}</td>
-                        <td>{{number_format Total}}</td>
-                    </tr>
+                        <tr>
+                            <td><a href="/user/history_detail/{{OrderID}}">#{{OrderID}}</a></th></td>
+                            <td>{{OrderDate}}</td>
+                            <td>{{ProName}}</td>
+                            <td>{{number_format Total}}</td>
+                        </tr>
                     {{/each}}
-                    {{!-- <tr>
-                        <td><a href="./order_detail.html">857164483</a></th></td>
-                        <td>04/03/2018</td>
-                        <td>HP 15 inch</td>
-                        <td>$6000</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="./order_detail.html">213213123</a></th></td>
-                        <td>01/11/2018</td>
-                        <td>Macbook Air 13</td>
-                        <td>$1010</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order_detail.html">435454354</a></th></td>
-                        <td>06/12/2017</td>
-                        <td>Dell 5547</td>
-                        <td>$7000</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order_detail.html">565464645</a></th></td>
-                        <td>08/04/2000</td>
-                        <td>Samsung</td>
-                        <td>$4000</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order_detail.html">654765645</a></th></td>
-                        <td>06/05/2018</td>
-                        <td>Thinkpad</td>
-                        <td>$2200</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order_detail.html">657543345</a></th></td>
-                        <td>01/04/2014</td>
-                        <td>Macbook Air 13</td>
-                        <td>$1300</td>
-                    </tr>
-                    <tr>
-                        <td><a href="./order_detail.html">656434756</a></th></td>
-                        <td>06/09/2018</td>
-                        <td>Macbook Pro</td>
-                        <td>$2000</td>
-                    </tr> --}}
-
-
                     </tbody>
                 </table>
                 <div >
                     <nav aria-label="...">
                         <ul class="pagination justify-content-end">
+                            {{#each page_numbers}}
+                                {{#if isCurPage}}
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:;">{{pagination}}</a>
+                                    </li>
+                                {{else}}
+                                    <li class="page-item"><a class="page-link" href="?list={{pagination}}">{{pagination}}</a></li>
 
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-
+                                {{/if}}
+                            {{/each}}
                         </ul>
                     </nav>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </div>
-
+<br>
+<br>

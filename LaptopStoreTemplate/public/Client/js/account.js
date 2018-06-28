@@ -16,6 +16,7 @@ function sortOldest() {
   var rows = [].slice.call(tbody.querySelectorAll("tr"));
   
   rows.sort(function(a,b) {
+      console.log(a.cells[1].innerHTML);
     return convertDate(a.cells[1].innerHTML) - convertDate(b.cells[1].innerHTML);
   });
   
@@ -32,6 +33,7 @@ function sortNewest() {
   var rows = [].slice.call(tbody.querySelectorAll("tr"));
   
   rows.sort(function(b,a) {
+      console.log(a.cells[1].innerHTML);
     return convertDate(a.cells[1].innerHTML) - convertDate(b.cells[1].innerHTML);
   });
   

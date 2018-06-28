@@ -1,93 +1,4 @@
-<div>
-    <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
-        <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Account</li>
-    </ol>
-</div>
-
 <br>
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-3">
-
-            <div class="list-group-flush" style="margin-top: 55px;">
-
-                <a href="/user/profile" class="list-group-item list-group-item-action active">Account infomations</a>
-                <a href="/user/history" class="list-group-item list-group-item-action">Your Histories</a>
-
-            </div>
-        </div>
-
-        <div class="col-9" >
-            <h3 style="font-weight:lighter;">Account infomations</h3>
-            <br>
-             <form action = "/user/edit" method = "POST">
-            <div >
-            {{#if layoutVM.isLogged}}
-                <div class="form-group">
-
-                    <label class="person-info">
-                        Personal
-                    </label>
-                    <hr style="margin-top: 0;">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="col-3">
-                                Full Name
-                            </div>
-                            <div class="col-9">
-                                <input type="text" id="txtName" class="form-control" value={{layoutVM.curUser.f_Name}} name="name">
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <br>
-                 
-                    <div class="row">
-                        
-                        <div class="col-12">
-                            <div class="col-3">
-                                Birthday
-                            </div>
-
-                            <div class="col-9">
-                                <!-- <input type="date" class="form-control" placeholder={{layoutVM.curUser.f_DOB}} style="color: #555;"> -->
-                                <input type="text" class="form-control" value={{birth}} name="dob">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="col-3">Email</div>
-                        <div class="col-9">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value= {{layoutVM.curUser.f_Email}}  name="email">
-                        </div>
-                    </div>
-
-                </div>
-       
-       			<br>
-                <div class="form-group row">
-                  
-                        <button type="submit" class="btn btn-primary" style="margin-left: 30px;">Update</button>
-                   
-                </div>
-            </div>
-             </form>
-            {{/if}}
-        </div>
-    </div>
-</div>
-
-
-
 <div class="container">
     <div class="row profile">
         <div class="col-md-3" style="background-color: #9898b9">
@@ -113,34 +24,95 @@
                 <!-- SIDEBAR MENU -->
                 <div class="profile-usermenu">
                     <ul class="nav">
-                        <li class="active">
-                            <a href="#">
-                                <i class="glyphicon glyphicon-home"></i>
+                        <li id="nav-element1">
+                            <a class="tablinks" href="#" onclick="OpenTabs(event,'Overview')">
+                                <i class="fa fa-home" aria-hidden="true"></i></i>
                                 Overview </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Account Settings </a>
+                        <li id="nav-element2" class="nav-element active">
+                            <a class="tablinks" href="/user/profile" onclick="OpenTabs(event,'Information')">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i></i>
+                                Account Information </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <i class="glyphicon glyphicon-ok"></i>
-                                Tasks </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="glyphicon glyphicon-flag"></i>
-                                Help </a>
+                        <li id="nav-element3" >
+                            <a class="tablinks" href="/user/history" onclick="OpenTabs(event,'Histories')">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i></i>
+                                Histories </a>
                         </li>
                     </ul>
                 </div>
                 <!-- END MENU -->
             </div>
         </div>
-        <div class="col-md-9">
+        <div id="Overview" class="col-md-9 tabcontent" style="display: none">
             <div class="profile-content">
-                Some user related content goes here...
+                Overview Account
+            </div>
+        </div>
+        <div id="Information" class="col-md-9 tabcontent" style="display: block">
+            <div class="profile-content">
+                <h3 style="font-weight:lighter;">Account infomations</h3>
+                <br>
+                {{{notify}}}
+            <form action = "/user/edit" method = "POST">
+            <div >
+                {{#if layoutVM.isLogged}}
+                    <div class="form-group">
+
+                        <label class="person-info">
+                            Personal
+                        </label>
+                        <hr style="margin-top: 0;">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-3">
+                                    Full Name
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" id="txtName" class="form-control" value="{{layoutVM.curUser.f_Name}}" name="name">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="col-3">
+                                    Birthday
+                                </div>
+
+                                <div class="col-9">
+                                    <!-- <input type="date" class="form-control" placeholder={{layoutVM.curUser.f_DOB}} style="color: #555;"> -->
+                                    <input type="text" class="form-control" value={{birth}} name="dob">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-3">Email</div>
+                            <div class="col-9">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value= {{layoutVM.curUser.f_Email}}  name="email">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <div class="form-group row">
+
+                        <button type="submit" class="btn btn-primary" style="margin-left: 30px;">Update</button>
+
+                    </div>
+                </div>
+                </form>
+                {{/if}}
             </div>
         </div>
     </div>

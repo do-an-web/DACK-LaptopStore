@@ -1260,7 +1260,7 @@ select option
 .shop
 {
 	background: #FFFFFF;
-    padding-top: 60px   ;
+    padding-top: 60px;
 }
 
 .shop_content
@@ -1405,6 +1405,12 @@ select option
 	vertical-align: middle;
 
 }
+.product_extras {
+    display: none;
+}
+.product_item:hover .product_extras {
+    display: block;
+}
 .product_border
 {
 	display: block;
@@ -1435,6 +1441,7 @@ select option
 	width: 100%;
 	vertical-align: middle;
 	height: 110px;
+    padding-top: 20px;
 }
 .product_price
 {

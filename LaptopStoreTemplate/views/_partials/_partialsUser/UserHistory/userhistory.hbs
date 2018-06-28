@@ -17,8 +17,8 @@
 
                 <div class="list-group-flush" style="margin-top: 55px;">
 
-                    <a href="./Account.html" class="list-group-item list-group-item-action">Account infomations</a>
-                    <a href="./history.html" class="list-group-item list-group-item-action active">Your Histories</a>
+                    <a href="/user/profile" class="list-group-item list-group-item-action">Account infomations</a>
+                    <a href="/user/history" class="list-group-item list-group-item-action active">Your Histories</a>
 
                 </div>
             </div>
@@ -51,13 +51,15 @@
                     </tr>
                     </thead>
                     <tbody>
+                    {{#each orders}}
                     <tr>
-                        <td><a href="./order_detail.html">312321312</a></th></td>
-                        <td>06/04/2017</td>
-                        <td>Macbook Air 13 2018</td>
-                        <td>$1000</td>
+                        <td><a href="/user/history_detail/{{OrderID}}">#{{OrderID}}</a></th></td>
+                        <td>{{OrderDate}}</td>
+                        <td>{{ProName}}</td>
+                        <td>{{number_format Total}}</td>
                     </tr>
-                    <tr>
+                    {{/each}}
+                    {{!-- <tr>
                         <td><a href="./order_detail.html">857164483</a></th></td>
                         <td>04/03/2018</td>
                         <td>HP 15 inch</td>
@@ -99,7 +101,7 @@
                         <td>06/09/2018</td>
                         <td>Macbook Pro</td>
                         <td>$2000</td>
-                    </tr>
+                    </tr> --}}
 
 
                     </tbody>

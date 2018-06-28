@@ -32,29 +32,21 @@
                             </ul>
                         </div>
                         <div class="top_bar_user">
-                            {{!-- <div class="user_icon"><img src="/images/user.svg" alt=""></div>
-                            <div><a href="/signup">Register</a></div>
-                            <div><a href="/signin">Sign in</a></div> --}}
                            
                                 {{#if layoutVM.isLogged}}
-                                <form id="frmLogout" action="/user/logout" method="post"></form>
-                                    <div>
-                                        <div class="user_icon"><img src="/images/user.svg" alt=""></div>
-                                        <div>
-
-                                            <div class="dropdown">
-                                               
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{layoutVM.curUser.f_Name}} <b class="caret"></b></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
-                                                    <li><a class="dropdown-item" id="lnkLogout" href="javascript:;">Logout</a></li>
-                                                </ul>
-
-                                            </div>
-                                         </div>
-                                        <div><a href="">Shopping Cart (0 items)</a></div>
+                                <form id="frmLogout" action="/user/logout" method="post">
+                                <div></div>
+                                <div></div>
+                                    <div class="user_icon"><img src="/images/user.svg" alt=""></div>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{layoutVM.curUser.f_Username}} <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/user/profile">Profile</a></li>
+                                            <li><a class="dropdown-item" id="lnkLogout" href="javascript:;">Logout</a></li>
+                                        </ul>
                                     </div>
-                        
+                                    {{!-- <div><a href="/cart">Shopping Cart(0 items)</a></div> --}}
+                                </form>
                                 {{else}}
                                     <div class="user_icon"><img src="/images/user.svg" alt=""></div>
                                     <div><a href="/user/register">Register</a></div>
@@ -84,19 +76,19 @@
                     <div class="header_search">
                         <div class="header_search_content">
                             <div class="header_search_form_container">
-                                <form action="#" class="header_search_form clearfix">
-                                    <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                <form action="/shop/search/Name" method="POST" class="header_search_form clearfix"  onsubmit="return validate();">
+                                    <input name ="keyword" type="search" required="required" class="header_search_input" placeholder="Search for products...">
                                     <div class="custom_dropdown">
                                         <div class="custom_dropdown_list">
                                             <span class="custom_dropdown_placeholder clc">All Categories</span>
                                             <i class="fas fa-chevron-down"></i>
                                             <ul class="custom_list clc">
-                                                <li><a class="clc" href="/shop">Macbook - iMac</a></li>
-                                                <li><a class="clc" href="/shop">HP</a></li>
-                                                <li><a class="clc" href="/shop">Dell</a></li>
-                                                <li><a class="clc" href="/shop">ASUS</a></li>
-                                                <li><a class="clc" href="/shop">Acer</a></li>
-                                                <li><a class="clc" href="/shop">Lenovo</a></li>
+                                                <li><a class="clc" href="/categories/macbook">Macbook - iMac</a></li>
+                                                <li><a class="clc" href="/categories/hp">HP</a></li>
+                                                <li><a class="clc" href="/categories/dell">Dell</a></li>
+                                                <li><a class="clc" href="/categories/asus">ASUS</a></li>
+                                                <li><a class="clc" href="/categories/acer">Acer</a></li>
+                                                <li><a class="clc" href="/categories/lenovo">Lenovo</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -111,9 +103,9 @@
                 <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                     <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                         <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                            <div class="wishlist_icon"><img src="/  images/heart.png" alt=""></div>
+                            <div class="wishlist_icon"><img src="/images/heart.png" alt=""></div>
                             <div class="wishlist_content">
-                                <div class="wishlist_text"><a href="./sign_in.html">Wishlist</a></div>
+                                <div class="wishlist_text"><a href="/sign_in">Wishlist</a></div>
                                 <div class="wishlist_count">115</div>
                             </div>
                         </div>
@@ -122,12 +114,12 @@
                         <div class="cart">
                             <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                 <div class="cart_icon">
-                                    <img src="/ images/cart.png" alt="">
-                                    <div class="cart_count"><span>10</span></div>
+                                    <img src="/images/cart.png" alt="">
+                                    <div class="cart_count"><span>{{layoutVM.cartProducts}}</span></div>
                                 </div>
                                 <div class="cart_content">
-                                    <div class="cart_text"><a href="./sign_in.html">Cart</a></div>
-                                    <div class="cart_price">$85</div>
+                                    <div class="cart_text"><a href="/cart">Cart</a></div>
+                                    {{!-- <div class="cart_price">$85</div> --}}
                                 </div>
                             </div>
                         </div>
@@ -156,31 +148,51 @@
 
                             <ul class="cat_menu">
                                 <li class="hassubs">
-                                    <a href="./shop.html">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li class="hassubs">
                                     <a href="/shop">Shop<i class="fas fa-chevron-right"></i></a>
                                     <ul>
                                         <li>
-                                            <a href="/shop">Macbook - iMac</a>
+                                            <a href="/categories/Macbook">Macbook - iMac</a>
                                         </li>
                                         <li>
-                                            <a href="/shop">HP</a>
+                                            <a href="/categories/hp">HP</a>
                                         </li>
                                         <li>
-                                            <a href="/shop">Dell</a>
+                                            <a href="/categories/dell">Dell</a>
                                         </li>
                                         <li>
-                                            <a href="/shop">Asus</a>
+                                            <a href="/categories/asus">Asus</a>
                                         </li>
                                         <li>
-                                            <a href="/shop">Acer</a>
+                                            <a href="/categories/acer">Acer</a>
                                         </li>
                                         <li>
-                                            <a href="/shop">Lenovo</a>
+                                            <a href="/categories/lenovo">Lenovo</a>
                                         </li>
 
 
+                                    </ul>
+                                </li>
+                                <li class="hassubs">
+                                    <a href="/shop/process">Process<i class="fas fa-chevron-right"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="/shop/process/Celeron">Intel Celeron</a>
+                                        </li>
+                                        <li>
+                                            <a href="/shop/process/i3">Intel I3</a>
+                                        </li>
+                                        <li>
+                                            <a href="/shop/process/i5">Intel I5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/shop/process/i7">Intel I7</a>
+                                        </li>
+                                        <li>
+                                            <a href="/shop/process/Pentium">Intel Pentinum</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>

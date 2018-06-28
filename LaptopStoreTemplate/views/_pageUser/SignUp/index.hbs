@@ -1,45 +1,78 @@
-<form action="" method="POST" class="form-horizontal" role="form" onsubmit="return validate();">
-	<div class="form-group">
-        <label for="txtUsername" class="col-sm-2 control-label">Tên đăng nhập</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="txtUsername" placeholder="Tên đăng nhập" name="username">
+<div class="text-center">
+    <form action="" method="POST" class="form-signup form-horizontal" role="form" onsubmit="return validate();">
+        <img class="" src="/images/logo.jpg" alt="" width="50%" height="70%">
+        <h1 class="h3 mb-4 font-weight-normal">Sign up</h1>
+        <div class="form-group">
+            <label for="txtUsername" class="sr-only">User name</label>
+            <div class="">
+                <input type="text" class="form-control mb-3" name="username" id="txtUsername" placeholder="Username" autofocus="" required="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="txtPWD" class="col-sm-2 control-label">Password</label>
-        <div class="col-sm-4">
-            <input type="password" class="form-control" id="txtPWD" placeholder="Password" name="rawPWD">
+        <div class="form-group">
+            <label for="txtPWD" class="sr-only">Password</label>
+            <div class="">
+                <input type="password" id="txtPWD" class="form-control mb-3" placeholder="Password" name="rawPWD" required="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="txtCPWD" class="col-sm-2 control-label">Nhập lại</label>
-        <div class="col-sm-4">
-            <input type="password" class="form-control" id="txtCPWD" placeholder="Nhập lại password" name="cPWD">
+        <div class="form-group">
+            <label for="txtCPWD" class="sr-only">Re-enter Password</label>
+            <div class="">
+                <input type="password" class="form-control mb-3" id="txtCPWD" placeholder="Re-enter Password" name="cPWD" required="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="txtName" class="col-sm-2 control-label">Họ tên</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="txtName" placeholder="Họ tên" name="name">
+        <div class="form-group">
+            <label for="txtName" class="sr-only">Your Name</label>
+            <div class="">
+                <input type="text" class="form-control mb-3" id="txtName" placeholder="Your Name" name="name" required="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="txtEmail" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="txtEmail" placeholder="Email" name="email">
+        <div class="form-group">
+            <label for="txtEmail" class="sr-only">Email</label>
+            <div class="">
+                <input type="text" class="form-control mb-3" id="txtEmail" placeholder="Email" name="email" required="">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="txtDOB" class="col-sm-2 control-label">Ngày sinh</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="txtDOB" placeholder="d/m/yyyy" name="dob">
+        <div class="form-group">
+            <label for="txtDOB" class="sr-only">Date of Birth</label>
+            <div class="">
+                <input type="text" class="form-control mb-3" id="txtDOB" placeholder="dd/mm/yyyy" name="dob" required=""">
+            </div>
         </div>
-    </div>
-	<div class="form-group">
-		<div class="col-sm-10 col-sm-offset-2">
-			<button type="submit" class="btn btn-success">
-				Đăng ký
-			</button>
-		</div>
-	</div>
-</form>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-success">
+                    Sign up
+                </button>
+            </div>
+        </div>
+        <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+    </form>
+</div>
+{{!-- <!-- Content page -->
+<div class="text-center">
+    <form class="form-signup" method="POST" role="form" onsubmit="return validate();">
+        <img class="" src="./images/logo.jpg" alt="" width="50%" height="70%">
+        <h1 class="h3 mb-4 font-weight-normal">Sign up</h1>
+
+
+        <div class="field_password">
+            <label class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required="">
+            <!-- <a href="#0" class="hide-password">Show</a> -->
+        </div>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> I agree to the <a href="#">Term</a>
+            </label>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LdZglQUAAAAAAReQrsF08evZqxDomRJz2W-WngR"></div>
+
+
+    </form>
+</div>
+
+
+
+ --}}

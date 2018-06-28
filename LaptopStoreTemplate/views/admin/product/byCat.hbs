@@ -1,0 +1,48 @@
+{{#section 'title'}}
+	Product List
+{{/section}}
+<a href="/product/add?id={{CatID}}" class="btn btn-primary a-btn-slide-text">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  <span>Add A Product</span>
+</a>
+<hr/>
+{{#if noProducts}}
+<div class="row">
+	<div class="col-sm-12 col-md-12 col-lg-12">
+		Không có sản phẩm thoả yêu cầu.
+	</div>
+</div>
+{{else}}
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+	<thead>
+	  <tr>
+	    <th>ID</th>
+	    <th>Name</th>
+	    <th>Overview</th>
+	    <th>Price</th>
+	    <th>Quantity</th>
+	    <th></th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {{#each products}}
+	  <tr>
+	    <td>{{ProID}}</td>
+	    <td>{{ProName}}</td>
+	    <td>{{Overview}}</td>
+	    <td>{{number_format Price}}</td>
+	    <td>{{Quantity}}</td>
+	    <td>
+	      <a href="/product/edit?id={{ProID}}" class="btn btn-primary">Edit</a>
+	      <form action="/product/delete" method="POST" role="form">
+	        <input type="hidden" id="" name="ProID" value="{{ProID}}">  
+	        <button type="submit" class="btn btn-danger">
+	          Delete
+	        </button>
+	      </form>
+	    </td>
+	  </tr>
+	  {{/each}}
+	</tbody>
+</table>
+{{/if}}

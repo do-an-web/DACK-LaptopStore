@@ -26,13 +26,8 @@
                                                 <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="/images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">{{number_format Price}}</div>
-                                                    <div class="product_name"><div><a href="./product.html">{{ProName}}</a></div></div>
+                                                    <div class="product_name"><div><a href="/detail/{{ProID}}">{{ProName}}</a></div></div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color" style="background:#b19c83">
-                                                            <input type="radio" name="product_color" style="background:#000000">
-                                                            <input type="radio" name="product_color" style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -55,11 +50,11 @@
 
                                 {{#each dataNewsSpecial}}
                                     <div class="d-flex flex-column align-items-center justify-content-center">
-                                        <div class="arrivals_single_image"><img src="/images/product_20.png" alt=""></div>
+                                        <div class="arrivals_single_image"><img src="/images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
                                         <div class="arrivals_single_content">
-                                            <div class="arrivals_single_category"><a href="#">{{Factory}}</a></div>
+                                            <div class="arrivals_single_category"><a href="/shop/{{Factory}}">{{Factory}}</a></div>
                                             <div class="arrivals_single_name_container clearfix">
-                                                <div class="arrivals_single_name"><a href="#">{{ProName}}</a></div>
+                                                <div class="arrivals_single_name"><a href="/detail/{{ProID}}">{{ProName}}</a></div>
                                                 <div class="arrivals_single_price text-right">{{number_format Price}}</div>
                                             </div>
                                             <div class="rating_r rating_r_4 arrivals_single_rating">

@@ -59,6 +59,10 @@
         {{> _partialsUser/UserHistoryDetail/userhistorydetail.css}}
     {{/compare}}
 
+    <!--User History Detail Page-->
+    {{#compare title 'Error' operator="=="}}
+        {{> _partialsUser/UserHistoryDetail/userhistorydetail.css}}
+    {{/compare}}
     
 </head>
 
@@ -126,10 +130,14 @@
     {{#compare title 'User History Detail' operator="=="}}
         {{> _partialsUser/UserHistoryDetail/userhistorydetail.js}}
     {{/compare}}
+    <!--User History Detail Page-->
+    {{#compare title 'Error' operator="=="}}
+        {{> _partialsUser/UserHistoryDetail/userhistorydetail.js}}
+    {{/compare}}
 
-    <!-- Cho nay dung chung -->
+
     {{#if layoutVM.isLogged}}
-    <script type="text/javascript">
+        <script type="text/javascript">
         $('#lnkLogout').on('click', function() {
             $('#frmLogout').submit();
         });

@@ -16,26 +16,27 @@
 
             <div class="list-group-flush" style="margin-top: 55px;">
 
-                <a href="./Account.html" class="list-group-item list-group-item-action">Account infomations</a>
-                <a href="./history.html" class="list-group-item list-group-item-action">Your Histories</a>
+                <a href="/user/profile" class="list-group-item list-group-item-action">Account infomations</a>
+                <a href="/history" class="list-group-item list-group-item-action">Your Histories</a>
 
             </div>
         </div>
-
+        
         <div class="col-9" >
+            {{#each order}}
             <div class="row">
-
                 <div class="col-8">
                     <h1 style="font-weight: 100; font-size: 20px;">
-                        Detail of #534232343 - Have delivered
+                        Detail of #{{OrderID}} - Have delivered
                     </h1>
                 </div>
                 <div class="col-4">
-                    <p>Date of the order: 06/04/2018</p>
+                    <p>Date of the order: {{OrderDate}}</p>
 
                 </div>
-            </div>
 
+            </div>
+            {{/each}}
             <div class="row" style="margin-top: 12px;">
                 <div class="col-4">
                     <div class="card" style="width: 18rem; border: 0px;">
@@ -44,7 +45,7 @@
                             <hr>
                             <p class="card-text">
                                 <div>
-                            <p style="color: #242424;">Việt Dương</p>
+                            <p style="color: #242424;">{{layoutVM.curUser.f_Name}}</p>
 
                             <p><span>Address: </span>114/24, De Tham street,District 1, TP.HCM, Ho Chi Minh, Viet Nam</p>
 
@@ -55,6 +56,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-4">
                 <div class="card" style="width: 18rem; border: 0px;">
                     <div class="card-body">
@@ -97,60 +99,28 @@
                             <th scope="col">Product</th>
                             <th scope="col">Quantity</th>
                             <th scope="col">Price</th>
-
-
                         </tr>
                         </thead>
                         <tbody>
+                        {{#each order}}
                         <tr>
                             <td>
                                 <div>
-                                    <img src="images/product_1.jpg" width="130" height="130">
+                                    <img src="/images_product/{{ProID}}/{{ProID}}.jpg" width="130" height="130">
 
                                 </div>
                                 <div style="margin-left: 40px;">
-                                    <h5>Dell 5547</h5>
+                                    <h5>{{ProName}}</h5>
                                 </div>
 
 
 
                             </td>
 
-                            <td>1</td>
-                            <td>$1000</td>
+                            <td>{{Quantity}}</td>
+                            <td>{{Price}}</td>
                         </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="images/product_11.jpg" width="130" height="130">
-
-                                </div>
-                                <div style="margin-left: 40px;">
-                                    <h5>Dell 5547</h5>
-                                </div>
-
-
-
-                            </td>
-
-                            <td>1</td>
-                            <td>$2000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="images/product_12.jpg" width="130" height="130">
-
-                                </div>
-                                <div style="margin-left: 40px;">
-                                    <h5>Dell 5547</h5>
-                                </div>
-
-                            </td>
-
-                            <td>1</td>
-                            <td>$3000</td>
-                        </tr>
+                        {{/each}}
                         </tbody>
                         <tfoot>
                         <!--Total Summary List-->
@@ -158,7 +128,7 @@
                             <td colspan="2" style="text-align: right;">
                                 <span>Price</span>
                             </td>
-                            <td >$6000</td>
+                            <td >{{number_format Total}}</td>
                         </tr>
                         <tr>
                             <td colspan="2" style="border: 0px; text-align: right;">
@@ -170,7 +140,7 @@
                         <!--Final Total-->
                         <tr>
                             <td colspan="2" style="border: 0px; text-align: right;"><span>Sum</span></td>
-                            <td style="border: 0px; color: #ff3b27;">$6500</td>
+                            <td style="border: 0px; color: #ff3b27;">{{number_format Total}}</td>
                         </tr>
                         </tfoot>
                     </table>

@@ -1,5 +1,6 @@
 <!-- Shop -->
 {{#if noProducts}}
+    <div class="shop">
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
@@ -13,9 +14,9 @@
                             <div class="sidebar_subtitle">Price</div>
 
                             <div class="input-group">
-                                <input type="text" class="form-control" name="money" id="value-start" placeholder="">
+                                <input style="margin-top: 27px;" type="text" class="form-control" name="money" id="value-start" placeholder="">
                             </div>
-                            <label for="validate-text">Between</label>
+                            <label style=" margin-top: 10px;" for="validate-text">To</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" name="money" id="value-finish" placeholder="">
                             </div>
@@ -76,6 +77,7 @@
 
         </div>
     </div>
+    </div>
 
 {{else}}
 <div class="shop">
@@ -92,9 +94,9 @@
                             <div class="sidebar_subtitle">Price</div>
 
                             <div class="input-group">
-                                <input type="number" class="input-money form-control" name="money" id="value-start" value="0" placeholder=""/>
+                                <input style="margin-top: 27px;" type="number" class="input-money form-control" name="money" id="value-start" value="0" placeholder=""/>
                             </div>
-                            <label for="validate-text">Between</label>
+                            <label style=" margin-top: 10px;" for="validate-text">To</label>
                             <div class="input-group">
                                 <input type="number" class="input-money form-control" name="money" id="value-finish" placeholder=""/>
                             </div>

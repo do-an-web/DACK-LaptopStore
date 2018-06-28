@@ -136,10 +136,15 @@ app.use(session({
 app.use(handleLayoutMDW);
 
 //User
+<<<<<<< HEAD
 app.use('/',userRouter);
 
+=======
+app.use('/', userRouter);
+//app.use('/cart', restrict, cartController);
+>>>>>>> 5caa4450090122a744966195171ec658382f91d2
 app.use('/user', userController);
-app.use('/cart', cartController);
+app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);
 
 app.use(handle404MDW);

@@ -11,12 +11,14 @@ var express_handlebars_sections = require('express-handlebars-sections');
 var session = require('express-session');
 var MySQLStore = require('express-mysql-session')(session);
 
+
+
 /*middle-wares*/
 var handleLayoutMDW = require('./middle-wares/handleLayout');
 var restrict = require('./middle-wares/restrict');
 var handle404MDW = require('./middle-wares/handle404');
-
-
+var bodyParser = require('body-parser');
+var request = require('request');
 
 /*************************/
 var userRouter = require('./routes/user');
@@ -27,6 +29,11 @@ var paymentController = require('./controller/paymentController');
 
 /************************/
 var app = express();
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.engine('hbs', express_handlebars({
     extname: '.hbs',
@@ -109,7 +116,7 @@ app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /*Sessions*/
 var sessionStore = new MySQLStore({
-    host: 'localhost',
+    host: '127.0.0.1',
     port: 3306,
     user: 'root',
     password: '',
@@ -136,13 +143,8 @@ app.use(session({
 app.use(handleLayoutMDW);
 
 //User
-<<<<<<< HEAD
-app.use('/',userRouter);
-
-=======
 app.use('/', userRouter);
 //app.use('/cart', restrict, cartController);
->>>>>>> 5caa4450090122a744966195171ec658382f91d2
 app.use('/user', userController);
 app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);

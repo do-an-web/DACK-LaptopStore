@@ -9,9 +9,22 @@ var paymentRepo = require('../repos/userRepos/paymentRepo');
 var restrict = require('../middle-wares/restrict');
 var router = express.Router();
 
+var Recaptcha = require('express-recaptcha').Recaptcha;
+ 
+var recaptcha = new Recaptcha('SITE_KEY', 'SECRET_KEY');
+
 /* GET home page. */
 
-router.get('/signin',(req, res) => {
+
+/*app.get('/', recaptcha.middleware.render, function(req, res){
+  res.render('login', { captcha:res.recaptcha });
+});*/
+
+
+
+router.get('/signin', recaptcha.middleware.render,(req, res) => {
+
+
     var vm = {
         //layout: 'user.layout.hbs',
         title: "Sign In"
@@ -20,6 +33,7 @@ router.get('/signin',(req, res) => {
 });
 
 router.post('/signin', (req, res) => {
+
     var user = {
         username: req.body.username,
         password: SHA256(req.body.rawPWD).toString()

@@ -28,8 +28,12 @@ var cartController = require('./controller/cartController');
 var paymentController = require('./controller/paymentController');
 
 /************************/
+
 /*********ADMIN***************/
-var adminHomeController = require('./controller/adminControllers/homeController')
+var adminHomeController = require('./controller/adminControllers/homeController');
+var adminCategoryController = require('./controller/adminControllers/categoryController');
+var adminOderController = require('./controller/adminControllers/orderController');
+var adminProductController = require('./controller/adminControllers/productController');
 
 /************************/
 var app = express();
@@ -153,8 +157,12 @@ app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);
 
 
+
 //Admin
 app.use('/admin',adminHomeController);
+app.use('/admin/category',adminCategoryController);
+app.use('/admin/orders',adminOderController);
+app.use('/admin/product',adminProductController);
 
 
 

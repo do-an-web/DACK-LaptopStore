@@ -25,8 +25,8 @@
       <td>{{number_format Price}}</td>
       <td>{{Quantity}}</td>
       <td>
-        <a href="/product/edit?id={{ProID}}" class="btn btn-primary">Edit</a>
-        <form action="/product/delete" method="POST" role="form">
+        <a href="/admin/product/edit?id={{ProID}}" class="btn btn-primary">Edit</a>
+        <form action="/admin/product/delete" method="POST" role="form">
           <input type="hidden" id="" name="ProID" value="{{ProID}}">  
           <input type="hidden" id="" name="CatID" value="{{CatID}}">
           <button type="submit" class="btn btn-danger">

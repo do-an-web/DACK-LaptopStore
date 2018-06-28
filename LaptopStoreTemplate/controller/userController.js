@@ -45,9 +45,16 @@ router.post('/signin', (req, res) => {
             req.session.cart = [];
 
             var url = '/';
-            if (req.session.current_url) {
-                url = req.session.current_url;
+            if (rows[0].f_Permission === 1)
+            {
+                url ='/admin'
             }
+            else {
+                if (req.session.current_url) {
+                    url = req.session.current_url;
+                }
+            }
+
             res.redirect(url);
         } else {
             var vm = {

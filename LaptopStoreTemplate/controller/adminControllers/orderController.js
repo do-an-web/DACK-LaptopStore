@@ -1,9 +1,10 @@
 var express = require('express');
-var orderRepo = require('../repos/orderRepo');
+var orderRepo = require('../../repos/adminRepos/orderRepo');
 
 var router = express.Router();
 
 router.get('/', (req, res) => {
+    console.log("page order admin");
     var results = [];
     var p1 = orderRepo.loadAll();
     var p2 = orderRepo.loadUserByRole(0);
@@ -32,36 +33,45 @@ router.get('/', (req, res) => {
             
         }
         var vm = {
-            Results: results
+            Results: results,
+            layout: 'admin_main',
         };
         console.log(results);
-        res.render('orders/index', vm);
+        res.render('admin/orders/index', vm);
     });
 });
 
 router.get('/add', (req, res) => {
     var vm = {
-        showAlert: false
+        showAlert: false,
+        layout: 'admin_main',
     };
-    res.render('category/add', vm);
+    res.render('admin/category/add', vm);
 });
-
+// **********************
 router.post('/processing', (req, res) => {
     orderRepo.update(req.body).then(value => {
-        res.redirect('/orders');
+        var vm = {
+            layout: 'admin_main',
+        };
+        res.redirect('orders',vm);
     });
 });
 
 router.get('/delete', (req, res) => {
     var vm = {
-        CatId: req.query.id
+        CatId: req.query.id,
+        layout: 'admin_main',
     }
-    res.render('category/delete', vm);
+    res.render('admin/category/delete', vm);
 });
 
 router.post('/delivering', (req, res) => {
     orderRepo.update(req.body).then(value => {
-        res.redirect('/orders');
+        var vm = {
+            layout: 'admin_main',
+        };
+        res.redirect('/orders',vm);
     });
 });
 
@@ -70,15 +80,19 @@ router.get('/edit', (req, res) => {
     orderRepo.single(req.query.id).then(c => {
     	 console.log(c);
         var vm = {
-            Category: c
+            Category: c,
+            layout: 'admin_main',
         };
-        res.render('category/edit', vm);
+        res.render('admin/category/edit', vm);
     });
 });
 
 router.post('/done', (req, res) => {
     orderRepo.update(req.body).then(value => {
-        res.redirect('/orders');
+        var vm = {
+            layout: 'admin_main',
+        };
+        res.redirect('/orders',vm);
     });
 });
 
@@ -107,9 +121,10 @@ router.get('/details/:orderId', (req, res) => {
             
         }
         var vm = {
-            Results: results
+            Results: results,
+            layout: 'admin_main',
         };
-        res.render('orders/orderDetails', vm);
+        res.render('admin/orders/orderDetails', vm);
     });
 });
 

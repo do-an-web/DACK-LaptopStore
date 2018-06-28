@@ -25,28 +25,28 @@
       <th>{{Status}}</th>
       <td>
         
-        <form action="/orders/processing" method="POST" role="form">
+        <form action="/admin/orders/processing" method="POST" role="form">
           <input type="hidden" id="" name="OrderID" value="{{OrderID}}"> 
           <input type="hidden" id="" name="Status" value="Processing">
           <button type="submit" class="btn btn-warning" id="processing">
             Processing
           </button>
         </form>
-        <form action="/orders/delivering" method="POST" role="form">
+        <form action="/admin/orders/delivering" method="POST" role="form">
           <input type="hidden" id="" name="OrderID" value="{{OrderID}}">
           <input type="hidden" id="" name="Status" value="Delivering">
           <button type="submit" class="btn btn-primary" id="delivering">
             Delivering
           </button>
         </form>
-        <form action="/orders/done" method="POST" role="form">
+        <form action="/admin/orders/done" method="POST" role="form">
           <input type="hidden" id="" name="OrderID" value="{{OrderID}}">
           <input type="hidden" id="" name="Status" value="Done">
           <button type="submit" class="btn btn-success" id="done">
             Done
           </button>
         </form>
-        <a href="/orders/details/{{OrderID}}" class="btn btn-primary">Detail</a>
+        <a href="/admin/orders/details/{{OrderID}}" class="btn btn-primary">Detail</a>
       </td>
     </tr>
     {{/each}}

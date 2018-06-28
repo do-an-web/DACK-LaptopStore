@@ -136,7 +136,7 @@ app.use(session({
 app.use(handleLayoutMDW);
 
 //User
-app.use('/', userRouter);
+app.use('/',userRouter);
 
 app.use('/user', userController);
 app.use('/cart', cartController);

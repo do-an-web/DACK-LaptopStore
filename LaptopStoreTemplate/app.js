@@ -112,7 +112,7 @@ var sessionStore = new MySQLStore({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'root',
+    password: '',
     database: 'laptoponline',
     createDatabaseTable: true,
     schema: {
@@ -136,8 +136,13 @@ app.use(session({
 app.use(handleLayoutMDW);
 
 //User
+<<<<<<< HEAD
+app.use('/',userRouter);
+
+=======
 app.use('/', userRouter);
 //app.use('/cart', restrict, cartController);
+>>>>>>> 5caa4450090122a744966195171ec658382f91d2
 app.use('/user', userController);
 app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);

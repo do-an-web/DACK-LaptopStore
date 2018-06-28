@@ -14,5 +14,7 @@ module.exports = (req, res, next) => {
         curUser: req.session.user,
         cartProducts: cartProduct
     };
+
+    
     next();
 };

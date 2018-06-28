@@ -10,7 +10,8 @@ var restrict = require('../middle-wares/restrict');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/signin', (req, res) => {
+
+router.get('/signin',(req, res) => {
     var vm = {
         //layout: 'user.layout.hbs',
         title: "Sign In"
@@ -31,8 +32,8 @@ router.post('/signin', (req, res) => {
             req.session.cart = [];
 
             var url = '/';
-                if (req.query.retUrl) {
-                url = req.query.retUrl;
+            if (req.session.current_url) {
+                url = req.session.current_url;
             }
             res.redirect(url);
         } else {

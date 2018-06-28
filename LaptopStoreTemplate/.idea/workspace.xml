@@ -6,11 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Client/styles/info_account.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.css.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.css.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" afterPath="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fn/db.js" afterPath="$PROJECT_DIR$/fn/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middle-wares/handleLayout.js" afterPath="$PROJECT_DIR$/middle-wares/handleLayout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="userController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/userController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            <state relative-caret-position="226">
+              <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,11 +175,11 @@
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/Detail/SingleProduct.hbs" />
         <option value="$PROJECT_DIR$/public/Client/styles/product_styles.css" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/controller/userController.js" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.css.hbs" />
         <option value="$PROJECT_DIR$/public/Client/styles/info_account.css" />
         <option value="$PROJECT_DIR$/views/_partials/_partialsUser/InfoAccount/InfoAccount.hbs" />
         <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/controller/userController.js" />
       </list>
     </option>
   </component>
@@ -593,12 +593,12 @@
       <workItem from="1530029368404" duration="190000" />
       <workItem from="1530064030614" duration="23379000" />
       <workItem from="1530116344880" duration="4361000" />
-      <workItem from="1530153671064" duration="15226000" />
+      <workItem from="1530153671064" duration="15268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209598000" />
+    <option name="totallyTimeSpent" value="209640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -1031,15 +1031,15 @@
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="226">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding />
         </state>
       </provider>

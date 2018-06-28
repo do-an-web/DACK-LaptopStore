@@ -27,16 +27,16 @@ exports.single = proId => {
 }
 
 exports.add = (p) => {
-    var sql = `insert into products(ProName, Overview, Detail, Price, CatID, Quantity, Views, Image) values('${p.ProName}', '${p.Overview}', '${p.Detail}', '${p.Price}', '${p.CatID}', ${p.Quantity}, ${p.Views}, ${p.Image})`;
+    var sql = `insert into products(ProName, Factory, Overview, Detail, Price, CatID, Quantity, Views, Image) values('${p.ProName}', '${p.Factory}', '${p.Overview}', '${p.Detail}', '${p.Price}', '${p.CatID}', '${p.Quantity}', '${p.Views}', '${p.Image}')`;
     return db.save(sql);
 }
 
 exports.delete = (id) => {
-    var sql = `delete from products where ProID = ${id}`;
+    var sql = `delete from products where ProID = '${id}'`;
     return db.save(sql);
 }
 
 exports.update = (p) => {
-    var sql = `update products set ProName = '${p.ProName}', Overview = '${p.Overview}', Detail = '${p.Detail}', Price = '${p.Price}', CatID = '${p.CatID}', Quantity = '${p.Quantity}', Views = '${p.Views}', Image = '${p.Image}'where ProID = ${p.ProID}`;
+    var sql = `update products set ProName = '${p.ProName}', Factory = '${p.Factory}', Overview = '${p.Overview}', Detail = '${p.Detail}', Price = '${p.Price}', CatID = '${p.CatID}', Quantity = '${p.Quantity}', Views = '${p.Views}', Image = '${p.Image}'where ProID = '${p.ProID}'`;
     return db.save(sql);
 }

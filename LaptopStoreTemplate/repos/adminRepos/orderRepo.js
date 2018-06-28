@@ -1,7 +1,22 @@
 var db = require('../fn/db');
 
 exports.loadAll = () => {
-    var sql = 'select * from categories';
+    var sql = 'select * from orders';
+    return db.load(sql);
+}
+
+exports.loadUserByRole = (role) => {
+    var sql = `select * from users where f_Permission = ${role}`;
+    return db.load(sql);
+}
+
+exports.loadAllByOrderID = (orderId) => {
+    var sql = `select * from orderdetails where OrderID = ${orderId}`;
+    return db.load(sql);
+}
+
+exports.loadAllProductNames = () => {
+    var sql = 'select ProID, ProName from products';
     return db.load(sql);
 }
 
@@ -30,7 +45,7 @@ exports.delete = (id) => {
     return db.save(sql);
 }
 
-exports.update = (c) => {
-    var sql = `update categories set CatName = '${c.CatName}' where CatID = ${c.CatId}`;
+exports.update = (o) => {
+    var sql = `update orders set Status = '${o.Status}' where OrderID = ${o.OrderID}`;
     return db.save(sql);
 }

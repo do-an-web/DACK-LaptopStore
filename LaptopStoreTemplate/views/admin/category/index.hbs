@@ -3,7 +3,7 @@
     <a href="#">Category</a>
   </li>
 {{/section}}
-<a href="/admin/category/add" class="btn btn-primary a-btn-slide-text">
+<a href="/category/add" class="btn btn-primary a-btn-slide-text">
   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
   <span>Add A Category</span>
 </a>
@@ -22,14 +22,14 @@
       <td>{{CatID}}</td>
       <td>{{CatName}}</td>
       <td>
-        <a href="/admin/category/edit?id={{CatID}}" class="btn btn-primary">Edit</a>
-        <form action="/admin/category/delete" method="POST" role="form">
+        <a href="/category/edit?id={{CatID}}" class="btn btn-primary">Edit</a>
+        <form action="/category/delete" method="POST" role="form">
           <input type="hidden" id="" name="CatId" value="{{CatID}}">  
           <button type="submit" class="btn btn-danger">
             Delete
           </button>
         </form>
-        <a href="/admin/product/byCat/{{CatID}}" class="btn btn-primary">Product</a>
+        <a href="/product/byCat/{{CatID}}" class="btn btn-primary">Product</a>
       </td>
     </tr>
     {{/each}}

@@ -1,5 +1,5 @@
 var express = require('express');
-var categoryRepo = require('../../repos/adminRepos/categoryRepo');
+var categoryRepo = require('../repos/categoryRepo');
 
 var router = express.Router();
 
@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         var vm = {
             categories: rows
         };
-        res.render('admin/category/index', vm);
+        res.render('category/index', vm);
     });
 });
 
@@ -16,7 +16,7 @@ router.get('/add', (req, res) => {
     var vm = {
         showAlert: false
     };
-    res.render('admin/category/add', vm);
+    res.render('category/add', vm);
 });
 
 router.post('/add', (req, res) => {
@@ -24,7 +24,7 @@ router.post('/add', (req, res) => {
         var vm = {
             showAlert: true
         };
-        res.render('admin/category/add', vm);
+        res.render('category/add', vm);
     }).catch(err => {
         res.end('fail');
     });
@@ -34,12 +34,12 @@ router.get('/delete', (req, res) => {
     var vm = {
         CatId: req.query.id
     }
-    res.render('admin/category/delete', vm);
+    res.render('category/delete', vm);
 });
 
 router.post('/delete', (req, res) => {
     categoryRepo.delete(req.body.CatId).then(value => {
-        res.redirect('admin/category');
+        res.redirect('/category');
     });
 });
 
@@ -50,13 +50,13 @@ router.get('/edit', (req, res) => {
         var vm = {
             Category: c
         };
-        res.render('admin/category/edit', vm);
+        res.render('category/edit', vm);
     });
 });
 
 router.post('/edit', (req, res) => {
     categoryRepo.update(req.body).then(value => {
-        res.redirect('admin/category');
+        res.redirect('/category');
     });
 });
 

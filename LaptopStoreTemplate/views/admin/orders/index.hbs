@@ -1,0 +1,86 @@
+{{#section 'title'}}
+  <li class="breadcrumb-item active">
+    <a href="#">Orders</a>
+  </li>
+{{/section}}
+<hr/>
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Order Time</th>
+      <th>User</th>
+      <th>Total</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each Results}}
+    <tr>
+      <td>{{OrderID}}</td>
+      <td>{{OrderDate}}</td>
+      <td>{{User}}</td>
+      <td>{{number_format Total}}</td>
+      <th>{{Status}}</th>
+      <td>
+        
+        <form action="/orders/processing" method="POST" role="form">
+          <input type="hidden" id="" name="OrderID" value="{{OrderID}}"> 
+          <input type="hidden" id="" name="Status" value="Processing">
+          <button type="submit" class="btn btn-warning" id="processing">
+            Processing
+          </button>
+        </form>
+        <form action="/orders/delivering" method="POST" role="form">
+          <input type="hidden" id="" name="OrderID" value="{{OrderID}}">
+          <input type="hidden" id="" name="Status" value="Delivering">
+          <button type="submit" class="btn btn-primary" id="delivering">
+            Delivering
+          </button>
+        </form>
+        <form action="/orders/done" method="POST" role="form">
+          <input type="hidden" id="" name="OrderID" value="{{OrderID}}">
+          <input type="hidden" id="" name="Status" value="Done">
+          <button type="submit" class="btn btn-success" id="done">
+            Done
+          </button>
+        </form>
+        <a href="/orders/details/{{OrderID}}" class="btn btn-primary">Detail</a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+{{#section 'js'}}
+
+<script src="/assets/jquery/jquery.min.js"></script>
+<script src="assets/datatables/jquery.dataTables.js"></script>
+<script src="assets/datatables/dataTables.bootstrap4.js"></script>
+<script src="js/sb-admin.min.js"></script>
+<script src="js/sb-admin-datatables.min.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function (){
+    var table = $('#dataTable').DataTable();
+    
+    table.rows().every( function ( rowIdx, tableLoop, rowLoop ) {
+        var data = this.data();
+        if(data[4] == 'Done'){
+          $(table.row(rowIdx).node()).css("background-color","LimeGreen");
+        } else if(data[4] == 'Delivering'){
+          $(table.row(rowIdx).node()).css("background-color","RoyalBlue");
+        } else if(data[4] == 'Processing'){
+          $(table.row(rowIdx).node()).css("background-color","yellow");
+        }
+                
+        //this.data(data);
+    });
+});
+
+</script>
+
+{{/section}}

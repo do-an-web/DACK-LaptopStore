@@ -20,12 +20,16 @@ var handle404MDW = require('./middle-wares/handle404');
 var bodyParser = require('body-parser');
 var request = require('request');
 
-/*************************/
+/**********USER***************/
 var userRouter = require('./routes/user');
 
 var userController = require('./controller/userController');
 var cartController = require('./controller/cartController');
 var paymentController = require('./controller/paymentController');
+
+/************************/
+/*********ADMIN***************/
+var adminHomeController = require('./controller/adminControllers/homeController')
 
 /************************/
 var app = express();
@@ -116,7 +120,7 @@ app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /*Sessions*/
 var sessionStore = new MySQLStore({
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 3306,
     user: 'root',
     password: 'root',
@@ -144,13 +148,18 @@ app.use(handleLayoutMDW);
 
 //User
 app.use('/', userRouter);
-<<<<<<< HEAD
-=======
-//app.use('/cart', restrict, cartController);
->>>>>>> b253fe97f54e55bf67fc9b638256fd61e34c1e9c
 app.use('/user', userController);
 app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);
+
+
+//Admin
+app.use('/admin',adminHomeController);
+
+
+
+
+
 
 app.use(handle404MDW);
 

@@ -137,9 +137,9 @@ app.use(handleLayoutMDW);
 
 //User
 app.use('/', userRouter);
-
+//app.use('/cart', restrict, cartController);
 app.use('/user', userController);
-app.use('/cart', cartController);
+app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);
 
 app.use(handle404MDW);

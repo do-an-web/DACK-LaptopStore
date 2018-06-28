@@ -7,9 +7,9 @@
             <!-- Images -->
             <div class="col-lg-2 order-lg-1 order-2">
                 <ul class="image_list">
-                    <li data-image="images/single_4.jpg"><img src="images/single_4.jpg" alt=""></li>
-                    <li data-image="images/single_2.jpg"><img src="images/single_2.jpg" alt=""></li>
-                    <li data-image="images/single_3.jpg"><img src="images/single_3.jpg" alt=""></li>
+                    <li data-image="/images_product/{{product.ProID}}/{{product.ProID}}.jpg"><img src="/images_product/{{product.ProID}}/{{product.ProID}}.jpg" alt=""></li>
+                    <li data-image="/images_product/{{product.ProID}}/{{product.ProID}}.jpg"><img src="/images_product/{{product.ProID}}/{{product.ProID}}.jpg" alt=""></li>
+                    <li data-image="/images_product/{{product.ProID}}/{{product.ProID}}.jpg"><img src="/images_product/{{product.ProID}}/{{product.ProID}}.jpg" alt=""></li>
                 </ul>
             </div>
 
@@ -30,7 +30,6 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<p>(908)</p>
 							</span>
                         <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
                         <span>
@@ -38,7 +37,7 @@
 							</span>
                         <p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</p>
                         <span>
-								<p><b>21 Products Sold</b></p>
+								<p><b>Quantity: {{product.Quantity}} Products</b></p>
 							</span>
                         <hr>
                     </div>
@@ -61,7 +60,37 @@
                         <a href="#">See more.</a>
                     </p>
                 </div>
-                {{#if layoutVM.isLogged}}
+                <!--{{#if layoutVM.isLogged}}-->
+                <!--<div class="order_info d-flex flex-row">-->
+                    <!--<form method="post" action="/cart/add">-->
+                        <!--<div class="clearfix" style="z-index: 1000;">-->
+                            <!--<input name="proId" type="hidden" value="{{product.ProID}}">-->
+                            <!--&lt;!&ndash; Product Quantity &ndash;&gt;-->
+                            <!--<div class="product_quantity clearfix">-->
+                                <!--<span>Quantity: </span>-->
+                                <!--<input name="quantity" id="quantity_input" type="text" pattern="[0-9]*" value="1">-->
+                                <!--<div class="quantity_buttons">-->
+                                    <!--<div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fas fa-chevron-up"></i></div>-->
+                                    <!--<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fas fa-chevron-down"></i></div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Product Color &ndash;&gt;-->
+
+                            <!--{{!-- <div class="product_price center-block">$2000</div> --}}-->
+
+
+                        <!--</div>-->
+
+                        <!--<div class="product_price">{{number_format product.Price}}</div>-->
+            <!---->
+                        <!--<div class="button_container">-->
+                            <!--<button type="submit" class="button cart_button">Add to Cart</button>-->
+                            <!--<div class="product_fav"><i class="fas fa-heart"></i></div>-->
+                        <!--</div>-->
+
+                    <!--</form>-->
+                <!--</div>-->
+                <!--{{/if}}-->
                 <div class="order_info d-flex flex-row">
                     <form method="post" action="/cart/add">
                         <div class="clearfix" style="z-index: 1000;">
@@ -76,13 +105,12 @@
                                 </div>
                             </div>
                             <!-- Product Color -->
+                            <div class="product_color">
 
-                            {{!-- <div class="product_price center-block">$2000</div> --}}
+                                    <span>{{number_format product.Price}}</span>
 
-
+                            </div>
                         </div>
-
-                        <div class="product_price">{{number_format product.Price}}</div>
 
                         <div class="button_container">
                             <button type="submit" class="button cart_button">Add to Cart</button>
@@ -91,7 +119,6 @@
 
                     </form>
                 </div>
-                {{/if}}
             </div>
         </div>
 

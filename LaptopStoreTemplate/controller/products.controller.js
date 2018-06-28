@@ -8,6 +8,8 @@ var ConditonSearch = {
     brands: [],
     process: [],
 };
+
+//Home
 exports.getProductsHome = function (req,res,next) {
     products.loadAll().then(rows => {
         // var rowsClone = rows.slice();
@@ -52,7 +54,18 @@ exports.getProductsHome = function (req,res,next) {
 
 }
 
+//Shop
 exports.getAllProducts = function (req,res,next) {
+    var p0 = products.loadAll();
+    var HighestView = [];
+    Promise.all([p0]).then(([pRows]) => {
+        var data = pRows.slice().sort(function (a, b) {
+            return (Number(b.Views) - Number(a.Views));
+        });
+        HighestView =  data.slice(0, 10);
+
+    });
+
 
     var page = req.query.list;
     if (!page) {
@@ -88,6 +101,7 @@ exports.getAllProducts = function (req,res,next) {
             next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
             previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
             brands : Brands,
+            HighestView: HighestView,
             title: 'Shop',
         };
         res.render('_pageUser/Shop/index',vm);
@@ -95,22 +109,18 @@ exports.getAllProducts = function (req,res,next) {
 
 }
 
-exports.getSingleProduct = function (req, res, next) {
-    var proID = req.params.proID;
-    products.single(proID).then(pRow => {
-        products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{
-            var vm = {
-                sameBrand: psRow,
-                product: pRow[0],
-                layout: 'main.layout.hbs',
-                title: "Single Product"
-            };
-            res.render('_pageUser/Detail/index', vm);
-        })
-    });
-}
-
 exports.getAllProductsForBrands= function (req,res,next) {
+
+    var p1 = products.loadAll();
+    var HighestView = [];
+    Promise.all([p1]).then(([pRows]) => {
+        var data = pRows.slice().sort(function (a, b) {
+            return (Number(b.Views) - Number(a.Views));
+        });
+        HighestView =  data.slice(0, 10);
+
+    });
+
     var page = req.query.list;
     if (!page) {
         page = 1;
@@ -120,10 +130,11 @@ exports.getAllProductsForBrands= function (req,res,next) {
     var CatName = req.params.CatName;
 
     var p0 = products.getIDBrandsByCatName(CatName);
-    var p1 = products.loadAll();
     var p2 = products.loadAllBrands();
 
     Promise.all([p0,p1,p2]).then(([pIDBrand,pRows,Brands]) => {
+
+
 
         var products = [];
         var total = 0;
@@ -155,6 +166,7 @@ exports.getAllProductsForBrands= function (req,res,next) {
             next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
             previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
             brands : Brands,
+            HighestView: HighestView,
             title: 'Shop',
         };
         res.render('_pageUser/Shop/index',vm);
@@ -163,6 +175,17 @@ exports.getAllProductsForBrands= function (req,res,next) {
 }
 
 exports.getAllProductForProcess = function (req,res,next) {
+
+
+    var p0 = products.loadAll();
+    var HighestView = [];
+    Promise.all([p0]).then(([pRows]) => {
+        var data = pRows.slice().sort(function (a, b) {
+            return (Number(b.Views) - Number(a.Views));
+        });
+        HighestView =  data.slice(0, 10);
+
+    });
 
     var process =  [];
 
@@ -175,7 +198,6 @@ exports.getAllProductForProcess = function (req,res,next) {
     }
     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
-    var p0 = products.loadAll();
     var p1 = products.loadAllBrands();
 
     Promise.all([p0,p1]).then(([pTotal,Brands]) => {
@@ -222,6 +244,7 @@ exports.getAllProductForProcess = function (req,res,next) {
             next : Number(req.query.list) + 1 > Number(nPages) ? false : Number(req.query.list) + 1,
             previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
             brands : Brands,
+            HighestView : HighestView,
             title: 'Shop',
         };
         res.render('_pageUser/Shop/index',vm);
@@ -229,6 +252,16 @@ exports.getAllProductForProcess = function (req,res,next) {
 }
 
 exports.searchProduct = function (req,res,next) {
+
+    var p0 = products.loadAll();
+    var HighestView = [];
+    Promise.all([p0]).then(([pRows]) => {
+        var data = pRows.slice().sort(function (a, b) {
+            return (Number(b.Views) - Number(a.Views));
+        });
+        HighestView =  data.slice(0, 10);
+
+    });
 
     var isMethodGet = false;
     if (req.method === 'POST')
@@ -268,7 +301,6 @@ exports.searchProduct = function (req,res,next) {
     }
     var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
-    var p0 = products.loadAll();
     var p1 = products.loadAllBrands();
 
     Promise.all([p0,p1]).then(([pTotal,Brands]) => {
@@ -282,7 +314,7 @@ exports.searchProduct = function (req,res,next) {
         var isProcess = false;
         var total;
 
-        //Search
+        //Search Price
         pTotal.forEach(function (item,index) {
 
             if (ConditonSearch.money !== null) {
@@ -299,11 +331,15 @@ exports.searchProduct = function (req,res,next) {
                 products = [];
             }
         }
+        //Search Brands
         pTotal.forEach(function (item,index) {
             if (ConditonSearch.brands.length !== 0) {
                 for (i = 0; i < ConditonSearch.brands.length; i++) {
+                    if(ConditonSearch.brands[i] === "Macbook")
+                    {
+                        ConditonSearch.brands[i] = "Apple";
+                    }
                     if (ConditonSearch.brands[i] === item.Factory) {
-                        console.log(item.Factory);
                         isBrands = true;
                         products.push(item);
                     }
@@ -311,6 +347,7 @@ exports.searchProduct = function (req,res,next) {
 
             }
         });
+        //Search Process
         if (ConditonSearch.process.length !== 0)
         {
             if(isMoney || isBrands)
@@ -327,12 +364,8 @@ exports.searchProduct = function (req,res,next) {
                             products.push(item);
                         }
                     }
-
-                
             });
         }
-
-
         total = products.length;
         products = products.slice((Number(page)-1)* config.PRODUCTS_PER_PAGE,Number(page)* config.PRODUCTS_PER_PAGE);
 
@@ -358,6 +391,7 @@ exports.searchProduct = function (req,res,next) {
             brands : Brands,
             isMethodGet : isMethodGet,
             body: req.body,
+            HighestView : HighestView,
             title: 'Shop',
         };
         res.render('_pageUser/Shop/index',vm);
@@ -365,6 +399,16 @@ exports.searchProduct = function (req,res,next) {
 }
 
 exports.searchNameProduct = function (req,res,next) {
+
+    var p0 = products.loadAll();
+    var HighestView = [];
+    Promise.all([p0]).then(([pRows]) => {
+        var data = pRows.slice().sort(function (a, b) {
+            return (Number(b.Views) - Number(a.Views));
+        });
+        HighestView =  data.slice(0, 10);
+
+    });
 
     if (req.method === 'POST') {
         var Keyword = req.body.keyword;
@@ -375,7 +419,6 @@ exports.searchNameProduct = function (req,res,next) {
         }
         var offset = (page - 1) * config.PRODUCTS_PER_PAGE;
 
-        var p0 = products.loadAll();
         var p1 = products.loadAllBrands();
 
         Promise.all([p0, p1]).then(([pTotal, Brands]) => {
@@ -415,6 +458,7 @@ exports.searchNameProduct = function (req,res,next) {
                 previous: Number(req.query.list) - 1 < 1 ? false : Number(req.query.list) - 1,
                 brands: Brands,
                 body: req.body,
+                HighestView : HighestView,
                 title: 'Shop',
             };
             res.render('_pageUser/Shop/index', vm);
@@ -422,11 +466,57 @@ exports.searchNameProduct = function (req,res,next) {
     }
     else {
         var vm = {
+            HighestView : HighestView,
             title: 'Error',
         };
         res.render('error', vm);
     }
 }
+
+
+//Detail
+exports.getSingleProduct = function (req, res, next) {
+    var proID = req.params.proID;
+    products.single(proID).then(pRow => {
+        products.loadSameBrandsByCat(pRow[0].CatID).then(psRow =>{
+            products.loadAll().then(pAllProducts => {
+                var processType;
+                if (pRow[0].Detail.toLowerCase().search("i3".toLowerCase())) {
+                    processType = "i3";
+                }
+                if (pRow[0].Detail.toLowerCase().search("i5".toLowerCase())) {
+                    processType = "i3";
+                }
+                if (pRow[0].Detail.toLowerCase().search("i7".toLowerCase())) {
+                    processType = "i3";
+                }
+                if (pRow[0].Detail.toLowerCase().search("i3".toLowerCase())) {
+                    processType = "pentium";
+                }
+                if (pRow[0].Detail.toLowerCase().search("i3".toLowerCase())) {
+                    processType = "celeron";
+                }
+                var SameProcess = [];
+                pAllProducts.forEach(function (item) {
+                    if (item.Detail.toLowerCase().search(processType.toLowerCase()) >= 0) {
+                        SameProcess.push(item);
+                    }
+                });
+
+                var vm = {
+                    SameProcess : SameProcess,
+                    sameBrand: psRow,
+                    product: pRow[0],
+                    layout: 'main.layout.hbs',
+                    title: "Single Product"
+                };
+                res.render('_pageUser/Detail/index', vm);
+            });
+
+        });
+    });
+}
+
 function isArray(arr) {
     return arr.constructor.toString().indexOf("Array") > -1;
 }

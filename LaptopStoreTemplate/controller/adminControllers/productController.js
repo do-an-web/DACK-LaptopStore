@@ -80,12 +80,16 @@ router.get('/add', (req, res) => {
 });
 
 router.post('/add', (req, res) => {
+    console.log(req.body);
     productRepo.add(req.body).then(value => {
         var vm = {
-            showAlert: true
+            CatID: req.body.CatID,
+            showAlert: true,
+            IsCat: true
         };
         res.render('product/add', vm);
     }).catch(err => {
+        console.log(err);
         res.end('fail');
     });
 });
@@ -99,7 +103,11 @@ router.get('/delete', (req, res) => {
 
 router.post('/delete', (req, res) => {
     productRepo.delete(req.body.ProID).then(value => {
-        res.redirect('/category');
+        if(req.body.CatID == ''){
+            res.redirect('/product/');
+        } else{
+            res.redirect(`/product/byCat/${req.body.CatID}`);
+        }
     });
 });
 
@@ -120,8 +128,12 @@ router.get('/edit', (req, res) => {
 
 router.post('/edit', (req, res) => {
     productRepo.update(req.body).then(value => {
-        console.log(req.body.CatID);
-        res.redirect(`/product/byCat/${req.body.CatID}`);
+        if(req.body.IsCat === 'true'){
+            res.redirect(`/product/byCat/${req.body.CatID}`);
+        } else{
+            res.redirect('/product/');
+        }
+        
     });
 });
 

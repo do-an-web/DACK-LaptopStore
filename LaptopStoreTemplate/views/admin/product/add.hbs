@@ -1,9 +1,19 @@
 {{#section 'title'}}
+	{{#if IsCat}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/category">Category</a>
+	  	</li>
+		<li class="breadcrumb-item active">
+		  <a href="/product/byCat/{{CatID}}">Product By Category</a>
+		</li>
+	{{else}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/product">Products</a>
+	  	</li>
+	{{/if}}
+
 	<li class="breadcrumb-item active">
-   	 <a href="/category">Category</a>
-  	</li>
-	<li class="breadcrumb-item active">
-	  <a href="#">Add Category</a>
+	  <a href="#">Add A Product</a>
 	</li>
 {{/section}}
 
@@ -40,18 +50,11 @@
 		<label for="">Quantity</label>
 		<input type="text" class="form-control" id="" name="Quantity" placeholder="Quantity">
 	</div>
-	<div class="form-group">
-		<label for="">Views</label>
-		<input type="text" class="form-control" id="" name="Views" placeholder="Views">
-	</div>
+	<input type="hidden" id="" name="Views" value="0">
 	<div class="form-group">
 		<label for="">Image</label>
 		<input type="text" class="form-control" id="" name="Image" placeholder="Image">
 	</div>
-	<a class="btn btn-default" href="/category" role="button">
-		<span class="glyphicon glyphicon-arrow-left"></span>
-		View list
-	</a>
 	<button type="submit" class="btn btn-primary">
 		<span class="glyphicon glyphicon-check"></span>
 		Save

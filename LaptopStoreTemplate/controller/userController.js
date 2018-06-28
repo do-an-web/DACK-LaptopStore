@@ -31,7 +31,7 @@ router.post('/signin', (req, res) => {
             req.session.cart = [];
 
             var url = '/';
-            if (req.query.retUrl) {
+                if (req.query.retUrl) {
                 url = req.query.retUrl;
             }
             res.redirect(url);

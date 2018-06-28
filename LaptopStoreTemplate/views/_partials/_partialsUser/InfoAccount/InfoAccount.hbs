@@ -85,154 +85,65 @@
         </div>
     </div>
 </div>
-{{!-- <div>
-    <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
-        <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Account</li>
-    </ol>
-</div>
 
-<br>
+
+
 <div class="container">
-
-    <div class="row">
-
-        <div class="col-3">
-
-            <div class="list-group-flush" style="margin-top: 55px;">
-
-                <a href="#" class="list-group-item list-group-item-action active">Account infomations</a>
-                <a href="./history.html" class="list-group-item list-group-item-action">Your Histories</a>
-
+    <div class="row profile">
+        <div class="col-md-3" style="background-color: #9898b9">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img src="/assets/account.png" alt="">
+                </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        {{layoutVM.curUser.f_Username}}
+                    </div>
+                    <div class="profile-usertitle-job">
+                        {{layoutVM.curUser.f_Name}}
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR BUTTONS -->
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm">Follow</button>
+                    <button type="button" class="btn btn-danger btn-sm">Message</button>
+                </div>
+                <!-- END SIDEBAR BUTTONS -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Overview </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Account Settings </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="glyphicon glyphicon-ok"></i>
+                                Tasks </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-flag"></i>
+                                Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
             </div>
         </div>
-
-        <div class="col-9" >
-            <h3 style="font-weight:lighter;">Account infomations</h3>
-            <br>
-            <div >
-
-                <div class="form-group">
-
-                    <label class="person-info">
-                        Personal
-                    </label>
-                    <hr style="margin-top: 0;">
-
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="col-3">
-                                First Name
-                            </div>
-                            <div class="col-9">
-                                <input type="text" class="form-control" placeholder="Nguyen">
-
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="col-3">
-                                Last Name
-                            </div>
-                            <div class="col-9">
-                                <input type="text" class="form-control" placeholder="Duong">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="col-3">
-                                Gender
-                            </div>
-
-                            <div class="col-9">
-                                <select class="custom-select"  style="margin-left: 0px; min-width:100%;">
-                                    <option selected>...</option>
-                                    <option value="1">Male</option>
-                                    <option value="2">Female</option>
-                                    <option value="3">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="col-3">
-                                Birthday
-                            </div>
-
-                            <div class="col-9">
-                                <input type="date" class="form-control" placeholder="dd/mm/yyyy" style="color: #555;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6">
-                        <div class="col-3">Email</div>
-                        <div class="col-9">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="col-3">Phone</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-
-                </div>
-
-                <br>
-
-                <label class="person-info">
-                    Address
-                </label>
-                <hr style="margin-top: 0;">
-
-                <div class="row">
-                    <div class="col-6">
-                        <div class="col-3">Address 1</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-                    <div class="col-6">
-                        <div class="col-3">Address 2</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="col-3">City</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-                    <div class="col-6">
-                        <div class="col-3">State</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="col-3">Postcode</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-                    <div class="col-6">
-                        <div class="col-3">Country</div>
-                        <div class="col-9"><input type="text" class="form-control"></div>
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-
-                    <button  onclick="saveInfo()" type="submit" class="btn btn-primary" style="margin-left: 30px;">Update</button>
-
-                </div>
+        <div class="col-md-9">
+            <div class="profile-content">
+                Some user related content goes here...
             </div>
-
         </div>
     </div>
-</div> --}}
+</div>
+<br>
+<br>

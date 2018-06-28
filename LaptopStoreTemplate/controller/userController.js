@@ -9,21 +9,18 @@ var paymentRepo = require('../repos/userRepos/paymentRepo');
 var restrict = require('../middle-wares/restrict');
 var router = express.Router();
 
-var Recaptcha = require('express-recaptcha').Recaptcha;
+// var Recaptcha = require('express-recaptcha').Recaptcha;
  
-var recaptcha = new Recaptcha('SITE_KEY', 'SECRET_KEY');
-
-/* GET home page. */
+// var recaptcha = new Recaptcha('SITE_KEY', 'SECRET_KEY');
 
 
 /*app.get('/', recaptcha.middleware.render, function(req, res){
   res.render('login', { captcha:res.recaptcha });
 });*/
+let request = require('request');
 
 
-
-router.get('/signin', recaptcha.middleware.render,(req, res) => {
-
+router.get('/signin', /*recaptcha.middleware.render,*/(req, res) => {
 
     var vm = {
         //layout: 'user.layout.hbs',
@@ -71,25 +68,56 @@ router.get('/register', (req, res) => {
 
 router.post('/register', (req, res) => {
 
-    var dob = moment(req.body.dob, 'D/M/YYYY')
-        .format('YYYY-MM-DD');
-    
-    var user = {
-        username: req.body.username,
-        password: SHA256(req.body.rawPWD).toString(),
-        name: req.body.name,
-        email: req.body.email,
-        dob: dob,
-        permission: 0
-    };
+    let data = req.body;  // Dữ liệu từ form submit lên bao gồm thông tin đăng ký và captcha response
+    let captchaResponse = data.captchaResponse;
 
-    userRepo.add(user).then(value => {
-        var vm = {
-            title: "Register"
-        };
+    if (captchaResponse) {
+        request({
+            url: 'https://www.google.com/recaptcha/api/siteverify',
+            method: 'POST',
+            form: {
+                secret: '6LdlzxcUAAAAAPF5nZYAtT12hlXAhjXXXXXXXXXX',
+                response: captchaResponse
+            }
+            }, function (error, response, body) {
+            // Parse String thành JSON object
+            try {
+                body = JSON.parse(body);
+            } catch (err) {
+                body = {};
+            }
+
+            if (!error && response.statusCode == 200 && body.success) {
+                // Captcha hợp lệ, xử lý tiếp phần đăng ký tài khoản       
+                var dob = moment(req.body.dob, 'D/M/YYYY').format('YYYY-MM-DD');
+            
+                var user = {
+                    username: req.body.username,
+                    password: SHA256(req.body.rawPWD).toString(),
+                    name: req.body.name,
+                    email: req.body.email,
+                    dob: dob,
+                    permission: 0
+                };
+
+                userRepo.add(user).then(value => {
+                    var vm = {
+                        title: "Register"
+                    };
+                    
+                    res.render("_pageUser/SignUp/index",vm);
+                });
+            } else {
+                // Xử lý lỗi nếu Captcha không hợp lệ
+                console.log("Không hợp lệ");
+                    
+            }
+        });
+    } else {
+        // Xử lý lỗi nếu không có Captcha
+        console.log("Không có capcha");
         
-        res.render("_pageUser/SignUp/index",vm);
-    });
+    }
 });
 
 router.post('/logout', (req, res) => {

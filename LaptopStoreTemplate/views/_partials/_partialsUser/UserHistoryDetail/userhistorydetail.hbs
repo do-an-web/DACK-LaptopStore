@@ -45,6 +45,7 @@
                 <!-- END MENU -->
             </div>
         </div>
+<<<<<<< HEAD
         <div id="Overview" class="col-md-9 tabcontent" style="display: block">
             <div class="profile-content">
                 <div class="col-md-12">
@@ -95,10 +96,75 @@
                             </p>
                         </div>
                     </div>
+=======
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 100%; border: 0px;">
+                <div class="card-body">
+
+                    <p class="card-text">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each order}}
+                        <tr>
+                            <td>
+                                <div>
+                                    <img src="/images_product/{{ProID}}/{{ProID}}.jpg" width="130" height="130">
+
+                                </div>
+                                <div style="margin-left: 40px;">
+                                    <h5>{{ProName}}</h5>
+                                </div>
+
+
+
+                            </td>
+
+                            <td>{{Quantity}}</td>
+                            <td>{{number_format Price}}</td>
+                        </tr>
+                        {{/each}}
+                        </tbody>
+                        <tfoot>
+                        <!--Total Summary List-->
+                        <tr>
+                            <td colspan="2" style="text-align: right;">
+                                <span>Price</span>
+                            </td>
+                            <td >{{number_format Total}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border: 0px; text-align: right;">
+                                <span>Delivery fee</span>
+                            </td>
+                            <td style="border: 0px;">$500</td>
+                        </tr>
+
+                        <!--Final Total-->
+                        <tr>
+                            <td colspan="2" style="border: 0px; text-align: right;"><span>Sum</span></td>
+                            <td style="border: 0px; color: #ff3b27;">{{number_format Total}}</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    </p>
+>>>>>>> b253fe97f54e55bf67fc9b638256fd61e34c1e9c
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    <a class="btn btn-primary" href="/user/history" role="button">Go back your orders</a>
+>>>>>>> b253fe97f54e55bf67fc9b638256fd61e34c1e9c
 </div>
 <br>
 <br>

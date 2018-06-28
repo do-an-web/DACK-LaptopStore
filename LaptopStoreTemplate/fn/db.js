@@ -4,7 +4,7 @@ console.log('Get connection...');
 exports.load = sql => {
     return new Promise((resolve, reject) => {
         var cn = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             port: 3306,
             user: 'root',
             password: 'root',
@@ -29,7 +29,7 @@ exports.load = sql => {
 exports.save = sql => {
     return new Promise((resolve, reject) => {
         var cn = mysql.createConnection({
-            host: 'localhost',
+            host: '127.0.0.1',
             port: 3306,
             user: 'root',
             password: 'root',

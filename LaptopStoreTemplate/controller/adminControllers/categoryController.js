@@ -39,7 +39,7 @@ router.get('/delete', (req, res) => {
 
 router.post('/delete', (req, res) => {
     categoryRepo.delete(req.body.CatId).then(value => {
-        res.redirect('/category');
+        res.redirect('admin/category');
     });
 });
 

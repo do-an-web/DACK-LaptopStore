@@ -42,8 +42,11 @@ exports.countByCatNameBrands = (CatName) => {
     var sql = `select count(*) as total from products where factory = '${CatName}'`;
     return db.load(sql);
 }
-
 exports.single = ProID => {
     var sql = `select * from products where ProID = ${ProID}`;
     return db.load(sql);
+}
+exports.updateQuantityProduct = (ProID, Quantity, Selled, QuantitySell) => {
+    var sql = `UPDATE products set Quantity=${Quantity}-${QuantitySell}, Selled = ${QuantitySell}+${Selled} WHERE ProID = ${ProID}`;
+    return db.save(sql);
 }

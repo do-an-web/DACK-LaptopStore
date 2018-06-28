@@ -4,26 +4,14 @@ var config = require('../config/config');
 
 var router = express.Router();
 
-// router.get('/byCat', (req, res) => {
-//     var catId = req.query.catId;
-//     productRepo.loadAllByCat(catId).then(rows => {
-//         var vm = {
-//             products: rows
-//         };
-//         res.render('product/byCat', vm);
-//     });
-// });
-
-// router.get('/byCat/:catId', (req, res) => {
-//     var catId = req.params.catId;
-//     productRepo.loadAllByCat(catId).then(rows => {
-//         var vm = {
-//             products: rows,
-//             noProducts: rows.length === 0
-//         };
-//         res.render('product/byCat', vm);
-//     });
-// });
+router.get('/', (req, res) => {
+    productRepo.loadAll().then(rows => {
+        var vm = {
+            products: rows
+        };
+        res.render('product/index', vm);
+    });
+});
 
 router.get('/byCat/:catId', (req, res) => {
     var catId = req.params.catId;
@@ -54,7 +42,6 @@ router.get('/byCat/:catId', (req, res) => {
                 isCurPage: i === +page
             });
         }
-
         var vm = {
             CatID: catId,
             products: pRows,
@@ -80,9 +67,14 @@ router.get('/detail/:proId', (req, res) => {
 });
 
 router.get('/add', (req, res) => {
+    var cat = false;
+    if(req.query.catPath == 'true'){
+        cat = true;
+    }
     var vm = {
         CatID: req.query.id,
-        showAlert: false
+        showAlert: false,
+        IsCat: cat
     };
     res.render('product/add', vm);
 });
@@ -112,11 +104,15 @@ router.post('/delete', (req, res) => {
 });
 
 router.get('/edit', (req, res) => {
-    console.log(req.query.id);
+    var cat = false;
+    if(req.query.catPath == 'true'){
+        cat = true;
+    }
     productRepo.single(req.query.id).then(p => {
-        
         var vm = {
-            Product: p[0]
+            Product: p[0],
+            CatID: p[0].CatID,
+            IsCat: cat
         };
         res.render('product/edit', vm);
     });

@@ -75,9 +75,11 @@ router.post('/order', (req, res) => {
                 }
                 for (var i = 0; i < details.length; i++) {
                     paymentRepo.addOrderDetail(details[i]);
+                    products.updateQuantityProduct(result[i][0].ProID, result[i][0].Quantity, result[i][0].Selled, details[i].Quantity);
                 }
+                res.redirect("/user/history");
             });
-            res.redirect("/user/history");
+            
         });
     });
 });

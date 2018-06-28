@@ -12,7 +12,7 @@ exports.single = item => {
     var sql = `select * from orders where UserID = '${item.UserID}' and OrderDate = '${item.OrderDate}'`;
     return db.load(sql);
 }
-exports.loadAll = item => {
+exports.loadAll = () => {
     var sql = `select * from orders`;
     return db.load(sql);
 }

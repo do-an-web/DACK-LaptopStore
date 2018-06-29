@@ -1,9 +1,10 @@
 var express = require('express');
 var orderRepo = require('../../repos/adminRepos/orderRepo');
-
+var restrict = require("../../middle-wares/restrict");
+var restrict_admin = require("../../middle-wares/restrict_admin");
 var router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', restrict, restrict_admin, (req, res) => {
     console.log("page order admin");
     var results = [];
     var p1 = orderRepo.loadAll();
@@ -41,7 +42,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/add', (req, res) => {
+router.get('/add', restrict, restrict_admin,(req, res) => {
     var vm = {
         showAlert: false,
         layout: 'admin_main',
@@ -58,7 +59,7 @@ router.post('/processing', (req, res) => {
     });
 });
 
-router.get('/delete', (req, res) => {
+router.get('/delete', restrict, restrict_admin,(req, res) => {
     var vm = {
         CatId: req.query.id,
         layout: 'admin_main',
@@ -66,7 +67,7 @@ router.get('/delete', (req, res) => {
     res.render('admin/category/delete', vm);
 });
 
-router.post('/delivering', (req, res) => {
+router.post('/delivering', restrict, restrict_admin,(req, res) => {
     orderRepo.update(req.body).then(value => {
         var vm = {
             layout: 'admin_main',
@@ -75,7 +76,7 @@ router.post('/delivering', (req, res) => {
     });
 });
 
-router.get('/edit', (req, res) => {
+router.get('/edit', restrict, restrict_admin,(req, res) => {
     console.log(req.query.id);
     orderRepo.single(req.query.id).then(c => {
     	 console.log(c);
@@ -87,7 +88,7 @@ router.get('/edit', (req, res) => {
     });
 });
 
-router.post('/done', (req, res) => {
+router.post('/done', restrict, restrict_admin,(req, res) => {
     orderRepo.update(req.body).then(value => {
         var vm = {
             layout: 'admin_main',
@@ -96,7 +97,7 @@ router.post('/done', (req, res) => {
     });
 });
 
-router.get('/details/:orderId', (req, res) => {
+router.get('/details/:orderId', restrict, restrict_admin,(req, res) => {
     var orderId = req.params.orderId;
 
     var results = [];

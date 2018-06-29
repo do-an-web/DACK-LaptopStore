@@ -1,3 +1,10 @@
+{{#if showError}}
+<div class="alert alert-danger">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<strong>Title!</strong> {{errorMsg}}
+</div>
+{{/if}}
+
 <div class="text-center">
     <form action="" method="POST" class="form-signup form-horizontal" role="form" onsubmit="return validate();">
         <img class="" src="/images/logo.jpg" alt="" width="50%" height="70%">

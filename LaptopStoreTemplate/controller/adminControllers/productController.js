@@ -84,19 +84,60 @@ router.get('/add', (req, res) => {
 });
 
 router.post('/add', (req, res) => {
-    console.log(req.body);
-    productRepo.add(req.body).then(value => {
-        var vm = {
+    if (!req.files)
+        return res.end('fail');
+
+    var product = [];
+    
+     
+      // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+      let File = req.files.Image;
+     
+      // Use the mv() method to place the file somewhere on your server
+      var newPath = '/HK8/admin/image/filename.jpg';
+      File.mv(newPath, function(err) {
+        if (err){
+
+          return res.end('fail');
+        }
+        product.push({
+            ProName: req.body.ProName,
+            Factory: req.body.Factory,
+            Overview: req.body.Overview,
+            Detail: req.body.Detail,
             CatID: req.body.CatID,
-            showAlert: true,
-            IsCat: true,
-            layout: 'admin_main',
-        };
-        res.render('admin/product/add', vm);
-    }).catch(err => {
-        console.log(err);
-        res.end('fail');
-    });
+            Price: req.body.Price,
+            Quantity: req.body.Quantity,
+            Views: 0,
+            Image: newPath
+        });
+        productRepo.add(product[0]).then(value => {
+            var vm = {
+                CatID: req.body.CatID,
+                showAlert: true,
+                IsCat: true
+            };
+            res.render('admin/product/add', vm);
+        }).catch(err => {
+            console.log(err);
+            res.end('fail');
+        });
+     
+      });
+
+      // console.log(req.body);
+      //   productRepo.add(req.body).then(value => {
+      //       var vm = {
+      //           CatID: req.body.CatID,
+      //           showAlert: true,
+      //           IsCat: true,
+      //           layout: 'admin_main',
+      //       };
+      //       res.render('admin/product/add', vm);
+      //   }).catch(err => {
+      //       console.log(err);
+      //       res.end('fail');
+      //   });
 });
 
 router.get('/delete', (req, res) => {

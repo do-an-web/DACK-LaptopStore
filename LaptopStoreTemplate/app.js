@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var wnumb = require('wnumb');
+var fileUpload = require('express-fileupload');
 
 var express = require('express');
 var express_handlebars  = require('express-handlebars');
@@ -107,6 +108,7 @@ app.engine('hbs', express_handlebars({
 
 
 // view engine setup
+app.use(fileUpload());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','hbs');
 app.use(logger('dev'));

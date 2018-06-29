@@ -24,7 +24,7 @@
 </div>
 {{/if}}
 
-<form action="" method="POST" role="form">
+<form action='' enctype="multipart/form-data" method="POST" role="form">
 	<div class="form-group">
 		<label for="">Product Name</label>
 		<input type="text" class="form-control" id="" name="ProName" placeholder="Product">
@@ -50,11 +50,8 @@
 		<label for="">Quantity</label>
 		<input type="text" class="form-control" id="" name="Quantity" placeholder="Quantity">
 	</div>
-	<input type="hidden" id="" name="Views" value="0">
-	<div class="form-group">
-		<label for="">Image</label>
-		<input type="text" class="form-control" id="" name="Image" placeholder="Image">
-	</div>
+	<input type="file" name="Image">
+	<hr/><hr/><hr/>
 	<button type="submit" class="btn btn-primary">
 		<span class="glyphicon glyphicon-check"></span>
 		Save

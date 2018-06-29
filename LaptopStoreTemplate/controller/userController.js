@@ -68,56 +68,50 @@ router.get('/register', (req, res) => {
 
 router.post('/register', (req, res) => {
 
-    let data = req.body;  // Dữ liệu từ form submit lên bao gồm thông tin đăng ký và captcha response
-    let captchaResponse = data.captchaResponse;
-
-    if (captchaResponse) {
-        request({
-            url: 'https://www.google.com/recaptcha/api/siteverify',
-            method: 'POST',
-            form: {
-                secret: '6LdlzxcUAAAAAPF5nZYAtT12hlXAhjXXXXXXXXXX',
-                response: captchaResponse
-            }
-            }, function (error, response, body) {
-            // Parse String thành JSON object
-            try {
-                body = JSON.parse(body);
-            } catch (err) {
-                body = {};
-            }
-
-            if (!error && response.statusCode == 200 && body.success) {
-                // Captcha hợp lệ, xử lý tiếp phần đăng ký tài khoản       
-                var dob = moment(req.body.dob, 'D/M/YYYY').format('YYYY-MM-DD');
-            
-                var user = {
-                    username: req.body.username,
-                    password: SHA256(req.body.rawPWD).toString(),
-                    name: req.body.name,
-                    email: req.body.email,
-                    dob: dob,
-                    permission: 0
-                };
-
-                userRepo.add(user).then(value => {
-                    var vm = {
-                        title: "Register"
-                    };
-                    
-                    res.render("_pageUser/SignUp/index",vm);
-                });
-            } else {
-                // Xử lý lỗi nếu Captcha không hợp lệ
-                console.log("Không hợp lệ");
-                    
-            }
-        });
-    } else {
-        // Xử lý lỗi nếu không có Captcha
-        console.log("Không có capcha");
-        
+    //chưa ấn captcha
+    if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
+        var vm = {
+            title: "Register",
+            showError: true,
+            errorMsg: 'Please select captcha'
+        };
+        res.render('_pageUser/SignUp/index', vm);
+        return;
     }
+    var secretKey = "6LdZglQUAAAAAFwlkKxgD7hiYJmwEea6dTZzGmZE";
+    
+    var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+    
+    request(verificationUrl,function(error,response,body) {
+        body = JSON.parse(body);
+        // captcha sai
+        if(body.success !== undefined && !body.success) {
+            var vm = {
+                title: "Register",
+                showError: true,
+                errorMsg: 'Failed captcha verification'
+            };
+            res.render('_pageUser/SignUp/index', vm);
+            return;
+        }
+        //captcha đúng
+        var dob = moment(req.body.dob, 'D/M/YYYY').format('YYYY-MM-DD');
+        var user = {
+            username: req.body.username,
+            password: SHA256(req.body.rawPWD).toString(),
+            name: req.body.name,
+            email: req.body.email,
+            dob: dob,
+            permission: 0
+        };
+
+        userRepo.add(user).then(value => {
+            var vm = {
+                title: "Register"
+            };            
+            res.render("_pageUser/SignUp/index",vm);
+        });
+    });
 });
 
 router.post('/logout', (req, res) => {

@@ -1,10 +1,11 @@
 var express = require('express');
 var productRepo = require('../../repos/adminRepos/productRepo');
 var config = require('../../config/config');
-
+var restrict = require("../../middle-wares/restrict");
+var restrict_admin = require("../../middle-wares/restrict_admin");
 var router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', restrict, restrict_admin,(req, res) => {
     productRepo.loadAll().then(rows => {
         var vm = {
             products: rows,
@@ -14,7 +15,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/byCat/:catId', (req, res) => {
+router.get('/byCat/:catId', restrict, restrict_admin,(req, res) => {
     var catId = req.params.catId;
 
     var page = req.query.page;
@@ -54,7 +55,7 @@ router.get('/byCat/:catId', (req, res) => {
     });
 });
 
-router.get('/detail/:proId', (req, res) => {
+router.get('/detail/:proId', restrict, restrict_admin,(req, res) => {
     var proId = req.params.proId;
     productRepo.single(proId).then(rows => {
         if (rows.length > 0) {
@@ -69,7 +70,7 @@ router.get('/detail/:proId', (req, res) => {
     });
 });
 
-router.get('/add', (req, res) => {
+router.get('/add', restrict, restrict_admin,(req, res) => {
     var cat = false;
     if(req.query.catPath == 'true'){
         cat = true;
@@ -83,7 +84,7 @@ router.get('/add', (req, res) => {
     res.render('admin/product/add', vm);
 });
 
-router.post('/add', (req, res) => {
+router.post('/add', restrict, restrict_admin,(req, res) => {
     if (!req.files)
         return res.end('fail');
 
@@ -140,7 +141,7 @@ router.post('/add', (req, res) => {
       //   });
 });
 
-router.get('/delete', (req, res) => {
+router.get('/delete', restrict, restrict_admin,(req, res) => {
     var vm = {
         CatId: req.query.id,
         layout: 'admin_main',
@@ -148,7 +149,7 @@ router.get('/delete', (req, res) => {
     res.render('admin/product/delete', vm);
 });
 
-router.post('/delete', (req, res) => {
+router.post('/delete', restrict, restrict_admin,(req, res) => {
     productRepo.delete(req.body.ProID).then(value => {
         var vm = {
             layout: 'admin_main',
@@ -161,7 +162,7 @@ router.post('/delete', (req, res) => {
     });
 });
 
-router.get('/edit', (req, res) => {
+router.get('/edit', restrict, restrict_admin,(req, res) => {
     var cat = false;
     if(req.query.catPath === 'true'){
         cat = true;
@@ -177,7 +178,7 @@ router.get('/edit', (req, res) => {
     });
 });
 
-router.post('/edit', (req, res) => {
+router.post('/edit', restrict, restrict_admin,(req, res) => {
     productRepo.update(req.body).then(value => {
         var vm = {
             layout: 'admin_main',

@@ -1,9 +1,10 @@
 var express = require('express');
 var categoryRepo =require('../../repos/adminRepos/categoryRepo');
-
+var restrict = require("../../middle-wares/restrict");
+var restrict_admin = require("../../middle-wares/restrict_admin");
 var router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', restrict, restrict_admin,(req, res) => {
     categoryRepo.loadAll().then(rows => {
         var vm = {
             layout: 'admin_main',
@@ -13,7 +14,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/add', (req, res) => {
+router.get('/add', restrict, restrict_admin,(req, res) => {
     var vm = {
         layout: 'admin_main',
         showAlert: false
@@ -21,7 +22,7 @@ router.get('/add', (req, res) => {
     res.render('admin/category/add', vm);
 });
 
-router.post('/add', (req, res) => {
+router.post('/add', restrict, restrict_admin,(req, res) => {
     categoryRepo.add(req.body).then(value => {
         var vm = {
             layout: 'admin_main',
@@ -33,7 +34,7 @@ router.post('/add', (req, res) => {
     });
 });
 
-router.get('/delete', (req, res) => {
+router.get('/delete', restrict, restrict_admin,(req, res) => {
     var vm = {
         layout: 'admin_main',
         CatId: req.query.id
@@ -41,7 +42,7 @@ router.get('/delete', (req, res) => {
     res.render('admin/category/delete', vm);
 });
 
-router.post('/delete', (req, res) => {
+router.post('/delete', restrict, restrict_admin,(req, res) => {
     categoryRepo.delete(req.body.CatId).then(value => {
         var vm = {
             layout: 'admin_main',
@@ -50,7 +51,7 @@ router.post('/delete', (req, res) => {
     });
 });
 
-router.get('/edit', (req, res) => {
+router.get('/edit', restrict, restrict_admin,(req, res) => {
     console.log(req.query.id);
     categoryRepo.single(req.query.id).then(c => {
     	 console.log(c);
@@ -62,7 +63,7 @@ router.get('/edit', (req, res) => {
     });
 });
 
-router.post('/edit', (req, res) => {
+router.post('/edit', restrict, restrict_admin,(req, res) => {
     console.log("get data");
     categoryRepo.update(req.body).then(value => {
         console.log("get data");

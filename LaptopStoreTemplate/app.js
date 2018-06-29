@@ -152,13 +152,6 @@ app.use(session({
 
 app.use(handleLayoutMDW);
 
-//User
-app.use('/', userRouter);
-app.use('/user', userController);
-app.use('/cart',restrict, cartController);
-app.use('/payment', paymentController);
-
-
 
 //Admin
 app.use('/admin',adminHomeController);
@@ -166,10 +159,11 @@ app.use('/admin/category',adminCategoryController);
 app.use('/admin/orders',adminOderController);
 app.use('/admin/product',adminProductController);
 
-
-
-
-
+//User
+app.use('/', userRouter);
+app.use('/user', userController);
+app.use('/cart',restrict, cartController);
+app.use('/payment', paymentController);
 
 app.use(handle404MDW);
 

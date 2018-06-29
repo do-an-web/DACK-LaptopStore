@@ -49,7 +49,8 @@ router.post('/signin', (req, res) => {
             {
                 url ='/admin'
             }
-            else {
+            else
+            {
                 if (req.session.current_url) {
                     url = req.session.current_url;
                 }

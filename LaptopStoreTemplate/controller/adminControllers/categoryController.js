@@ -45,8 +45,8 @@ router.post('/delete', (req, res) => {
     categoryRepo.delete(req.body.CatId).then(value => {
         var vm = {
             layout: 'admin_main',
-        }
-        res.redirect('/category',vm);
+        };
+        res.redirect('/admin/category');
     });
 });
 
@@ -63,11 +63,13 @@ router.get('/edit', (req, res) => {
 });
 
 router.post('/edit', (req, res) => {
+    console.log("get data");
     categoryRepo.update(req.body).then(value => {
+        console.log("get data");
         var vm = {
             layout: 'admin_main',
-        }
-        res.redirect('/category',vm);
+        };
+        res.redirect('/admin/category');
     });
 });
 

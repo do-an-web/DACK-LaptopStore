@@ -6,32 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd9fbe92-ec9d-47f3-acdd-a35624e11a64" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/css/sb-admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/css/sb-admin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/sb-admin-datatables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/sb-admin-datatables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/sb-admin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/js/sb-admin.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/adminControllers/categoryController.js" afterPath="$PROJECT_DIR$/controller/adminControllers/categoryController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/adminControllers/homeController.js" afterPath="$PROJECT_DIR$/controller/adminControllers/homeController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/adminControllers/orderController.js" afterPath="$PROJECT_DIR$/controller/adminControllers/orderController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/adminControllers/productController.js" afterPath="$PROJECT_DIR$/controller/adminControllers/productController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/userController.js" afterPath="$PROJECT_DIR$/controller/userController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repos/adminRepos/categoryRepo.js" afterPath="$PROJECT_DIR$/repos/adminRepos/categoryRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repos/adminRepos/orderRepo.js" afterPath="$PROJECT_DIR$/repos/adminRepos/orderRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repos/adminRepos/productRepo.js" afterPath="$PROJECT_DIR$/repos/adminRepos/productRepo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/category/add.hbs" afterPath="$PROJECT_DIR$/views/admin/category/add.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/category/edit.hbs" afterPath="$PROJECT_DIR$/views/admin/category/edit.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/category/index.hbs" afterPath="$PROJECT_DIR$/views/admin/category/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/orders/index.hbs" afterPath="$PROJECT_DIR$/views/admin/orders/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/orders/orderDetails.hbs" afterPath="$PROJECT_DIR$/views/admin/orders/orderDetails.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/product/add.hbs" afterPath="$PROJECT_DIR$/views/admin/product/add.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/product/byCat.hbs" afterPath="$PROJECT_DIR$/views/admin/product/byCat.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/product/edit.hbs" afterPath="$PROJECT_DIR$/views/admin/product/edit.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/product/index.hbs" afterPath="$PROJECT_DIR$/views/admin/product/index.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,73 +25,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/orders/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="48" column="15" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orderDetails.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/orders/orderDetails.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/category/add.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/category/delete.hbs">
+      <file leaf-file-name="categoryRepo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repos/adminRepos/categoryRepo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/userController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="285" column="25" lean-forward="false" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/adminControllers/productController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fn/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-350">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/category/edit.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/category/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-              <folding>
-                <marker date="1530229738043" expanded="true" signature="933:1005" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_main.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_layouts/admin_main.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,28 +68,58 @@
       <file leaf-file-name="orderController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/adminControllers/orderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="20" />
+            <state relative-caret-position="199">
+              <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categoryController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="orderRepo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repos/adminRepos/orderRepo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categoryController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/adminControllers/categoryController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state relative-caret-position="402">
+              <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="homeController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/adminControllers/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="162" column="24" lean-forward="false" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+            <state relative-caret-position="272">
+              <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cartController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/cartController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paymentController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/paymentController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -152,10 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>border</find>
-      <find>dropdown-toggle</find>
-      <find>profile-usertitle-job</find>
-      <find>hover</find>
       <find>sortNewest</find>
       <find>page_numbers: numbers,</find>
       <find>onclick</find>
@@ -177,11 +150,15 @@
       <find>ADMIN</find>
       <find>lay</find>
       <find>layout</find>
-      <find>render</find>
       <find>delete</find>
       <find>action</find>
       <find>href</find>
       <find>act</find>
+      <find>render</find>
+      <find>product</find>
+      <find>console.log(&quot;get data&quot;);</find>
+      <find>admin</find>
+      <find>redirect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,12 +202,9 @@
         <option value="$PROJECT_DIR$/repos/adminRepos/orderRepo.js" />
         <option value="$PROJECT_DIR$/repos/adminRepos/categoryRepo.js" />
         <option value="$PROJECT_DIR$/repos/adminRepos/productRepo.js" />
-        <option value="$PROJECT_DIR$/controller/adminControllers/orderController.js" />
-        <option value="$PROJECT_DIR$/controller/adminControllers/productController.js" />
         <option value="$PROJECT_DIR$/controller/adminControllers/homeController.js" />
         <option value="$PROJECT_DIR$/views/admin/product/add.hbs" />
         <option value="$PROJECT_DIR$/views/admin/product/edit.hbs" />
-        <option value="$PROJECT_DIR$/controller/userController.js" />
         <option value="$PROJECT_DIR$/views/_layouts/admin_main.hbs" />
         <option value="$PROJECT_DIR$/views/admin/product/index.hbs" />
         <option value="$PROJECT_DIR$/views/admin/product/byCat.hbs" />
@@ -238,9 +212,12 @@
         <option value="$PROJECT_DIR$/views/admin/orders/orderDetails.hbs" />
         <option value="$PROJECT_DIR$/views/admin/category/add.hbs" />
         <option value="$PROJECT_DIR$/views/admin/category/edit.hbs" />
-        <option value="$PROJECT_DIR$/views/admin/category/index.hbs" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/admin/category/index.hbs" />
+        <option value="$PROJECT_DIR$/controller/userController.js" />
         <option value="$PROJECT_DIR$/controller/adminControllers/categoryController.js" />
+        <option value="$PROJECT_DIR$/controller/adminControllers/orderController.js" />
+        <option value="$PROJECT_DIR$/controller/adminControllers/productController.js" />
       </list>
     </option>
   </component>
@@ -406,6 +383,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LaptopStoreTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adminRepos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -608,12 +617,12 @@
       <workItem from="1530029368404" duration="190000" />
       <workItem from="1530064030614" duration="23379000" />
       <workItem from="1530116344880" duration="4361000" />
-      <workItem from="1530153671064" duration="49215000" />
+      <workItem from="1530153671064" duration="51100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243587000" />
+    <option name="totallyTimeSpent" value="245472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="0" />
@@ -670,14 +679,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_pageUser/InfoAccount/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_pageUser/Home/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -803,22 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/cartController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/paymentController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="43" column="34" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/products.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -920,50 +905,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repos/adminRepos/categoryRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repos/adminRepos/orderRepo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/adminControllers/productController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/adminControllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_pageUser/SignIn/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/userController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="54" column="17" lean-forward="false" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1027,10 +972,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layouts/admin_main.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="162" column="24" lean-forward="false" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/category/add.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="304">
+          <caret line="19" column="66" lean-forward="true" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -1053,42 +1014,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/category/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="398">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
-            <marker date="1530229738043" expanded="true" signature="933:1005" ph="..." />
+            <marker date="1530230554369" expanded="true" signature="939:1011" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layouts/admin_main.hbs">
+    <entry file="file://$PROJECT_DIR$/fn/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="-350">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/adminControllers/orderController.js">
+    <entry file="file://$PROJECT_DIR$/repos/adminRepos/categoryRepo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/controller/cartController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="162" column="24" lean-forward="false" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+        <state relative-caret-position="327">
+          <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/paymentController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repos/adminRepos/orderRepo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="285" column="25" lean-forward="false" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/adminControllers/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/adminControllers/categoryController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="402">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/adminControllers/orderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/adminControllers/productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="66" column="40" lean-forward="false" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
           <folding />
         </state>
       </provider>

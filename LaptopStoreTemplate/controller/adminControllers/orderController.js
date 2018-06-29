@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     console.log("page order admin");
     var results = [];
     var p1 = orderRepo.loadAll();
-    var p2 = orderRepo.loadUserByRole(0);
+    var p2 = orderRepo.loadUserByRole(1);
     Promise.all([p1, p2]).then(([pRows, pUsers]) => {
         for(i=0;i<pRows.length;i++){
             for(j=0;j<pUsers.length;j++){
@@ -54,7 +54,7 @@ router.post('/processing', (req, res) => {
         var vm = {
             layout: 'admin_main',
         };
-        res.redirect('orders',vm);
+        res.redirect('/admin/orders');
     });
 });
 
@@ -71,7 +71,7 @@ router.post('/delivering', (req, res) => {
         var vm = {
             layout: 'admin_main',
         };
-        res.redirect('/orders',vm);
+        res.redirect('/admin/orders');
     });
 });
 
@@ -92,7 +92,7 @@ router.post('/done', (req, res) => {
         var vm = {
             layout: 'admin_main',
         };
-        res.redirect('/orders',vm);
+        res.redirect('/admin/orders');
     });
 });
 

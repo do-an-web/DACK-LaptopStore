@@ -64,7 +64,7 @@ router.get('/detail/:proId', (req, res) => {
             }
             res.render('product/detail', vm);
         } else {
-            res.redirect('/');
+            res.redirect('/admin/product');
         }
     });
 });
@@ -113,9 +113,9 @@ router.post('/delete', (req, res) => {
             layout: 'admin_main',
         };
         if(req.body.CatID === ''){
-            res.redirect('/product/',vm);
+            res.redirect('/admin/product/');
         } else{
-            res.redirect(`/product/byCat/${req.body.CatID}`,vm);
+            res.redirect(`/admin/product/byCat/${req.body.CatID}`);
         }
     });
 });
@@ -142,9 +142,9 @@ router.post('/edit', (req, res) => {
             layout: 'admin_main',
         };
         if(req.body.IsCat === 'true'){
-            res.redirect(`/product/byCat/${req.body.CatID}`,vm);
+            res.redirect(`/admin/product/byCat/${req.body.CatID}`);
         } else{
-            res.redirect('/product/',vm);
+            res.redirect('/admin/product/');
         }
         
     });

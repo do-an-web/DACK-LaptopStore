@@ -16,6 +16,7 @@
   <link href="/assets/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
   {{{_sections.css}}}
 </head>
 
@@ -113,7 +114,9 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="#">Logout</a>
+              <form id="frmLogout" action="/user/logout" method="post">
+            <a id="lnkLogout" class="btn btn-primary" href="javascript:;">Logout</a>
+              </form>
           </div>
         </div>
       </div>
@@ -133,13 +136,6 @@
   <!-- Custom scripts for this page-->
   <script src="/js/sb-admin-datatables.min.js"></script>
   <script src="/js/sb-admin-charts.min.js"></script>
-{{#if layoutVM.isLogged}}
-    <script type="text/javascript">
-        $('#lnkLogout').on('click', function() {
-            $('#frmLogout').submit();
-        });
-    </script>
-{{/if}}
   {{{_sections.js}}}
 </body>
 

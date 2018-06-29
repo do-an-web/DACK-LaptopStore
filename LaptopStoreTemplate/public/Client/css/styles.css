@@ -7,3 +7,10 @@
     display: block;
     text-align: center;
 }
+#dataTable {
+    font-size: 14px;
+}
+#dataTable .btn {
+    width: 70px;
+    height: 36px;
+}

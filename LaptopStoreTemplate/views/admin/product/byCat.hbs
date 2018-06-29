@@ -1,7 +1,12 @@
 {{#section 'title'}}
-	Product List
+	<li class="breadcrumb-item active">
+   	 <a href="/admin/category">Category</a>
+  	</li>
+	<li class="breadcrumb-item active">
+	  <a href="#">Product By Category</a>
+	</li>
 {{/section}}
-<a href="/product/add?id={{CatID}}" class="btn btn-primary a-btn-slide-text">
+<a href="/admin/product/add?id={{CatID}}&catPath=true" class="btn btn-primary a-btn-slide-text">
   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
   <span>Add A Product</span>
 </a>
@@ -33,9 +38,10 @@
 	    <td>{{number_format Price}}</td>
 	    <td>{{Quantity}}</td>
 	    <td>
-	      <a href="/product/edit?id={{ProID}}" class="btn btn-primary">Edit</a>
-	      <form action="/product/delete" method="POST" role="form">
+	      <a href="/admin/product/edit?id={{ProID}}&catPath=true" class="btn btn-primary">Edit</a>
+	      <form action="/admin/product/delete" method="POST" role="form">
 	        <input type="hidden" id="" name="ProID" value="{{ProID}}">  
+          	<input type="hidden" id="" name="CatID" value="{{CatID}}">
 	        <button type="submit" class="btn btn-danger">
 	          Delete
 	        </button>

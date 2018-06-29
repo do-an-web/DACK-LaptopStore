@@ -4,6 +4,8 @@ var express = require('express'),
 
 var userRepo = require('../repos/userRepos/userRepo');
 var paymentRepo = require('../repos/userRepos/paymentRepo');
+
+var config = require('../config/config');
 // var productRepo = require('../model/products.model');
 
 var restrict = require('../middle-wares/restrict');
@@ -43,9 +45,17 @@ router.post('/signin', (req, res) => {
             req.session.cart = [];
 
             var url = '/';
-            if (req.session.current_url) {
-                url = req.session.current_url;
+            if (rows[0].f_Permission === 1)
+            {
+                url ='/admin'
             }
+            else
+            {
+                if (req.session.current_url) {
+                    url = req.session.current_url;
+                }
+            }
+
             res.redirect(url);
         } else {
             var vm = {
@@ -123,44 +133,109 @@ router.post('/logout', (req, res) => {
 });
 
 router.get('/profile', restrict,(req, res) => {
-    
-    var date = new Date(res.locals.layoutVM.curUser.f_DOB);
-    date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
-    var vm = {
-        title: "Profile",
-        birth: date
-    };
-    res.render('_pageUser/InfoAccount/index', vm);
+
+    var userID = res.locals.layoutVM.curUser.f_ID;
+    var p0 = userRepo.loadAllOrdersByUserID(userID);
+    var bill = [];
+
+    var page = req.query.list;
+
+    if (!page) {
+        page = 1;
+    }
+    var offset = (page - 1) * config.BILL_PER_PAGE;
+
+    Promise.all([p0]).then(([rows]) => {
+        for (let i = 0; i < rows.length; i++) {
+            rows[i].OrderDate = rows[i].OrderDate.toLocaleString();
+        }
+        var date = new Date(res.locals.layoutVM.curUser.f_DOB);
+        date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
+
+        var nPages = rows.length / config.BILL_PER_PAGE;
+        if (rows.length % config.BILL_PER_PAGE > 0) {
+            nPages++;
+        }
+        var numbers = [];
+        for (i = 1; i <= nPages; i++) {
+            numbers.push({
+                pagination: i,
+                isCurPage: i === +page
+            });
+        }
+        bill = rows.slice((Number(page)-1)* config.BILL_PER_PAGE,Number(page)* config.BILL_PER_PAGE);
+
+
+        var vm = {
+            title: "Profile",
+            orders: bill,
+            page_numbers: numbers,
+            isProfile: true,
+            birth: date
+        };
+        res.render('_pageUser/InfoAccount/index', vm);
+    });
 });
 
 router.get('/history', restrict,(req, res) => {
     var userID = res.locals.layoutVM.curUser.f_ID;
-    userRepo.loadAllOrdersByUserID(userID).then( rows => {
+    var p0 = userRepo.loadAllOrdersByUserID(userID);
+    var bill = [];
 
+    var page = req.query.list;
+
+    if (!page) {
+        page = 1;
+    }
+    var offset = (page - 1) * config.BILL_PER_PAGE;
+
+    Promise.all([p0]).then(([rows]) => {
         for (let i = 0; i < rows.length; i++) {
             rows[i].OrderDate = rows[i].OrderDate.toLocaleString();
         }
+        var date = new Date(res.locals.layoutVM.curUser.f_DOB);
+        date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
+
+        var nPages = rows.length / config.BILL_PER_PAGE;
+        if (rows.length % config.BILL_PER_PAGE > 0) {
+            nPages++;
+        }
+        var numbers = [];
+        for (i = 1; i <= nPages; i++) {
+            numbers.push({
+                pagination: i,
+                isCurPage: i === +page
+            });
+        }
+        bill = rows.slice((Number(page)-1)* config.BILL_PER_PAGE,Number(page)* config.BILL_PER_PAGE);
+
 
         var vm = {
-            title: "User History",
-            orders: rows,
+            title: "Profile",
+            orders: bill,
+            page_numbers: numbers,
+
+            birth: date
         };
         res.render('_pageUser/UserHistory/index', vm);
     });
-    
+
 });
 
 router.get('/history_detail/:OrderID', restrict,(req, res) => {
     var OrderID = req.params.OrderID;
+    var amountAll = 0;
     
     userRepo.singleOrderByOrderID(OrderID).then(row =>{
         for (let i = 0; i < row.length; i++) {
             row[i].OrderDate = row[i].OrderDate.toLocaleString();
+            amountAll += row[i].Quantity;
         }
         
         var vm = {
             title: "User History Detail",
             order: row,
+            amount: amountAll,
             Total: row[0].Total
         };
         res.render('_pageUser/UserHistoryDetail/index', vm);
@@ -169,7 +244,6 @@ router.get('/history_detail/:OrderID', restrict,(req, res) => {
 });
 
 router.post('/edit', (req, res) => {
-
     var mdob = moment(req.body.dob, 'D/M/YYYY')
         .format('YYYY-MM-DD');
 
@@ -180,13 +254,52 @@ router.post('/edit', (req, res) => {
         email: req.body.email
     };
 
+
+
     res.locals.layoutVM.curUser.f_Name = user.fullname;
     res.locals.layoutVM.curUser.f_Email = user.email;
     res.locals.layoutVM.curUser.f_DOB = mdob;
 
     userRepo.update(user).then(rows => {
-        res.redirect('/user/profile');
-    });
+
+        var userID = res.locals.layoutVM.curUser.f_ID;
+        var p0 = userRepo.loadAllOrdersByUserID(user.ID);
+        var notify = `<div class="alert alert-danger notify2"><button type="button" class="close">×</button>Success</div>`;
+        Promise.all([p0]).then(([rows]) => {
+            for (let i = 0; i < rows.length; i++) {
+                rows[i].OrderDate = rows[i].OrderDate.toLocaleString();
+            }
+            var date = new Date(res.locals.layoutVM.curUser.f_DOB);
+            date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
+
+            var vm = {
+                title: "Profile",
+                notify : notify,
+                birth: date
+            };
+            res.render('_pageUser/InfoAccount/index', vm);
+        });
+        // res.redirect('/user/profile');
+    }), function (reason) {
+        var p0 = userRepo.loadAllOrdersByUserID(user.ID);
+        var notify = `<div class="alert alert-danger notify2"><button type="button" class="close">×</button>Failure</div>`;
+        Promise.all([p0]).then(([rows]) => {
+            for (let i = 0; i < rows.length; i++) {
+                rows[i].OrderDate = rows[i].OrderDate.toLocaleString();
+            }
+            var date = new Date(res.locals.layoutVM.curUser.f_DOB);
+            date = date.getDate()+'/' + (date.getMonth()+1) + '/'+date.getFullYear();
+
+            var vm = {
+                title: "Profile",
+                notify : notify,
+                birth: date
+            };
+            res.render('_pageUser/InfoAccount/index', vm);
+        });
+    };
+
+
 });
 
 

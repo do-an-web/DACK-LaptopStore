@@ -78,6 +78,7 @@
         </div>
     </div>
     </div>
+    </div>
 
 {{else}}
 <div class="shop">
@@ -202,15 +203,25 @@
 
                         {{#each products}}
                             <!-- Product Item -->
+                            <form method="post" action="/cart/add">
+                                <input name="proId" type="hidden" value="{{ProID}}">
                             <div class="product_item is_new">
+
                                 <div class="product_border"></div>
                                 <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="/images_product/{{ProID}}/{{ProID}}.jpg" alt=""></div>
-                                <div class="product_content">
-                                    <div class="product_price">{{number_format Price}}</div>
-                                    <div class="product_name"><div><a href="/detail/{{ProID}}">{{ProName}}</a></div></div>
-                                </div>
-                                <div class="product_fav"><i class="fas fa-heart"></i></div>
+
+
+                                        <div class="product_content">
+                                            <div class="product_price">{{number_format Price}}</div>
+                                            <div class="product_name"><div><a href="/detail/{{ProID}}">{{ProName}}</a></div></div>
+                                        </div>
+                                        <div class="product_fav"><i class="fas fa-heart"></i></div>
+                                        <div class="product_extras" style="bottom: -15px">
+                                            <button class="btn btn-primary btn-sm btn-block product_cart_button" style="z-index: 999;">Add to Cart</button>
+                                        </div>
+
                             </div>
+                            </form>
                         {{/each}}
 
                     </div>

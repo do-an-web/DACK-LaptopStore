@@ -1240,9 +1240,10 @@ select option
 }
 .cart_item_image
 {
-	width: 133px;
-	height: 133px;
-	float: left;
+	width: 80px;
+	height: 80px;
+    padding-top: 20px;
+    left: 65px;
 }
 .cart_item_image img
 {
@@ -1263,6 +1264,18 @@ select option
 	font-size: 14px;
 	font-weight: 400;
 	color: rgba(0,0,0,0.5);
+}
+.cart_info_col {
+    top: 40%;
+
+
+}
+.cart_info_col button {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 .cart_item_text
 {

@@ -1,9 +1,19 @@
 {{#section 'title'}}
+	{{#if IsCat}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/admin/category">Category</a>
+	  	</li>
+		<li class="breadcrumb-item active">
+		  <a href="/admin/product/byCat/{{CatID}}">Product By Category</a>
+		</li>
+	{{else}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/admin/product">Products</a>
+	  	</li>
+	{{/if}}
+
 	<li class="breadcrumb-item active">
-   	 <a href="/category">Category</a>
-  	</li>
-	<li class="breadcrumb-item active">
-	  <a href="#">Add Category</a>
+	  <a href="#">Add A Product</a>
 	</li>
 {{/section}}
 
@@ -14,7 +24,7 @@
 </div>
 {{/if}}
 
-<form action="" method="POST" role="form">
+<form action='' enctype="multipart/form-data" method="POST" role="form">
 	<div class="form-group">
 		<label for="">Product Name</label>
 		<input type="text" class="form-control" id="" name="ProName" placeholder="Product">
@@ -40,18 +50,8 @@
 		<label for="">Quantity</label>
 		<input type="text" class="form-control" id="" name="Quantity" placeholder="Quantity">
 	</div>
-	<div class="form-group">
-		<label for="">Views</label>
-		<input type="text" class="form-control" id="" name="Views" placeholder="Views">
-	</div>
-	<div class="form-group">
-		<label for="">Image</label>
-		<input type="text" class="form-control" id="" name="Image" placeholder="Image">
-	</div>
-	<a class="btn btn-default" href="/category" role="button">
-		<span class="glyphicon glyphicon-arrow-left"></span>
-		View list
-	</a>
+	<input type="file" name="Image">
+	<hr/><hr/><hr/>
 	<button type="submit" class="btn btn-primary">
 		<span class="glyphicon glyphicon-check"></span>
 		Save

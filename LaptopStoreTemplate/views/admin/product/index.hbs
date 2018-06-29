@@ -1,0 +1,40 @@
+{{#section 'title'}}
+  <li class="breadcrumb-item active">
+    <a href="#">Products</a>
+  </li>
+{{/section}}
+
+<hr/>
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Overview</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <td>{{ProID}}</td>
+      <td>{{ProName}}</td>
+      <td>{{Overview}}</td>
+      <td>{{number_format Price}}</td>
+      <td>{{Quantity}}</td>
+      <td>
+        <a href="/admin/product/edit?id={{ProID}}" class="btn btn-primary">Edit</a>
+        <form action="/admin/product/delete" method="POST" role="form">
+          <input type="hidden" id="" name="ProID" value="{{ProID}}">  
+          <input type="hidden" id="" name="CatID" value="{{CatID}}">
+          <button type="submit" class="btn btn-danger">
+            Delete
+          </button>
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

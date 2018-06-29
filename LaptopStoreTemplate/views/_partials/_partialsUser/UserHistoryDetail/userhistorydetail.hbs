@@ -1,91 +1,102 @@
-
-<div>
-    <ol class="breadcrumb" style="border-top: solid 1px;  border-bottom: solid 1px; border-color: #EDEDED; background-color: #FAFAFA;">
-        <li class="breadcrumb-item" style="margin-left: 105px;"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Account</li>
-        <li class="breadcrumb-item active" aria-current="page">Histories</li>
-    </ol>
-</div>
-
+<br>
 <br>
 <div class="container">
-
-    <div class="row">
-
-        <div class="col-3">
-
-            <div class="list-group-flush" style="margin-top: 55px;">
-
-                <a href="/user/profile" class="list-group-item list-group-item-action">Account infomations</a>
-                <a href="/history" class="list-group-item list-group-item-action">Your Histories</a>
-
+    <div class="row profile">
+        <div class="col-md-3" style="background-color: #9898b9">
+            <div class="profile-sidebar">
+                <div class="profile-userpic">
+                    <img src="/assets/account.png" alt="">
+                </div>
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        {{layoutVM.curUser.f_Username}}
+                    </div>
+                    <div class="profile-usertitle-job">
+                        {{layoutVM.curUser.f_Name}}
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR BUTTONS -->
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm">Follow</button>
+                    <button type="button" class="btn btn-danger btn-sm">Message</button>
+                </div>
+                <!-- END SIDEBAR BUTTONS -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li id="nav-element1">
+                            <a class="tablinks" href="#" onclick="OpenTabs(event,'Overview')">
+                                <i class="fa fa-home" aria-hidden="true"></i></i>
+                                Overview </a>
+                        </li>
+                        <li id="nav-element2">
+                            <a class="tablinks" href="/user/profile" onclick="OpenTabs(event,'Information')">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i></i>
+                                Account Information </a>
+                        </li>
+                        <li id="nav-element3" class="nav-element">
+                            <a class="tablinks" href="/user/history" onclick="OpenTabs(event,'Histories')">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i></i>
+                                Histories </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
             </div>
         </div>
-        
-        <div class="col-9" >
-            {{#each order}}
-            <div class="row">
-                <div class="col-8">
-                    <h1 style="font-weight: 100; font-size: 20px;">
-                        Detail of #{{OrderID}} - Have delivered
-                    </h1>
-                </div>
-                <div class="col-4">
-                    <p>Date of the order: {{OrderDate}}</p>
-
-                </div>
-
-            </div>
-            {{/each}}
-            <div class="row" style="margin-top: 12px;">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem; border: 0px;">
-                        <div class="card-body">
-                            <h5 class="card-title">CUSTOMER</h5>
-                            <hr>
+<<<<<<< HEAD
+        <div id="Overview" class="col-md-9 tabcontent" style="display: block">
+            <div class="profile-content">
+                <div class="col-md-12">
+                    <div class="card" style="width: 100%; border: 0px;">
+                        <div>
                             <p class="card-text">
-                                <div>
-                            <p style="color: #242424;">{{layoutVM.curUser.f_Name}}</p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col" style="text-align: center">Quantity</th>
+                                    <th scope="col" style="text-align: center">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {{#each order}}
+                                    <tr>
+                                        <td>
+                                            <div style="display: inline-block">
+                                                <img src="/images_product/{{ProID}}/{{ProID}}.jpg" width="80" height="80">
+                                            </div>
+                                            <div style="margin-left: 20px; display: inline-block">
+                                                <h5>{{ProName}}</h5>
+                                            </div>
+                                        </td>
 
-                            <p><span>Address: </span>114/24, De Tham street,District 1, TP.HCM, Ho Chi Minh, Viet Nam</p>
+                                        <td style="text-align: center">{{Quantity}}</td>
+                                        <td style="text-align: center">{{Price}}</td>
+                                    </tr>
+                                {{/each}}
+                                </tbody>
+                                <tfoot style="background-color: #00B7FF">
+                                <!--Total Summary List-->
+                                <tr>
+                                    <td colspan="2" style="border: 0px; text-align: right; ">
+                                        <span><strong>Amount:</strong></span>
+                                    </td>
+                                    <td style="border: 0px;">{{amount}} Products</td>
+                                </tr>
 
-                            <p><span>Phone:</span> 01632511676</p>
+                                <!--Final Total-->
+                                <tr>
+                                    <td colspan="2" style=" padding-top: 17px; border: 0px; text-align: right;"><span><strong>Sum:</strong></span></td>
+                                    <td style="border: 0px; color: #ff3b27; font-size: 20px">{{number_format Total}}</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                            </p>
                         </div>
-                        </p>
-
                     </div>
-                </div>
-            </div>
-            
-            <div class="col-4">
-                <div class="card" style="width: 18rem; border: 0px;">
-                    <div class="card-body">
-                        <h5 class="card-title">DELIVERY</h5>
-                        <hr>
-                        <p class="card-text">
-                            <div>
-
-                        <p>2H quick delivery (delivered before 10:00 2018-04-07)</p>
-
-                        <p><span>Delivery fee:</span> $20</p>
-                    </div>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="width: 18rem; border: 0px;">
-                <div class="card-body">
-                    <h5 class="card-title">PAYMENT</h5>
-                    <hr>
-                    <p class="card-text">
-                        Pay by cash
-                    </p>
-
-                </div>
-            </div>
-        </div>
+=======
     </div>
     <div class="row">
         <div class="col-12">
@@ -145,10 +156,15 @@
                         </tfoot>
                     </table>
                     </p>
+>>>>>>> b253fe97f54e55bf67fc9b638256fd61e34c1e9c
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
     <a class="btn btn-primary" href="/user/history" role="button">Go back your orders</a>
+>>>>>>> b253fe97f54e55bf67fc9b638256fd61e34c1e9c
 </div>
-
+<br>
+<br>

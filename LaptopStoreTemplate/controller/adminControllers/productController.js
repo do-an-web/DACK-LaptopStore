@@ -1,29 +1,18 @@
 var express = require('express');
-var productRepo = require('../repos/productRepo');
-var config = require('../config/config');
+var productRepo = require('../../repos/adminRepos/productRepo');
+var config = require('../../config/config');
 
 var router = express.Router();
 
-// router.get('/byCat', (req, res) => {
-//     var catId = req.query.catId;
-//     productRepo.loadAllByCat(catId).then(rows => {
-//         var vm = {
-//             products: rows
-//         };
-//         res.render('product/byCat', vm);
-//     });
-// });
-
-// router.get('/byCat/:catId', (req, res) => {
-//     var catId = req.params.catId;
-//     productRepo.loadAllByCat(catId).then(rows => {
-//         var vm = {
-//             products: rows,
-//             noProducts: rows.length === 0
-//         };
-//         res.render('product/byCat', vm);
-//     });
-// });
+router.get('/', (req, res) => {
+    productRepo.loadAll().then(rows => {
+        var vm = {
+            products: rows,
+            layout: 'admin_main',
+        };
+        res.render('admin/product/index', vm);
+    });
+});
 
 router.get('/byCat/:catId', (req, res) => {
     var catId = req.params.catId;
@@ -54,14 +43,14 @@ router.get('/byCat/:catId', (req, res) => {
                 isCurPage: i === +page
             });
         }
-
         var vm = {
             CatID: catId,
             products: pRows,
             noProducts: pRows.length === 0,
-            page_numbers: numbers
+            page_numbers: numbers,
+            layout: 'admin_main',
         };
-        res.render('product/byCat', vm);
+        res.render('admin/product/byCat', vm);
     });
 });
 
@@ -70,62 +59,135 @@ router.get('/detail/:proId', (req, res) => {
     productRepo.single(proId).then(rows => {
         if (rows.length > 0) {
             var vm = {
-                product: rows[0]
+                product: rows[0],
+                layout: 'admin_main',
             }
             res.render('product/detail', vm);
         } else {
-            res.redirect('/');
+            res.redirect('/admin/product');
         }
     });
 });
 
 router.get('/add', (req, res) => {
+    var cat = false;
+    if(req.query.catPath == 'true'){
+        cat = true;
+    }
     var vm = {
         CatID: req.query.id,
-        showAlert: false
+        showAlert: false,
+        IsCat: cat,
+        layout: 'admin_main',
     };
-    res.render('product/add', vm);
+    res.render('admin/product/add', vm);
 });
 
 router.post('/add', (req, res) => {
-    productRepo.add(req.body).then(value => {
-        var vm = {
-            showAlert: true
-        };
-        res.render('product/add', vm);
-    }).catch(err => {
-        res.end('fail');
-    });
+    if (!req.files)
+        return res.end('fail');
+
+    var product = [];
+    
+     
+      // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+      let File = req.files.Image;
+     
+      // Use the mv() method to place the file somewhere on your server
+      var newPath = '/HK8/admin/image/filename.jpg';
+      File.mv(newPath, function(err) {
+        if (err){
+
+          return res.end('fail');
+        }
+        product.push({
+            ProName: req.body.ProName,
+            Factory: req.body.Factory,
+            Overview: req.body.Overview,
+            Detail: req.body.Detail,
+            CatID: req.body.CatID,
+            Price: req.body.Price,
+            Quantity: req.body.Quantity,
+            Views: 0,
+            Image: newPath
+        });
+        productRepo.add(product[0]).then(value => {
+            var vm = {
+                CatID: req.body.CatID,
+                showAlert: true,
+                IsCat: true
+            };
+            res.render('admin/product/add', vm);
+        }).catch(err => {
+            console.log(err);
+            res.end('fail');
+        });
+     
+      });
+
+      // console.log(req.body);
+      //   productRepo.add(req.body).then(value => {
+      //       var vm = {
+      //           CatID: req.body.CatID,
+      //           showAlert: true,
+      //           IsCat: true,
+      //           layout: 'admin_main',
+      //       };
+      //       res.render('admin/product/add', vm);
+      //   }).catch(err => {
+      //       console.log(err);
+      //       res.end('fail');
+      //   });
 });
 
 router.get('/delete', (req, res) => {
     var vm = {
-        CatId: req.query.id
+        CatId: req.query.id,
+        layout: 'admin_main',
     }
-    res.render('product/delete', vm);
+    res.render('admin/product/delete', vm);
 });
 
 router.post('/delete', (req, res) => {
     productRepo.delete(req.body.ProID).then(value => {
-        res.redirect('/category');
+        var vm = {
+            layout: 'admin_main',
+        };
+        if(req.body.CatID === ''){
+            res.redirect('/admin/product/');
+        } else{
+            res.redirect(`/admin/product/byCat/${req.body.CatID}`);
+        }
     });
 });
 
 router.get('/edit', (req, res) => {
-    console.log(req.query.id);
+    var cat = false;
+    if(req.query.catPath === 'true'){
+        cat = true;
+    }
     productRepo.single(req.query.id).then(p => {
-        
         var vm = {
-            Product: p[0]
+            Product: p[0],
+            CatID: p[0].CatID,
+            IsCat: cat,
+            layout: 'admin_main',
         };
-        res.render('product/edit', vm);
+        res.render('admin/product/edit', vm);
     });
 });
 
 router.post('/edit', (req, res) => {
     productRepo.update(req.body).then(value => {
-        console.log(req.body.CatID);
-        res.redirect(`/product/byCat/${req.body.CatID}`);
+        var vm = {
+            layout: 'admin_main',
+        };
+        if(req.body.IsCat === 'true'){
+            res.redirect(`/admin/product/byCat/${req.body.CatID}`);
+        } else{
+            res.redirect('/admin/product/');
+        }
+        
     });
 });
 

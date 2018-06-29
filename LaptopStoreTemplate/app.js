@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var wnumb = require('wnumb');
+var fileUpload = require('express-fileupload');
 
 var express = require('express');
 var express_handlebars  = require('express-handlebars');
@@ -20,12 +21,20 @@ var handle404MDW = require('./middle-wares/handle404');
 var bodyParser = require('body-parser');
 var request = require('request');
 
-/*************************/
+/**********USER***************/
 var userRouter = require('./routes/user');
 
 var userController = require('./controller/userController');
 var cartController = require('./controller/cartController');
 var paymentController = require('./controller/paymentController');
+
+/************************/
+
+/*********ADMIN***************/
+var adminHomeController = require('./controller/adminControllers/homeController');
+var adminCategoryController = require('./controller/adminControllers/categoryController');
+var adminOderController = require('./controller/adminControllers/orderController');
+var adminProductController = require('./controller/adminControllers/productController');
 
 /************************/
 var app = express();
@@ -99,6 +108,7 @@ app.engine('hbs', express_handlebars({
 
 
 // view engine setup
+app.use(fileUpload());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','hbs');
 app.use(logger('dev'));
@@ -116,7 +126,7 @@ app.use(express.static(path.join(__dirname, 'public/Client')));
 
 /*Sessions*/
 var sessionStore = new MySQLStore({
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 3306,
     user: 'root',
     password: 'root',
@@ -144,10 +154,22 @@ app.use(handleLayoutMDW);
 
 //User
 app.use('/', userRouter);
-//app.use('/cart', restrict, cartController);
 app.use('/user', userController);
 app.use('/cart',restrict, cartController);
 app.use('/payment', paymentController);
+
+
+
+//Admin
+app.use('/admin',adminHomeController);
+app.use('/admin/category',adminCategoryController);
+app.use('/admin/orders',adminOderController);
+app.use('/admin/product',adminProductController);
+
+
+
+
+
 
 app.use(handle404MDW);
 

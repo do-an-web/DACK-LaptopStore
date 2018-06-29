@@ -1,14 +1,26 @@
+
 {{#section 'title'}}
+	{{#if IsCat}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/admin/category">Category</a>
+	  	</li>
+		<li class="breadcrumb-item active">
+		  <a href="/admin/product/byCat/{{CatID}}">Product By Category</a>
+		</li>
+	{{else}}
+		<li class="breadcrumb-item active">
+	   	 <a href="/admin/product">Products</a>
+	  	</li>
+	{{/if}}
+
 	<li class="breadcrumb-item active">
-   	 <a href="/category">Category</a>
-  	</li>
-	<li class="breadcrumb-item active">
-	  <a href="#">Edit Category</a>
+	  <a href="#">Edit Product</a>
 	</li>
 {{/section}}
 
-{{#with Product}}
+
 <form action="" method="POST" role="form">
+{{#with Product}}
 	<div class="form-group">
 		<label for="">ID</label>
 		<input type="text" class="form-control" id="" name="ProID" value="{{ProID}}" readonly>
@@ -49,13 +61,10 @@
 		<label for="">Image</label>
 		<input type="text" class="form-control" id="" name="Image" value="{{Image}}">
 	</div>
-	<a class="btn btn-default" href="/category" role="button">
-		<span class="glyphicon glyphicon-arrow-left"></span>
-		View List
-	</a>
+{{/with}}
+	<input type="hidden" id="" name="IsCat" value="{{IsCat}}"> 
 	<button type="submit" class="btn btn-primary">
 		<span class="glyphicon glyphicon-save"></span>
 		Update
 	</button>
 </form>
-{{/with}}
